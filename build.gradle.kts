@@ -33,17 +33,3 @@ tasks.named("npmInstall") {
 tasks.named("classes") {
     dependsOn(tasks.named("npmInstall"))
 }
-
-// We don't care about publishing javadocs anywhere, so don't waste time building them
-tasks.withType<Javadoc>().configureEach {
-    enabled = false
-}
-
-tasks.named<Jar>("javadocJar") {
-    enabled = false
-}
-
-val emptyJavadocJar = tasks.create<Jar>("emptyJavadocJar") {
-    file("README.md")
-    archiveClassifier.set("javadoc")
-}
