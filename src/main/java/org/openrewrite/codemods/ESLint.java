@@ -32,7 +32,7 @@ import static java.util.Collections.emptyList;
 import static org.openrewrite.Tree.randomId;
 
 @Value
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 public class ESLint extends NodeBasedRecipe {
 
     private static final String ESLINT_DIR = ESLint.class.getName() + ".ESLINT_DIR";
@@ -121,6 +121,7 @@ public class ESLint extends NodeBasedRecipe {
             description = "Allows specifying the full ESLint configuration file contents as multiline JSON. " +
                     "See [ESLint documentation](https://eslint.org/docs/latest/use/configure/configuration-files) for more details.\n\n" +
                     "Note that this will override any other configuration options.",
+            example = "{}",
             required = false)
     @Nullable
     String configFile;

@@ -1,9 +1,9 @@
 /*
  * Moderne Proprietary. Only for use by Moderne customers under the terms of a commercial contract.
  */
-@NonNullApi
+@NullMarked
 @NonNullFields
 package org.openrewrite.codemods;
 
-import org.openrewrite.internal.lang.NonNullApi;
+import org.jspecify.annotations.NullMarked;
 import org.openrewrite.internal.lang.NonNullFields;

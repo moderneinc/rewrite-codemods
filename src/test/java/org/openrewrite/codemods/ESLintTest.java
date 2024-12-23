@@ -5,6 +5,7 @@ package org.openrewrite.codemods;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
+import org.openrewrite.DocumentExample;
 import org.openrewrite.marker.SearchResult;
 import org.openrewrite.test.RewriteTest;
 
@@ -14,8 +15,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.openrewrite.test.SourceSpecs.text;
 
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
-public class ESLintTest implements RewriteTest {
+class ESLintTest implements RewriteTest {
 
+    @DocumentExample
     @Test
     void formatStatement() {
         rewriteRun(

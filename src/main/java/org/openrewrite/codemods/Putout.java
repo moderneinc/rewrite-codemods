@@ -18,7 +18,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @Value
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 public class Putout extends NodeBasedRecipe {
 
     private static final String PUTOUT_DIR = Putout.class.getName() + ".PUTOUT_DIR";
@@ -36,6 +36,7 @@ public class Putout extends NodeBasedRecipe {
 
     @Option(displayName = "Rules",
             description = "Names of rules to enable. If not provided, putout's default rules are used.",
+            example = "remove-unused-variables",
             required = false)
     @Nullable
     Set<String> rules;
