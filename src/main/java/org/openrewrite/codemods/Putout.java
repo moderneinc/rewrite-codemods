@@ -34,8 +34,9 @@ public class Putout extends NodeBasedRecipe {
         return "Run [Putout](https://github.com/coderaiser/putout) on your projects.";
     }
 
-    @Option(example = "TODO Provide a usage example for the docs", displayName = "Rules",
+    @Option(displayName = "Rules",
             description = "Names of rules to enable. If not provided, putout's default rules are used.",
+            example = "remove-unused-variables",
             required = false)
     @Nullable
     Set<String> rules;

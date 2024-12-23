@@ -117,10 +117,11 @@ public class ESLint extends NodeBasedRecipe {
     @Nullable
     Boolean fix;
 
-    @Option(example = "TODO Provide a usage example for the docs", displayName = "Override config file",
+    @Option(displayName = "Override config file",
             description = "Allows specifying the full ESLint configuration file contents as multiline JSON. " +
                     "See [ESLint documentation](https://eslint.org/docs/latest/use/configure/configuration-files) for more details.\n\n" +
                     "Note that this will override any other configuration options.",
+            example = "{}",
             required = false)
     @Nullable
     String configFile;
