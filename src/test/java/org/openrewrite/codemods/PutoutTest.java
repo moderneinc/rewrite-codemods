@@ -5,6 +5,7 @@ package org.openrewrite.codemods;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
+import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
 
 import java.util.Set;
@@ -12,8 +13,9 @@ import java.util.Set;
 import static org.openrewrite.test.SourceSpecs.text;
 
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
-public class PutoutTest implements RewriteTest {
+class PutoutTest implements RewriteTest {
 
+    @DocumentExample
     @Test
     void noRules() {
         rewriteRun(
@@ -118,15 +120,15 @@ public class PutoutTest implements RewriteTest {
               };
               """,
             """
-                export const square = x => x ** 2
-                export const sum = (a, b) => a + b;
-                export const obj = {
-                  key: 'value',
-                  method: function() {
-                        return something;
-                  },
-                  sum, square
-                };
+              export const square = x => x ** 2
+              export const sum = (a, b) => a + b;
+              export const obj = {
+                key: 'value',
+                method: function() {
+                      return something;
+                },
+                sum, square
+              };
               """,
             spec -> spec.path("src/Foo.js")
           )

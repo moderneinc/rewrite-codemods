@@ -5,13 +5,15 @@ package org.openrewrite.codemods;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
+import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
 
 import static org.openrewrite.test.SourceSpecs.text;
 
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
-public class ApplyCodemodTest implements RewriteTest {
+class ApplyCodemodTest implements RewriteTest {
 
+    @DocumentExample
     @Test
     void formatStatement() {
         rewriteRun(

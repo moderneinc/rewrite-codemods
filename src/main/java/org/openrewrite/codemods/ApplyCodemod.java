@@ -17,7 +17,7 @@ import java.util.Optional;
 import static java.util.Collections.emptyList;
 
 @Value
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 public class ApplyCodemod extends NodeBasedRecipe {
     @Option(displayName = "Codemod transform",
             description = "Transform to be applied using the executable.",

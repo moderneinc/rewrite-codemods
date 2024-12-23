@@ -5,6 +5,7 @@ package org.openrewrite.codemods;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
+import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
 
 import static org.openrewrite.test.SourceSpecs.text;
@@ -14,6 +15,7 @@ class NextJsCodemodsTest implements RewriteTest {
     @SuppressWarnings({"NpmUsedModulesInstalled", "JSUnusedLocalSymbols"})
     @Test
     @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
+    @DocumentExample
     void builtInNextFont() {
         rewriteRun(
           spec -> spec.recipeFromResource("/META-INF/rewrite/nextjs.yml", "org.openrewrite.codemods.nextjs.v13_2.BuiltInNextFont"),
