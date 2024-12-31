@@ -179,7 +179,8 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
                 before.getFileAttributes(),
                 null,
                 acc.content(before),
-                emptyList()
+                emptyList(),
+                null
         );
     }
 
