@@ -300,8 +300,7 @@ public class ESLint extends NodeBasedRecipe {
                 before.getFileAttributes(),
                 null,
                 "",
-                snippets,
-                null
+                snippets
         );
     }
 
