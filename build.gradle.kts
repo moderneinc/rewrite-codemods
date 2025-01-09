@@ -9,9 +9,9 @@ plugins {
 group = "org.openrewrite.recipe"
 description = "Migrate JavaScript projects using codemods"
 
-val rewriteVersion = rewriteRecipe.rewriteVersion.get()
+val rewriteVersion = "latest.release"
 dependencies {
-    implementation(platform("org.openrewrite:rewrite-bom:$rewriteVersion"))
+    implementation(platform("org.openrewrite:rewrite-bom:8.41.1"))
 
     implementation("org.openrewrite:rewrite-core")
 
