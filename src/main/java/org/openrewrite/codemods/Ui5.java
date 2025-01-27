@@ -46,7 +46,7 @@ public class Ui5 extends NodeBasedRecipe {
     @Override
     protected List<String> getNpmCommand(Accumulator acc, ExecutionContext ctx) {
         List<String> command = new ArrayList<>();
-        command.add("${nodeModules}/node_modules/.bin/ui5lint --json ${repoDir}");
+        command.add("${nodeModules}/.bin/ui5lint --json ${repoDir}");
         return command;
     }
 
