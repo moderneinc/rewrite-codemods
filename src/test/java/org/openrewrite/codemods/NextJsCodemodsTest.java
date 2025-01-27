@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
+import org.openrewrite.test.TypeValidation;
 
 import static org.openrewrite.test.SourceSpecs.text;
 
@@ -20,7 +21,7 @@ class NextJsCodemodsTest implements RewriteTest {
     @DocumentExample
     void builtInNextFont() {
         rewriteRun(
-          spec -> spec.recipeFromResource("/META-INF/rewrite/nextjs.yml", "org.openrewrite.codemods.migrate.nextjs.v13_2.BuiltInNextFont"),
+          spec -> spec.recipeFromResource("/META-INF/rewrite/nextjs.yml", "org.openrewrite.codemods.migrate.nextjs.v13_2.BuiltInNextFont").typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """

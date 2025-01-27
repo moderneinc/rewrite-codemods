@@ -10,6 +10,7 @@ import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.openrewrite.DocumentExample;
 import org.openrewrite.marker.SearchResult;
 import org.openrewrite.test.RewriteTest;
+import org.openrewrite.test.TypeValidation;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ class ESLintTest implements RewriteTest {
     @Test
     void formatStatement() {
         rewriteRun(
-          spec -> spec.recipe(new ESLint(null, null, null, null, null, null, null, List.of("eslint:recommended"), null, null, null)),
+          spec -> spec.recipe(new ESLint(null, null, null, null, null, null, null, List.of("eslint:recommended"), null, null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -31,9 +32,9 @@ class ESLintTest implements RewriteTest {
               """,
             """
               ~~('console' is not defined.
-                          
+              
               Disallow the use of undeclared variables unless mentioned in `/*global */` comments
-                          
+              
               Rule: no-undef, Severity: ERROR)~~>console.log('foo')
               """,
             spec -> spec.path("src/Foo.js")
@@ -44,7 +45,7 @@ class ESLintTest implements RewriteTest {
     @Test
     void multiple() {
         rewriteRun(
-          spec -> spec.recipe(new ESLint(null, null, null, null, null, null, null, List.of("eslint:recommended"), null, null, null)),
+          spec -> spec.recipe(new ESLint(null, null, null, null, null, null, null, List.of("eslint:recommended"), null, null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -53,14 +54,14 @@ class ESLintTest implements RewriteTest {
               """,
             """
               ~~('console' is not defined.
-                            
+              
               Disallow the use of undeclared variables unless mentioned in `/*global */` comments
-                            
+              
               Rule: no-undef, Severity: ERROR)~~>console.log('foo')
               ~~('console' is not defined.
-                            
+              
               Disallow the use of undeclared variables unless mentioned in `/*global */` comments
-                            
+              
               Rule: no-undef, Severity: ERROR)~~>console.log('bar')
               """,
             spec -> spec.path("src/Foo.js")
@@ -101,7 +102,7 @@ class ESLintTest implements RewriteTest {
                     "eqeqeq": "error",
                 }
             }
-            """)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -109,9 +110,9 @@ class ESLintTest implements RewriteTest {
               """,
             """
               2 ~~(Expected '===' and instead saw '=='.
-                            
+              
               Require the use of `===` and `!==`
-                            
+              
               Rule: eqeqeq, Severity: ERROR)~~>== 42;
               """,
             spec -> spec.path("src/Foo.js")
@@ -135,7 +136,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -165,7 +166,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -195,7 +196,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -234,7 +235,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -275,7 +276,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """

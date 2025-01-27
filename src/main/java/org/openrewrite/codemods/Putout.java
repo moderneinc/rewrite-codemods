@@ -24,7 +24,6 @@ import java.util.concurrent.TimeUnit;
 public class Putout extends NodeBasedRecipe {
 
     private static final String PUTOUT_DIR = Putout.class.getName() + ".PUTOUT_DIR";
-    private static final String REPO_DIRECTORY = ".";
 
     @Override
     public String getDisplayName() {

@@ -1,6 +1,6 @@
 /*
  * Copyright 2025 the original author or authors.
- * 
+ *
  * Moderne Proprietary. Only for use by Moderne customers under the terms of a commercial contract.
  */
 package org.openrewrite.codemods;
@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
+import org.openrewrite.test.TypeValidation;
 
 import java.util.Set;
 
@@ -21,7 +22,7 @@ class PutoutTest implements RewriteTest {
     @Test
     void noRules() {
         rewriteRun(
-          spec -> spec.recipe(new Putout(null, null)),
+          spec -> spec.recipe(new Putout(null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -40,7 +41,7 @@ class PutoutTest implements RewriteTest {
     @Test
     void withRules() {
         rewriteRun(
-          spec -> spec.recipe(new Putout(Set.of("conditions/merge-if-statements"), null)),
+          spec -> spec.recipe(new Putout(Set.of("conditions/merge-if-statements"), null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -67,7 +68,7 @@ class PutoutTest implements RewriteTest {
     @Test
     void jsx() {
         rewriteRun(
-          spec -> spec.recipe(new Putout(null, null)),
+          spec -> spec.recipe(new Putout(null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -105,7 +106,7 @@ class PutoutTest implements RewriteTest {
     @Test
     void printer() {
         rewriteRun(
-          spec -> spec.recipe(new Putout(null, "recast")),
+          spec -> spec.recipe(new Putout(null, "recast")).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """

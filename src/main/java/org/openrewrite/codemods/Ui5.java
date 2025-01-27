@@ -31,6 +31,8 @@ import static org.openrewrite.Tree.randomId;
 @EqualsAndHashCode(callSuper = false)
 public class Ui5 extends NodeBasedRecipe {
 
+    private static final String UI5_DIR = Putout.class.getName() + ".UI5_DIR";
+
     transient Ui5Messages messages = new Ui5Messages(this);
 
     @Override
@@ -44,9 +46,19 @@ public class Ui5 extends NodeBasedRecipe {
     }
 
     @Override
+    public Accumulator getInitialValue(ExecutionContext ctx) {
+        Path path = RecipeResources.from(getClass()).extractResources("config", UI5_DIR, ctx);
+        ctx.putMessage(UI5_DIR, path);
+        return super.getInitialValue(ctx);
+    }
+
+    @Override
     protected List<String> getNpmCommand(Accumulator acc, ExecutionContext ctx) {
         List<String> command = new ArrayList<>();
-        command.add("${nodeModules}/.bin/ui5lint --json ${repoDir}");
+        command.add("node");
+        command.add("${nodeModules}/@ui5/linter/bin/ui5lint.js");
+        command.add("--format=json");
+
         return command;
     }
 

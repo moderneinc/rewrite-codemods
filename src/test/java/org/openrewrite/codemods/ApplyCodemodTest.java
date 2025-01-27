@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
+import org.openrewrite.test.TypeValidation;
 
 import static org.openrewrite.test.SourceSpecs.text;
 
@@ -19,7 +20,7 @@ class ApplyCodemodTest implements RewriteTest {
     @Test
     void formatStatement() {
         rewriteRun(
-          spec -> spec.recipe(new ApplyCodemod("@kevinbarabash/codemods/transforms/array.js", null, null, null)),
+          spec -> spec.recipe(new ApplyCodemod("@kevinbarabash/codemods/transforms/array.js", null, null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
@@ -32,21 +33,22 @@ class ApplyCodemodTest implements RewriteTest {
           )
         );
     }
+
     @Test
     void formatReactStatement() {
         rewriteRun(
-          spec -> spec.recipe(new ApplyCodemod( "react-declassify", "@codemod/cli/bin/codemod --plugin", "**/*.(j|t)sx", null)),
+          spec -> spec.recipe(new ApplyCodemod("react-declassify", "@codemod/cli/bin/codemod --plugin", "**/*.(j|t)sx", null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=js
             """
               import React from "react";
-                        
+              
                         export class C extends React.Component {
                           render() {
                             const { text, color } = this.props;
                             return <button style={{ color }} onClick={() => this.onClick()}>{text}</button>;
                           }
-                        
+              
                           onClick() {
                             const { text, handleClick } = this.props;
                             alert(`${text} was clicked!`);
@@ -56,19 +58,19 @@ class ApplyCodemodTest implements RewriteTest {
               """,
             """
               import React from "react";
-                        
+              
                         export const C = props => {
                           const {
                             text,
                             color,
                             handleClick
                           } = props;
-                        
+              
                           function onClick() {
                             alert(`${text} was clicked!`);
                             handleClick();
                           }
-                        
+              
                           return <button style={{ color }} onClick={() => onClick()}>{text}</button>;
                         };
               """,

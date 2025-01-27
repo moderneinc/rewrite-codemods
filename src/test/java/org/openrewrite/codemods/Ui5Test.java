@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
+import org.openrewrite.test.TypeValidation;
 
 import static org.openrewrite.test.SourceSpecs.text;
 
@@ -21,7 +22,7 @@ class Ui5Test implements RewriteTest {
     @Disabled("Work in progress")
     void noRules() {
         rewriteRun(
-          spec -> spec.recipe(new Ui5()),
+          spec -> spec.recipe(new Ui5()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=xml
             """
