@@ -20,26 +20,26 @@ class NextJsCodemodsTest implements RewriteTest {
     @DocumentExample
     void builtInNextFont() {
         rewriteRun(
-          spec -> spec.recipeFromResource("/META-INF/rewrite/nextjs.yml", "org.openrewrite.codemods.nextjs.v13_2.BuiltInNextFont"),
+          spec -> spec.recipeFromResource("/META-INF/rewrite/nextjs.yml", "org.openrewrite.codemods.migrate.nextjs.v13_2.BuiltInNextFont"),
           text(
             //language=js
             """
-            import { Fira_Code } from "@next/font/google"
-            
-            const firaCode = Fira_Code({
-                weight: "500",
-                subsets: ["latin"]
-            })
-            """,
+              import { Fira_Code } from "@next/font/google"
+              
+              const firaCode = Fira_Code({
+                  weight: "500",
+                  subsets: ["latin"]
+              })
+              """,
             //language=js
             """
-            import { Fira_Code } from "next/font/google"
-            
-            const firaCode = Fira_Code({
-                weight: "500",
-                subsets: ["latin"]
-            })
-            """,
+              import { Fira_Code } from "next/font/google"
+              
+              const firaCode = Fira_Code({
+                  weight: "500",
+                  subsets: ["latin"]
+              })
+              """,
             spec -> spec.path("src/components/Code.js")
           )
         );
