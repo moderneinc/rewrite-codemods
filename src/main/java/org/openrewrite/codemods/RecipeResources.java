@@ -24,6 +24,7 @@ import org.openrewrite.Recipe;
 import org.openrewrite.scheduling.WorkingDirectoryExecutionContextView;
 
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -140,8 +141,9 @@ public final class RecipeResources {
             files.forEach(f -> {
                 try {
                     Files.delete(f);
+                } catch (NoSuchFileException ignore) {
                 } catch (IOException e) {
-                    throw new RuntimeException(e);
+                    throw new UncheckedIOException(e);
                 }
             });
         }
