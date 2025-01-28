@@ -15,7 +15,6 @@
  */
 package org.openrewrite.codemods;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.openrewrite.DocumentExample;
@@ -34,63 +33,133 @@ class Ui5Test implements RewriteTest {
         rewriteRun(
           spec -> spec.recipe(new Ui5()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
-            //language=xml
+            //language=HTML
             """
-              <mvc:View
-              	controllerName="sap.ui.demo.cart.controller.NotFound"
-              	xmlns:mvc="sap.ui.core.mvc"
-              	xmlns:core="sap.ui.core"
-              	xmlns="sap.m">
-              	<Page
-              		id="page"
-              		title="{i18n>categoryNoData}">
-              		<landmarkInfo>
-              			<PageAccessibleLandmarkInfo
-              				rootRole="Region"
-              				rootLabel="{i18n>NotFound_rootLabel}"
-              				contentRole="Main"
-              				contentLabel="{i18n>NotFound_contentLabel}"
-              				headerRole="Region"
-              				headerLabel="{i18n>NotFound_headerLabel}"/>
-              		</landmarkInfo>
-              		<content>
-              			<MessagePage
-              				showHeader="false"
-              				text="{i18n>categoryNoData}"
-              				description=""/>
-              		</content>
-              	</Page>
-              </mvc:View>
+              <!DOCTYPE html>
+              <html>
+              	<head>
+              		<title>Testing Overview</title>
+              		<!--  try to load the basic UI5 styles -->
+              		<link rel="stylesheet" type="text/css" href="resources/sap/ui/core/themes/sap_belize/library.css">
+              		</head>
+              		<body class="sapUiBody sapUiMediumMargin sapUiForceWidthAuto">
+              			<h1>Testing Overview</h1>
+              			<p>This is an overview page of various ways to test the generated app during development.<br/>
+              Choose one of the access points below to launch the app as a standalone application, e.g. on a Tomcat server.</p>
+              
+              			<ul>
+              				<li>
+              					<a href="index.html">index.html</a> - start the app standalone (using OpenUI5 and local grunt tooling)</li>
+              				<li>
+              					<a href="index_cdn.html">index_cdn.html</a> - start the app standalone (using OpenUI5 CDN)</li>
+              				<li>
+              					<a href="test/flpSandbox.html">test/flpSandbox.html</a> - start the app in Fiori Launchpad sandbox (using SAPUI5 CDN)</li>
+              			</ul>
+              		</body>
+              	</html>
               """,
-            //language=xml
+            //language=HTML
             """
-              <mvc:View
-              	controllerName="sap.ui.demo.cart.controller.NotFound"
-              	xmlns:mvc="sap.ui.core.mvc"
-              	xmlns:core="sap.ui.core"
-              	xmlns="sap.m">
-              	<Page
-              		id="page"
-              		title="{i18n>categoryNoData}">
-              		<landmarkInfo>
-              			<PageAccessibleLandmarkInfo
-              				rootRole="Region"
-              				rootLabel="{i18n>NotFound_rootLabel}"
-              				contentRole="Main"
-              				contentLabel="{i18n>NotFound_contentLabel}"
-              				headerRole="Region"
-              				headerLabel="{i18n>NotFound_headerLabel}"/>
-              		</landmarkInfo>
-              		<content>
-              			<MessagePage
-              				showHeader="false"
-              				text="{i18n>categoryNoData}"
-              				description=""/>
-              		</content>
-              	</Page>
-              </mvc:View>
+              <!DOCTYPE html>
+              <html>
+              	<head>
+              		<title>Testing Overview</title>
+              		<!--  try to load the basic UI5 styles -->
+              		<link rel="stylesheet" type="text/css" href=~~(Use of deprecated theme 'sap_belize')~~>"resources/sap/ui/core/themes/sap_belize/library.css">
+              		</head>
+              		<body class="sapUiBody sapUiMediumMargin sapUiForceWidthAuto">
+              			<h1>Testing Overview</h1>
+              			<p>This is an overview page of various ways to test the generated app during development.<br/>
+              Choose one of the access points below to launch the app as a standalone application, e.g. on a Tomcat server.</p>
+              
+              			<ul>
+              				<li>
+              					<a href="index.html">index.html</a> - start the app standalone (using OpenUI5 and local grunt tooling)</li>
+              				<li>
+              					<a href="index_cdn.html">index_cdn.html</a> - start the app standalone (using OpenUI5 CDN)</li>
+              				<li>
+              					<a href="test/flpSandbox.html">test/flpSandbox.html</a> - start the app in Fiori Launchpad sandbox (using SAPUI5 CDN)</li>
+              			</ul>
+              		</body>
+              	</html>
               """,
-            spec -> spec.path("view.xml")
+            spec -> spec.path("webapp/test.html")
+          ),
+          text(
+            //language=YAML
+            """
+              specVersion: '0.1'
+              metadata:
+                name: test-app
+              type: application
+              """,
+            //language=YAML
+            """
+              specVersion: '0.1'
+              metadata:
+                name: test-app
+              type: application
+              """,
+            spec -> spec.path("ui5.yaml")
+          ),
+          text(
+            //language=JSON
+            """
+              {
+                "sap.app": {
+                  "id": "my.ui5.app",
+                  "type": "application",
+                  "applicationVersion": {
+                    "version": "1.0.0"
+                  }
+                }
+              }
+              """,
+            //language=JSON
+            """
+              {
+                "sap.app": {
+                  "id": "my.ui5.app",
+                  "type": "application",
+                  "applicationVersion": {
+                    "version": "1.0.0"
+                  }
+                }
+              }
+              """,
+            // TODO: test js file
+//          text(
+//            //language=JS
+//            """
+//              sap.ui.define(
+//                [
+//                  './BaseController',
+//                  'sap/ui/model/json/JSONModel',
+//                  '../model/formatter',
+//                  'sap/base/util/UriParameters',
+//                ],
+//                function (BaseController, JSONModel, formatter, UriParameters) {
+//                  'use strict';
+//                }
+//              );
+//              """,
+//            //language=JS
+//            """
+//              sap.ui.define(
+//                [
+//                  './BaseController',
+//                  'sap/ui/model/json/JSONModel',
+//                  '../model/formatter',
+//                  ~~(Import of deprecated module 'sap/base/util/UriParameters')~~>'sap/base/util/UriParameters',
+//                ],
+//                function (BaseController, JSONModel, formatter, UriParameters) {
+//                  'use strict';
+//                }
+//              );
+//              """,
+//            spec -> spec.path("webapp/test.js")
+//          ),
+            spec -> spec.path("webapp/manifest.json")
           )
         );
     }

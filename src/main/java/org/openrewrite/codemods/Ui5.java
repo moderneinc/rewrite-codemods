@@ -65,10 +65,9 @@ public class Ui5 extends NodeBasedRecipe {
     @Override
     protected List<String> getNpmCommand(Accumulator acc, ExecutionContext ctx) {
         List<String> command = new ArrayList<>();
-        command.add("node");
-        command.add("${nodeModules}/@ui5/linter/bin/ui5lint.js");
-        command.add("--format=json");
-
+        command.add("sh");
+        command.add("-c");
+        command.add("node ${nodeModules}/@ui5/linter/bin/ui5lint.js --format=json || true");
         return command;
     }
 
