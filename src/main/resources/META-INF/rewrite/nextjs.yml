@@ -1,3 +1,7 @@
+# GENERATED FILE, DO NOT MODIFY MANUALLY
+# To regenerate this file, run `node apply-template next` command from
+# the root of the https://github.com/moderneinc/generate-codemod-categories
+#
 # Copyright 2025 the original author or authors.
 # <p>
 # Licensed under the Moderne Source Available License (the "License");
@@ -11,6 +15,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
 ---
 type: specs.openrewrite.org/v1beta/category
@@ -28,8 +33,8 @@ tags:
   - codemods
   - nextjs
 recipeList:
-  - org.openrewrite.codemods.migrate.nextjs.v6.UrlToWithRouter
-  - org.openrewrite.codemods.migrate.nextjs.v8.WithAmpToConfig
+  - org.openrewrite.codemods.migrate.nextjs.v6.UrlToWithrouter
+  - org.openrewrite.codemods.migrate.nextjs.v8.WithampToConfig
   - org.openrewrite.codemods.migrate.nextjs.v9.NameDefaultComponent
   - org.openrewrite.codemods.migrate.nextjs.v10.AddMissingReactImport
   - org.openrewrite.codemods.migrate.nextjs.v11.CraToNext
@@ -38,220 +43,138 @@ recipeList:
   - org.openrewrite.codemods.migrate.nextjs.v13_0.NewLink
   - org.openrewrite.codemods.migrate.nextjs.v13_2.BuiltInNextFont
   - org.openrewrite.codemods.migrate.nextjs.v14_0.NextOgImport
-  - org.openrewrite.codemods.migrate.nextjs.v14_0.UseViewportExport
+  - org.openrewrite.codemods.migrate.nextjs.v14_0.MetadataToViewportExport
+
 
 ---
 type: specs.openrewrite.org/v1beta/recipe
-name: org.openrewrite.codemods.migrate.nextjs.v6.UrlToWithRouter
+name: org.openrewrite.codemods.migrate.nextjs.v6.UrlToWithrouter
 displayName: Use `withRouter`
-description: >
-  Transforms the deprecated automatically injected url property on top level pages to using `withRouter` and the `router` 
-  property it injects. Read more here: https://nextjs.org/docs/messages/url-deprecated
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#url-to-withrouter)
-    for more information.
+description: Transforms the deprecated automatically injected url property on top-level pages to using `withRouter` and the `router` property it injects. Read more [here](https://nextjs.org/docs/messages/url-deprecated).
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'url-to-withrouter'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}'"
-
+      transform: "url-to-withrouter"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/url-to-withrouter.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
-name: org.openrewrite.codemods.migrate.nextjs.v8.WithAmpToConfig
+name: org.openrewrite.codemods.migrate.nextjs.v8.WithampToConfig
 displayName: Transform AMP HOC into page config
-description: >
-  Transforms the `withAmp` HOC into Next.js 9 page configuration.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#withamp-to-config)
-    for more information.
+description: Transforms the `withAmp` HOC into Next.js 9 page configuration.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'withamp-to-config'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "withamp-to-config"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/withamp-to-config.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v9.NameDefaultComponent
 displayName: Transform Anonymous Components into Named Components
-description: >
-  Transforms anonymous components into named components to make sure they work with
-  [Fast Refresh](https://nextjs.org/blog/next-9-4#fast-refresh).
-
-  The component will have a camel-cased name based on the name of the file, and it also works with arrow functions.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#name-default-component)
-    for more information.
+description: Transforms anonymous components into named components to make sure they work with Fast Refresh. The component will have a camel-cased name based on the name of the file, and it also works with arrow functions.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'name-default-component'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "name-default-component"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/name-default-component.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v10.AddMissingReactImport
 displayName: Add React imports
-description: >
-  Transforms files that do not import `React` to include the import in order for the new
-  [React JSX](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) transform to work.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#add-missing-react-import)
-    for more information.
+description: Transforms files that do not import `React` to include the import in order for the new React JSX transform to work.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'add-missing-react-import'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "add-missing-react-import"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/add-missing-react-import.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v11.CraToNext
 displayName: Rename Next Image Imports
-description: >
-  Safely renames `next/image` imports in existing Next.js 10, 11, or 12 applications to `next/legacy/image` in Next.js
-  13. Also renames `next/future/image` to `next/image`.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#cra-to-next)
-    for more information.
+description: Safely renames `next/image` imports in existing Next.js `10` `11` or `12` applications to `next/legacy/image` in Next.js 13. Also renames `next/future/image` to `next/image`.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'cra-to-next'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "cra-to-next"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/cra-to-next.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v13_0.NextImageToLegacyImage
 displayName: Rename Next Image Imports
-description: >
-  Safely renames `next/image` imports in existing Next.js 10, 11, or 12 applications to `next/legacy/image` in Next.js
-  13. Also renames `next/future/image` to `next/image`.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#next-image-to-legacy-image)
-    for more information.
+description: Safely renames `next/image` imports in existing Next.js `10` `11` or `12` applications to `next/legacy/image` in Next.js 13. Also renames `next/future/image` to `next/image`.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'next-image-to-legacy-image'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "next-image-to-legacy-image"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/next-image-to-legacy-image.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v13_0.NextImageExperimental
 displayName: Migrate to the New Image Component
-description: >
-  Dangerously migrates from `next/legacy/image` to the new `next/image` by adding inline styles and removing unused props.
-
-  - Removes `layout` prop and adds `style`.
-  - Removes `objectFit` prop and adds `style`.
-  - Removes `objectPosition` prop and adds `style`.
-  - Removes `lazyBoundary` prop.
-  - Removes `lazyRoot` prop.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#next-image-experimental)
-    for more information.
+description: Dangerously migrates from `next/legacy/image` to the new `next/image` by adding inline styles and removing unused props.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'next-image-experimental'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "next-image-experimental"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/next-image-experimental.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v13_0.NewLink
 displayName: Remove `<a>` Tags From Link Components
-description: >
-  Remove `<a>` tags inside [Link Components](https://nextjs.org/docs/app/api-reference/components/link), or add a
-  `legacyBehavior` prop to Links that cannot be auto-fixed.
-
-  In cases where auto-fixing can't be applied, the `legacyBehavior` prop is added. This allows your app to keep
-  functioning using the old behavior for that particular link.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#new-link)
-    for more information.
+description: Remove `&lt;a&gt;` tags inside Link Components or add a `legacyBehavior` prop to Links that cannot be auto-fixed.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'new-link'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "new-link"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/new-link.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v13_2.BuiltInNextFont
 displayName: Use Built-in Font
-description: >
-  This codemod uninstalls the `@next/font` package and transforms `@next/font` imports into the built-in `next/font`.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#built-in-next-font)
-    for more information.
+description: This codemod uninstalls the `@next/font` package and transforms `@next/font` imports into the built-in `next/font`.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'built-in-next-font'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "built-in-next-font"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/built-in-next-font.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v14_0.NextOgImport
 displayName: Migrate `ImageResponse` imports
-description: >
-  This codemod moves transforms imports from `next/server` to `next/og for` usage of [Dynamic OG Image Generation]
-  (https://nextjs.org/docs/app/building-your-application/upgrading/codemods#next-og-import).
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#migrate-imageresponse-imports)
-  for more information.
+description: This codemod moves transforms imports from `next/server` to `next/og` for usage of Dynamic OG Image Generation.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'next-og-import'
-      executable: '@next/codemod/bin/next-codemod.js'
-      commandArgs: "--force --jscodeshift='--parser=${parser}"
-
+      transform: "next-og-import"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/next-og-import.js'
 ---
 type: specs.openrewrite.org/v1beta/recipe
-name: org.openrewrite.codemods.migrate.nextjs.v14_0.UseViewportExport
+name: org.openrewrite.codemods.migrate.nextjs.v14_0.MetadataToViewportExport
 displayName: Use `viewport` export
-description: >
-  This codemod migrates certain viewport metadata to `viewport` export.
-
-  See [documentation](https://nextjs.org/docs/app/building-your-application/upgrading/codemods#metadata-to-viewport-export)
-  for more information.
+description: This codemod migrates certain viewport metadata to `viewport` export.
 tags:
   - codemods
   - nextjs
 recipeList:
   - org.openrewrite.codemods.ApplyCodemod:
-      transform: 'metadata-to-viewport-export'
-      executable: '@next/codemod/bin/next-codemod.js'
-      codemodArgs: "--force --jscodeshift='--parser=${parser}'"
+      transform: "metadata-to-viewport-export"
+      executable: 'jscodeshift/bin/jscodeshift.sh --parser=${parser} --extensions=tsx,ts,jsx,js --transform ${nodeModules}/@next/codemod/transforms/metadata-to-viewport-export.js'
