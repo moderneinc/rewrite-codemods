@@ -39,11 +39,11 @@ import static org.openrewrite.Tree.randomId;
 
 @Value
 @EqualsAndHashCode(callSuper = false)
-public class Ui5 extends NodeBasedRecipe {
+public class UI5 extends NodeBasedRecipe {
 
     private static final String UI5_DIR = Putout.class.getName() + ".UI5_DIR";
 
-    transient Ui5Messages messages = new Ui5Messages(this);
+    transient UI5Messages messages = new UI5Messages(this);
 
     @Override
     public String getDisplayName() {
@@ -151,10 +151,10 @@ public class Ui5 extends NodeBasedRecipe {
             String ruleId = message.get("ruleId").asText();
             Marker marker = new SearchResult(randomId(), messageText);
             messages.insertRow(
-                    ctx, new Ui5Messages.Row(
+                    ctx, new UI5Messages.Row(
                             before.getSourcePath().toString(),
                             ruleId,
-                            Ui5Messages.Severity.of(severity),
+                            UI5Messages.Severity.of(severity),
                             line,
                             column,
                             messageText

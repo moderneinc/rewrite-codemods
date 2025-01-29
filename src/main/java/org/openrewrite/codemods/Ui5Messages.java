@@ -20,12 +20,12 @@ import org.openrewrite.Column;
 import org.openrewrite.DataTable;
 import org.openrewrite.Recipe;
 
-public class Ui5Messages extends DataTable<Ui5Messages.Row> {
+public class UI5Messages extends DataTable<UI5Messages.Row> {
 
-    public Ui5Messages(Recipe recipe) {
+    public UI5Messages(Recipe recipe) {
         super(recipe,
-                "Ui5 messages",
-                "Errors and warnings as reported by Ui5.");
+                "UI5 messages",
+                "Errors and warnings as reported by UI5.");
     }
 
     @Value
