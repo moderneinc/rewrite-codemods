@@ -116,7 +116,7 @@ public class Ui5 extends NodeBasedRecipe {
             return super.createAfter(before, acc, ctx);
         }
 
-        JsonNode resultNode = results.get(acc.resolvedPath(before));
+        JsonNode resultNode = results.get(before.getSourcePath());
         if (resultNode == null) {
             return super.createAfter(before, acc, ctx);
         }
