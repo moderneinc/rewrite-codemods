@@ -25,14 +25,14 @@ import org.openrewrite.test.TypeValidation;
 import static org.openrewrite.test.SourceSpecs.text;
 
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
-class Ui5Test implements RewriteTest {
+class UI5Test implements RewriteTest {
 
     @DocumentExample
     @Test
     @Disabled("Work in progress")
     void noRules() {
         rewriteRun(
-          spec -> spec.recipe(new Ui5()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+          spec -> spec.recipe(new UI5()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
           text(
             //language=HTML
             """
