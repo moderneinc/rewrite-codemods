@@ -16,7 +16,6 @@
 package org.openrewrite.codemods;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
 import org.openrewrite.test.TypeValidation;
@@ -25,7 +24,6 @@ import java.util.Set;
 
 import static org.openrewrite.test.SourceSpecs.text;
 
-@DisabledIfEnvironmentVariable(named = "CI", matches = "true")
 class PutoutTest implements RewriteTest {
 
     @DocumentExample
