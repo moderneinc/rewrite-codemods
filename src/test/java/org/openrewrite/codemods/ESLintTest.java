@@ -34,7 +34,7 @@ class ESLintTest implements RewriteTest {
     @Test
     void formatStatement() {
         rewriteRun(
-          spec -> spec.recipe(new ESLint(null, null, null, null, null, null, null, List.of("eslint:recommended"), null, null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+          spec -> spec.recipe(new ESLint(null, null, null, null, null, null, null, List.of("eslint:recommended"), null, null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(2),
           text(
             //language=js
             """
@@ -55,7 +55,7 @@ class ESLintTest implements RewriteTest {
     @Test
     void multiple() {
         rewriteRun(
-          spec -> spec.recipe(new ESLint(null, null, null, null, null, null, null, List.of("eslint:recommended"), null, null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+          spec -> spec.recipe(new ESLint(null, null, null, null, null, null, null, List.of("eslint:recommended"), null, null, null)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(2),
           text(
             //language=js
             """
@@ -107,23 +107,30 @@ class ESLintTest implements RewriteTest {
     void configFile() {
         rewriteRun(
           spec -> spec.recipe(new ESLint(List.of("**/*.js"), null, null, null, null, null, null, null, null, null, """
-            {
-                "rules": {
-                    "eqeqeq": "error",
-                }
+             {
+              "root": true,
+              "parser": "@typescript-eslint/parser",
+              "plugins": [],
+              "rules": {
+                    "no-alert": "error",
+              },
+              "globals": {
+                "browser": true,
+                "node": true
+              }
             }
-            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(2),
           text(
             //language=js
             """
-              2 == 42;
+              alert("here!");
               """,
             """
-              2 ~~(Expected '===' and instead saw '=='.
+              ~~(Unexpected alert.
               
-              Require the use of `===` and `!==`
+              Disallow the use of `alert`, `confirm`, and `prompt`
               
-              Rule: eqeqeq, Severity: ERROR)~~>== 42;
+              Rule: no-alert, Severity: ERROR)~~>alert("here!");
               """,
             spec -> spec.path("src/Foo.js")
           )
@@ -146,7 +153,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(1),
           text(
             //language=js
             """
@@ -176,7 +183,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(1),
           text(
             //language=js
             """
@@ -206,7 +213,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(1),
           text(
             //language=js
             """
@@ -245,7 +252,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(1),
           text(
             //language=js
             """
@@ -286,7 +293,7 @@ class ESLintTest implements RewriteTest {
                 "node": true
               }
             }
-            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+            """)).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(1),
           text(
             //language=js
             """
