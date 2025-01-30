@@ -84,7 +84,7 @@ class ApplyCodemodTest implements RewriteTest {
                           return <button style={{ color }} onClick={() => onClick()}>{text}</button>;
                         };
               """,
-            spec -> spec.path("src/Foo.js")
+            spec -> spec.path("src/Foo.jsx")
           )
         );
     }
