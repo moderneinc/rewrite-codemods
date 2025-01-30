@@ -15,7 +15,6 @@
  */
 package org.openrewrite.codemods;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.openrewrite.DocumentExample;
@@ -29,10 +28,9 @@ class UI5Test implements RewriteTest {
 
     @DocumentExample
     @Test
-    @Disabled("Work in progress")
     void noRules() {
         rewriteRun(
-          spec -> spec.recipe(new UI5()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+          spec -> spec.recipe(new UI5()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)).expectedCyclesThatMakeChanges(2),
           text(
             //language=HTML
             """
@@ -66,7 +64,7 @@ class UI5Test implements RewriteTest {
               	<head>
               		<title>Testing Overview</title>
               		<!--  try to load the basic UI5 styles -->
-              		<link rel="stylesheet" type="text/css" href=~~(Use of deprecated theme 'sap_belize')~~>"resources/sap/ui/core/themes/sap_belize/library.css">
+              		<link rel="stylesheet" type="text/css" href="~~(Use of deprecated theme 'sap_belize')~~>resources/sap/ui/core/themes/sap_belize/library.css">
               		</head>
               		<body class="sapUiBody sapUiMediumMargin sapUiForceWidthAuto">
               			<h1>Testing Overview</h1>
@@ -94,13 +92,6 @@ class UI5Test implements RewriteTest {
                 name: test-app
               type: application
               """,
-            //language=YAML
-            """
-              specVersion: '0.1'
-              metadata:
-                name: test-app
-              type: application
-              """,
             spec -> spec.path("ui5.yaml")
           ),
           text(
@@ -116,18 +107,7 @@ class UI5Test implements RewriteTest {
                 }
               }
               """,
-            //language=JSON
-            """
-              {
-                "sap.app": {
-                  "id": "my.ui5.app",
-                  "type": "application",
-                  "applicationVersion": {
-                    "version": "1.0.0"
-                  }
-                }
-              }
-              """,
+            spec -> spec.path("webapp/manifest.json")
             // TODO: test js file
 //          text(
 //            //language=JS
@@ -160,7 +140,6 @@ class UI5Test implements RewriteTest {
 //              """,
 //            spec -> spec.path("webapp/test.js")
 //          ),
-            spec -> spec.path("webapp/manifest.json")
           )
         );
     }
