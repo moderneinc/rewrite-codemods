@@ -24,6 +24,8 @@ license {
 
 node {
     nodeProjectDir.set(file("build/resources/main/codemods"))
+    download.set(true)
+    version.set("20.18.1")
 }
 
 tasks.named("npmInstall") {
