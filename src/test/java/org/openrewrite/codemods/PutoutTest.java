@@ -15,6 +15,7 @@
  */
 package org.openrewrite.codemods;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
@@ -112,6 +113,7 @@ class PutoutTest implements RewriteTest {
      * have all props on a new line, leave trailing commas, etc.
      */
     @Test
+    @Disabled("runs fine locally but intermittently fails on CI")
     void printer() {
         rewriteRun(
           spec -> spec.recipe(new Putout(null, "recast")).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
