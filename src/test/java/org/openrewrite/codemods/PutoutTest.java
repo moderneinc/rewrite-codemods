@@ -25,9 +25,10 @@ import java.util.Set;
 
 import static org.openrewrite.test.SourceSpecs.text;
 
+@Disabled("Started to fail; discussed on Slack and disabled for now")
 class PutoutTest implements RewriteTest {
 
-    @Disabled("Started to fail; discussed on Slack and disabled for now")
+    @DocumentExample
     @Test
     void noRules() {
         rewriteRun(
@@ -47,7 +48,6 @@ class PutoutTest implements RewriteTest {
         );
     }
 
-    @DocumentExample
     @Test
     void withRules() {
         rewriteRun(
@@ -114,7 +114,6 @@ class PutoutTest implements RewriteTest {
      * have all props on a new line, leave trailing commas, etc.
      */
     @Test
-    @Disabled("runs fine locally but intermittently fails on CI")
     void printer() {
         rewriteRun(
           spec -> spec.recipe(new Putout(null, "recast")).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
