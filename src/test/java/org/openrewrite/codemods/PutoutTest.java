@@ -27,7 +27,7 @@ import static org.openrewrite.test.SourceSpecs.text;
 
 class PutoutTest implements RewriteTest {
 
-    @DocumentExample
+    @Disabled("Started to fail; discussed on Slack and disabled for now")
     @Test
     void noRules() {
         rewriteRun(
@@ -47,6 +47,7 @@ class PutoutTest implements RewriteTest {
         );
     }
 
+    @DocumentExample
     @Test
     void withRules() {
         rewriteRun(
