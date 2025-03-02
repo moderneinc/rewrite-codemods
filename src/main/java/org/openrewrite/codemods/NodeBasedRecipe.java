@@ -122,7 +122,7 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
 
             Process process = builder.start();
             if (!process.waitFor(5, TimeUnit.MINUTES)) {
-                throw new RuntimeException("Node command timed out after 5 minutes");
+                throw new RuntimeException(String.format("Command '%s' timed out after 5 minutes", String.join(" ", command)));
             } else if (process.exitValue() != 0) {
                 String error = "Command failed: " + String.join(" ", command);
                 if (Files.exists(err)) {
