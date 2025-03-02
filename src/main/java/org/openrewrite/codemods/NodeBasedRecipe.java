@@ -121,8 +121,9 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
             builder.redirectError(ProcessBuilder.Redirect.to(err.toFile()));
 
             Process process = builder.start();
-            process.waitFor(5, TimeUnit.MINUTES);
-            if (process.exitValue() != 0) {
+            if (!process.waitFor(5, TimeUnit.MINUTES)) {
+                throw new RuntimeException("Node command timed out after 5 minutes");
+            } else if (process.exitValue() != 0) {
                 String error = "Command failed: " + String.join(" ", command);
                 if (Files.exists(err)) {
                     error += "\n" + new String(Files.readAllBytes(err));
