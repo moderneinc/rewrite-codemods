@@ -35,8 +35,7 @@ public class Biome extends NodeBasedRecipe {
 
     @Override
     protected List<String> getNpmCommand(Accumulator acc, ExecutionContext ctx) {
-        String executable = "${nodeModules}/@biomejs/biome/bin/biome";
-        String command = executable + " lint ${repoDir} --fix || true";
+        String command = "chmod -R +x ${nodeModules}/@biomejs && ${nodeModules}/@biomejs/biome/bin/biome lint ${repoDir} --fix || true";
         return Arrays.asList("/bin/bash", "-c", command);
     }
 

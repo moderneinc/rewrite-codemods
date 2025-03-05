@@ -42,4 +42,22 @@ public class BiomeTest implements RewriteTest {
                 )
         );
     }
+
+    @Test
+    void removeEmptyExport() {
+        rewriteRun(
+                spec -> spec.recipe(new Biome()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
+                text(
+                        //language=js
+                        """  
+                                 export const A = 0;
+                                 export {};
+                                """,
+                        """  
+                                export const A = 0;
+                                """,
+                        spec -> spec.path("src/Foo.js")
+                )
+        );
+    }
 }
