@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@biomejs/biome": "1.9.4",
     "@codemod/cli": "^3.3.0",
     "@kevinbarabash/codemods": "github:kevinbarabash/codemods",
     "@mui/codemod": "6.0.0",
