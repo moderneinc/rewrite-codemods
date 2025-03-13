@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@biomejs/biome": "1.9.4",
-    "@codemod/cli": "^3.3.0",
     "@kevinbarabash/codemods": "github:kevinbarabash/codemods",
     "@mui/codemod": "6.0.0",
     "@next/codemod": "^14.0.4",
@@ -37,7 +36,6 @@
     "jscodeshift": "^0.16.1",
     "putout": "^38.0.6",
     "react": "^18.3.1",
-    "react-declassify": "^0.2.0",
     "svelte": "^4.2.19",
     "svelte-eslint-parser": "^0.33.1",
     "vue-eslint-parser": "^9.4.2"
