@@ -1,7 +1,7 @@
 plugins {
     id("org.openrewrite.build.recipe-library") version "latest.release"
     id("com.github.node-gradle.node") version "latest.release"
-    id("org.openrewrite.build.moderne-proprietary-license") version "latest.release"
+    id("org.openrewrite.build.moderne-source-available-license") version "latest.release"
 }
 
 // Set as appropriate for your organization
