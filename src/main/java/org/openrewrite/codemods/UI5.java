@@ -67,7 +67,7 @@ public class UI5 extends NodeBasedRecipe {
         List<String> command = new ArrayList<>();
         command.add("sh");
         command.add("-c");
-        command.add("node ${nodeModules}/@ui5/linter/bin/ui5lint.js --format=json || true"); // ignore exit code
+        command.add("node ${nodeModules}/@ui5/linter/bin/ui5lint.js --fix --format=json || true"); // ignore exit code
         return command;
     }
 
