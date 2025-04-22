@@ -17,6 +17,7 @@ package org.openrewrite.codemods;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
+import org.openrewrite.DocumentExample;
 import org.openrewrite.config.Environment;
 import org.openrewrite.test.RewriteTest;
 import org.openrewrite.test.TypeValidation;
@@ -24,7 +25,8 @@ import org.openrewrite.test.TypeValidation;
 import static org.openrewrite.test.SourceSpecs.text;
 
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
-public class ApplyCodemodReactMUITest implements RewriteTest {
+class ApplyCodemodReactMUITest implements RewriteTest {
+    @DocumentExample
     @Test
     void autocompleteRenameCloseicon() {
         rewriteRun(
