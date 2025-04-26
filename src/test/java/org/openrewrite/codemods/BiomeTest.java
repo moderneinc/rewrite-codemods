@@ -23,7 +23,7 @@ import org.openrewrite.test.TypeValidation;
 
 import static org.openrewrite.test.SourceSpecs.text;
 
-public class BiomeTest implements RewriteTest {
+class BiomeTest implements RewriteTest {
 
     @DocumentExample
     @Test
@@ -50,8 +50,8 @@ public class BiomeTest implements RewriteTest {
                 text(
                         //language=js
                         """  
-                                 export const A = 0;
-                                 export {};
+                                export const A = 0;
+                                export {};
                                 """,
                         """  
                                 export const A = 0;
