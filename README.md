@@ -20,3 +20,7 @@ The limitations imposed by this implementation are due to the fact that the actu
 
 > [!IMPORTANT]
 > `ApplyCodemod`-based recipes can currently not be combined with other recipes (not based on `ApplyCodemod`) in the same recipe run.
+
+## Licensing
+
+For more information about licensing, please visit our [licensing page](https://docs.openrewrite.org/licensing/openrewrite-licensing).
