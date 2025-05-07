@@ -933,9 +933,9 @@ tags:
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.vue.ScriptIndent
-displayName: Enforce consistent indentation in <script>
+displayName: Enforce consistent indentation in `<script>`
 description: |
-  Enforce consistent indentation in <script>
+  Enforce consistent indentation in `<script>`
   See rule details for [vue/script-indent](https://eslint.vuejs.org/rules/script-indent.html)
 recipeList:
   - org.openrewrite.codemods.ESLint:
