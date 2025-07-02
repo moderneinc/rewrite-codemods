@@ -112,7 +112,8 @@ public class Putout extends NodeBasedRecipe {
 
         }
 
-        Path out = null, err = null;
+        Path out = null;
+        Path err = null;
         try {
             for (String cmd : processedCommands) {
                 List<String> singleCommand = Arrays.asList("/bin/bash", "-c", cmd);

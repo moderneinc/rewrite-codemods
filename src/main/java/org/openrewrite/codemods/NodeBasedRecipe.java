@@ -58,7 +58,7 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
             @Override
             public @Nullable Tree visit(@Nullable Tree tree, ExecutionContext ctx) {
                 if (tree instanceof SourceFile && !(tree instanceof Quark) && !(tree instanceof ParseError) &&
-                        !tree.getClass().getName().equals("org.openrewrite.java.tree.J$CompilationUnit")) {
+                        !"org.openrewrite.java.tree.J$CompilationUnit".equals(tree.getClass().getName())) {
                     SourceFile sourceFile = (SourceFile) tree;
                     String fileName = sourceFile.getSourcePath().getFileName().toString();
                     if (fileName.indexOf('.') > 0) {
@@ -106,7 +106,8 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
                 .replace("${nodeModules}", nodeModules.toString())
                 .replace("${repoDir}", ".")
                 .replace("${parser}", acc.parser()));
-        Path out = null, err = null;
+        Path out = null;
+        Path err = null;
         try {
             ProcessBuilder builder = new ProcessBuilder();
             builder.command(command);
