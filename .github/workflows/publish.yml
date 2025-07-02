@@ -15,7 +15,7 @@ jobs:
   release:
     uses: openrewrite/gh-automation/.github/workflows/publish-gradle.yml@main
     secrets:
-      ossrh_username: ${{ secrets.OSSRH_USERNAME }}
-      ossrh_token: ${{ secrets.OSSRH_TOKEN }}
+      sonatype_username: ${{ secrets.SONATYPE_USERNAME }}
+      sonatype_token: ${{ secrets.SONATYPE_TOKEN}}
       ossrh_signing_key: ${{ secrets.OSSRH_SIGNING_KEY }}
       ossrh_signing_password: ${{ secrets.OSSRH_SIGNING_PASSWORD }}
