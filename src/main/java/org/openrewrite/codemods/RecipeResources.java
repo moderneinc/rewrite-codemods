@@ -150,7 +150,7 @@ public final class RecipeResources {
 
         // recreate symlinks from `package.json`
         try (Stream<Path> packageJsonFiles = Files.walk(target.resolve("node_modules"), 2)
-                .filter(p -> p.getFileName().toString().equals("package.json"))) {
+                .filter(p -> "package.json".equals(p.getFileName().toString()))) {
             ObjectMapper mapper = new ObjectMapper();
             packageJsonFiles.forEach(p -> {
                 try {
