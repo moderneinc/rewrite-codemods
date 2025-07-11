@@ -24,9 +24,9 @@ import static org.openrewrite.test.SourceSpecs.text;
 
 class NextJsCodemodsTest implements RewriteTest {
 
+    @DocumentExample
     @SuppressWarnings({"NpmUsedModulesInstalled", "JSUnusedLocalSymbols"})
     @Test
-    @DocumentExample
     void builtInNextFont() {
         rewriteRun(
           spec -> spec.recipeFromResource("/META-INF/rewrite/nextjs.yml", "org.openrewrite.codemods.migrate.nextjs.v13_2.BuiltInNextFont").typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
