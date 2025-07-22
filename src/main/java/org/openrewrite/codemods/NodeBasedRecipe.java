@@ -124,21 +124,21 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
             Process process = builder.start();
             if (!process.waitFor(5, TimeUnit.MINUTES)) {
                 throw new RuntimeException(String.format("Command '%s' timed out after 5 minutes", String.join(" ", command)));
-            } else if (process.exitValue() != 0) {
+            }
+            if (process.exitValue() != 0) {
                 String error = "Command failed: " + String.join(" ", command);
                 if (Files.exists(err)) {
                     error += "\n" + new String(Files.readAllBytes(err));
                 }
                 throw new RuntimeException(error);
-            } else {
-                for (Map.Entry<Path, Long> entry : acc.beforeModificationTimestamps.entrySet()) {
-                    Path path = entry.getKey();
-                    if (!Files.exists(path) || Files.getLastModifiedTime(path).toMillis() > entry.getValue()) {
-                        acc.modified(path);
-                    }
-                }
-                processOutput(out, acc, ctx);
             }
+            for (Map.Entry<Path, Long> entry : acc.beforeModificationTimestamps.entrySet()) {
+                Path path = entry.getKey();
+                if (!Files.exists(path) || Files.getLastModifiedTime(path).toMillis() > entry.getValue()) {
+                    acc.modified(path);
+                }
+            }
+            processOutput(out, acc, ctx);
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         } catch (InterruptedException e) {
@@ -240,11 +240,11 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
         public String parser() {
             if (extensionCounts.containsKey("tsx")) {
                 return "tsx";
-            } else if (extensionCounts.containsKey("ts")) {
-                return "ts";
-            } else {
-                return "babel";
             }
+            if (extensionCounts.containsKey("ts")) {
+                return "ts";
+            }
+            return "babel";
         }
 
         public void writeSource(SourceFile tree) {

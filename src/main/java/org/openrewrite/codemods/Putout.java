@@ -137,15 +137,14 @@ public class Putout extends NodeBasedRecipe {
                         error += "\n" + new String(Files.readAllBytes(err));
                     }
                     throw new RuntimeException(error);
-                } else {
-                    for (Map.Entry<Path, Long> entry : acc.beforeModificationTimestamps.entrySet()) {
-                        Path path = entry.getKey();
-                        if (!Files.exists(path) || Files.getLastModifiedTime(path).toMillis() > entry.getValue()) {
-                            acc.modified(path);
-                        }
-                    }
-                    processOutput(out, acc, ctx);
                 }
+                for (Map.Entry<Path, Long> entry : acc.beforeModificationTimestamps.entrySet()) {
+                    Path path = entry.getKey();
+                    if (!Files.exists(path) || Files.getLastModifiedTime(path).toMillis() > entry.getValue()) {
+                        acc.modified(path);
+                    }
+                }
+                processOutput(out, acc, ctx);
             }
         } catch (IOException e) {
             throw new UncheckedIOException(e);
