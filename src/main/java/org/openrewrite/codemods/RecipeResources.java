@@ -29,12 +29,13 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.*;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Objects;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
+
+import static java.util.Collections.emptyMap;
 
 public final class RecipeResources {
     private final String nodeModulesKey;
@@ -95,7 +96,7 @@ public final class RecipeResources {
                 try {
                     fileSystem = FileSystems.getFileSystem(uri);
                 } catch (FileSystemNotFoundException e) {
-                    fileSystem = FileSystems.newFileSystem(uri, Collections.emptyMap(), null);
+                    fileSystem = FileSystems.newFileSystem(uri, emptyMap(), null);
                 }
                 try (FileSystem localFileSystem = fileSystem) {
                     Path codemodsPath = localFileSystem.getPath("/" + resource);
