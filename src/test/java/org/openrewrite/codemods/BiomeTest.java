@@ -25,11 +25,17 @@ import static org.openrewrite.test.SourceSpecs.text;
 
 class BiomeTest implements RewriteTest {
 
+
+    @Override
+    public void defaults(RecipeSpec spec) {
+        spec.recipe(new Biome()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false));
+    }
+
+
     @DocumentExample
     @Test
     void noRules() {
         rewriteRun(
-                spec -> spec.recipe(new Biome()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
                 text(
                         //language=js
                         """
@@ -46,7 +52,6 @@ class BiomeTest implements RewriteTest {
     @Test
     void removeEmptyExport() {
         rewriteRun(
-                spec -> spec.recipe(new Biome()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false)),
                 text(
                         //language=js
                         """  
