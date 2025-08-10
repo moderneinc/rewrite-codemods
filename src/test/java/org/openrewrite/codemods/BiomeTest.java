@@ -18,6 +18,7 @@ package org.openrewrite.codemods;
 
 import org.junit.jupiter.api.Test;
 import org.openrewrite.DocumentExample;
+import org.openrewrite.test.RecipeSpec;
 import org.openrewrite.test.RewriteTest;
 import org.openrewrite.test.TypeValidation;
 
@@ -25,12 +26,10 @@ import static org.openrewrite.test.SourceSpecs.text;
 
 class BiomeTest implements RewriteTest {
 
-
     @Override
     public void defaults(RecipeSpec spec) {
         spec.recipe(new Biome()).typeValidationOptions(TypeValidation.all().immutableExecutionContext(false));
     }
-
 
     @DocumentExample
     @Test
