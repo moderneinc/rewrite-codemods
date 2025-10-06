@@ -40,7 +40,7 @@ import static java.util.Collections.emptyList;
 public class ReactI18Next extends NodeBasedRecipe {
 
     @Option(displayName = "Translation file path",
-            description = "Path to the translation JSON file where extracted strings will be stored. Defaults to 'translations.json' in the root of the project.",
+            description = "Path to the translation JSON file where extracted strings will be stored. Defaults to `translations.json` in the root of the project.",
             example = "./src/locales/en.json",
             required = false)
     @Nullable
@@ -52,7 +52,7 @@ public class ReactI18Next extends NodeBasedRecipe {
     String importName;
 
     @Option(displayName = "Translation root key",
-            description = "Root key in the translation file to organize translations under. Defaults to 'common'.",
+            description = "Root key in the translation file to organize translations under. Defaults to `common`.",
             example = "common",
             required = false)
     @Nullable
@@ -66,7 +66,7 @@ public class ReactI18Next extends NodeBasedRecipe {
     String filePattern;
 
     @Option(displayName = "Parser",
-            description = "Parser to use for transforming files. Defaults to auto-detection based on file extensions (tsx/ts/babel).",
+            description = "Parser to use for transforming files. Defaults to auto-detection based on file extensions (`tsx`/`ts`/`babel`).",
             example = "tsx",
             required = false)
     @Nullable
@@ -80,7 +80,7 @@ public class ReactI18Next extends NodeBasedRecipe {
     @Override
     public String getDescription() {
         return "Automatically internationalizes React applications by extracting hardcoded strings " +
-                "and replacing them with react-i18next translation calls. " +
+                "and replacing them with [react-i18next](https://react.i18next.com) translation calls. " +
                 "Handles JSX text, attributes, and template literals with variables. " +
                 "Creates and updates a translation JSON file with extracted strings.";
     }
