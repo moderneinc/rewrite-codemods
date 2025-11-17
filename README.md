@@ -21,8 +21,8 @@ The limitations imposed by this implementation are due to the fact that the actu
 > [!IMPORTANT]
 > `ApplyCodemod`-based recipes can currently not be followed by other recipes (not based on `ApplyCodemod`) in the same recipe run.
 
-See our documentation on [Creating recipes that run ESLint plugins
-](https://docs.openrewrite.org/authoring-recipes/recipe-with-npm-dependency) for a step by step guide to wrapping your own ESLint plugins.
+See our documentation on [creating recipes that run ESLint plugins
+](https://docs.openrewrite.org/authoring-recipes/recipe-with-npm-dependency) for a step-by-step guide to wrapping your own ESLint plugins.
 
 ## Licensing
 
