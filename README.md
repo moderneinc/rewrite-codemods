@@ -19,7 +19,10 @@ If there are multiple codemod recipes contained in the current recipe run (all b
 The limitations imposed by this implementation are due to the fact that the actual modifications are already performed in the generate phase. So as soon as codemod recipes are combined with other recipes in the same recipe run, this breaks down: The codemod recipes won't "see" the changes performed by other recipes (which modify sources in the edit phase) and vice versa.
 
 > [!IMPORTANT]
-> `ApplyCodemod`-based recipes can currently not be combined with other recipes (not based on `ApplyCodemod`) in the same recipe run.
+> `ApplyCodemod`-based recipes can currently not be followed by other recipes (not based on `ApplyCodemod`) in the same recipe run.
+
+See our documentation on [Creating recipes that run ESLint plugins
+](https://docs.openrewrite.org/authoring-recipes/recipe-with-npm-dependency) for a step by step guide to wrapping your own ESLint plugins.
 
 ## Licensing
 
