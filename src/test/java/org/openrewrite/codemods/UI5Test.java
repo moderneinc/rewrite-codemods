@@ -97,7 +97,6 @@ class UI5Test implements RewriteTest {
             """
               {
                ~~(manifest.json must be migrated to Version 2)~~>"_version": "1.76.0",
-´´´
                 "sap.app": {
                   "id": "my.ui5.app",
                   "type": "application",
