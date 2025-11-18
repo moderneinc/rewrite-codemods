@@ -251,8 +251,7 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
             try {
                 Path path = resolvedPath(tree);
                 Files.createDirectories(path.getParent());
-                PrintOutputCapture.MarkerPrinter markerPrinter = new PrintOutputCapture.MarkerPrinter() {
-                };
+                PrintOutputCapture.MarkerPrinter markerPrinter = PrintOutputCapture.MarkerPrinter.SANITIZED;
                 Path written = Files.write(path, tree.printAll(new PrintOutputCapture<>(0, markerPrinter)).getBytes(tree.getCharset() != null ? tree.getCharset() : StandardCharsets.UTF_8));
                 beforeModificationTimestamps.put(written, Files.getLastModifiedTime(written).toMillis());
             } catch (IOException e) {
