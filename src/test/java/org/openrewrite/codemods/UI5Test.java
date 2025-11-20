@@ -96,6 +96,20 @@ class UI5Test implements RewriteTest {
             //language=JSON
             """
               {
+                "_version": "1.76.0",
+                "sap.app": {
+                  "id": "my.ui5.app",
+                  "type": "application",
+                  "applicationVersion": {
+                    "version": "1.0.0"
+                  }
+                }
+              }
+              """,
+            //language=JSON
+            """
+              {
+                ~~(manifest.json must be migrated to Version 2)~~>"_version": "1.76.0",
                 "sap.app": {
                   "id": "my.ui5.app",
                   "type": "application",
