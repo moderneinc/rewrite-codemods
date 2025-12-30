@@ -21,7 +21,7 @@ description: Recipes that improve the use of JavaScript and TypeScript code in g
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.ESLintTypeScriptDefaults
 displayName: Lint TypeScript code using ESLint
-description: >
+description: >-
   The default config includes the `@typescript-eslint` plugin and the corresponding `plugin:@typescript-eslint/recommended` extend.
 tags:
   - codemods
@@ -40,7 +40,7 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.ESLintTypeScriptPrettier
 displayName: Format TypeScript using ESLint Prettier plugin
-description: >
+description: >-
   Formats all TypeScript source code using the ESLint Prettier plugin.
 tags:
   - codemods
@@ -60,8 +60,8 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.5to6.cjsToEsm
 displayName: Transform CommonJS style `require()` calls to ES6 `import` statements
-description: >
-  Transform CommonJS style `require()` calls to ES6 `import` statements
+description: >-
+  Transform CommonJS style `require()` calls to ES6 `import` statements.
 tags:
   - codemods
   - 5to6
@@ -74,8 +74,8 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.5to6.amdToEsm
 displayName: Transform AMD style `define()` calls to ES6 `import` statements
-description: >
-  Transform AMD style `define()` calls to ES6 `import` statements
+description: >-
+  Transform AMD style `define()` calls to ES6 `import` statements.
 tags:
   - codemods
   - 5to6
@@ -86,8 +86,8 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.5to6.noStrict
 displayName: Remove "use strict" directives
-description: >
-  Remove "use strict" directives
+description: >-
+  Remove "use strict" directives.
 tags:
   - codemods
   - 5to6
@@ -98,8 +98,8 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.5to6.namedExportGeneration
 displayName: Generate named exports from CommonJS modules
-description: >
-  Generate named exports from CommonJS modules
+description: >-
+  Generate named exports from CommonJS modules.
 tags:
   - codemods
   - 5to6
@@ -110,8 +110,8 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.5to6.varToLet
 displayName: Convert `var` to `let`
-description: >
-  Convert `var` to `let`
+description: >-
+  Convert `var` to `let`.
 tags:
   - codemods
   - 5to6
@@ -122,7 +122,7 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.5to6.simpleArrow
 displayName: Replace all function expressions with only `return` statement with simple arrow
-description: >
+description: >-
   Replace all function expressions with only `return` statement with simple arrow function.
 tags:
   - codemods
@@ -134,7 +134,7 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.ecmascript.5to6.ECMAScript6BestPractices
 displayName: Upgrade ECMAScript 5 to ECMAScript 6
-description: >
+description: >-
   A collection of common ECMAScript 5 to ECMAScript 6 updates.
 tags:
   - codemods

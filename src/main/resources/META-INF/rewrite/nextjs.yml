@@ -26,7 +26,7 @@ description: Recipes that modernize the use of [Next.js](https://nextjs.org/).
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.NextJsCodemods
 displayName: Next.js Codemods for API Updates
-description: >
+description: >-
   Next.js provides Codemod transformations to help upgrade your [Next.js](https://nextjs.org/) codebase when an API is
   updated or deprecated.
 tags:
