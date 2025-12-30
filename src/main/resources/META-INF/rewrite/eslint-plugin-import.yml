@@ -16,9 +16,9 @@
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.NoEmptyNamedBlocks
 displayName: Forbid empty named import
-description: |
+description: |-
   Forbid empty named import
-  See rule details for [import/no-empty-named-blocks](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-empty-named-blocks.md)
+  See rule details for [import/no-empty-named-blocks](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-empty-named-blocks.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -40,9 +40,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.NoImportModuleExports
 displayName: Forbid import statements with CommonJS module.exports
-description: |
+description: |-
   Forbid import statements with CommonJS module.exports
-  See rule details for [import/no-import-module-exports](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-import-module-exports.md)
+  See rule details for [import/no-import-module-exports](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-import-module-exports.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -64,9 +64,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.NoAbsolutePath
 displayName: Forbid import of modules using absolute paths
-description: |
+description: |-
   Forbid import of modules using absolute paths
-  See rule details for [import/no-absolute-path](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-absolute-path.md)
+  See rule details for [import/no-absolute-path](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-absolute-path.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -88,9 +88,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.NoRelativePackages
 displayName: Forbid importing packages through relative paths
-description: |
+description: |-
   Forbid importing packages through relative paths
-  See rule details for [import/no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-relative-packages.md)
+  See rule details for [import/no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-relative-packages.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -112,9 +112,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.NoUselessPathSegments
 displayName: Forbid unnecessary path segments in import and require statements
-description: |
+description: |-
   Forbid unnecessary path segments in import and require statements
-  See rule details for [import/no-useless-path-segments](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-useless-path-segments.md)
+  See rule details for [import/no-useless-path-segments](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-useless-path-segments.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -136,9 +136,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.ConsistentTypeSpecifierStyle
 displayName: Enforce or ban the use of inline type-only markers for named imports
-description: |
+description: |-
   Enforce or ban the use of inline type-only markers for named imports
-  See rule details for [import/consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/consistent-type-specifier-style.md)
+  See rule details for [import/consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/consistent-type-specifier-style.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -160,9 +160,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.First
 displayName: Ensure all imports appear before other statements
-description: |
+description: |-
   Ensure all imports appear before other statements
-  See rule details for [import/first](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/first.md)
+  See rule details for [import/first](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/first.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -184,9 +184,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.NewlineAfterImport
 displayName: Enforce a newline after import statements
-description: |
+description: |-
   Enforce a newline after import statements
-  See rule details for [import/newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/newline-after-import.md)
+  See rule details for [import/newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/newline-after-import.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -208,9 +208,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.NoDuplicates
 displayName: Forbid repeated import of the same module in multiple places
-description: |
+description: |-
   Forbid repeated import of the same module in multiple places
-  See rule details for [import/no-duplicates](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-duplicates.md)
+  See rule details for [import/no-duplicates](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-duplicates.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -231,10 +231,10 @@ recipeList:
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.NoNamespace
-displayName: Forbid namespace (a.k.a. "wildcard" `*`) imports.
-description: |
+displayName: Forbid namespace (a.k.a. "wildcard" `*`) imports
+description: |-
   Forbid namespace (a.k.a. "wildcard" `*`) imports.
-  See rule details for [import/no-namespace](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-namespace.md)
+  See rule details for [import/no-namespace](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-namespace.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -256,9 +256,9 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.javascript.Order
 displayName: Enforce a convention in module import order
-description: |
+description: |-
   Enforce a convention in module import order
-  See rule details for [import/order](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/order.md)
+  See rule details for [import/order](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/order.md).
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
