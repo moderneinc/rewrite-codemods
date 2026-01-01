@@ -192,7 +192,7 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.svelte.HtmlClosingBracketSpacing
 displayName: Require or disallow a space before tag's closing brackets
 description: |-
-  require or disallow a space before tag's closing brackets
+  Require or disallow a space before tag's closing brackets
   See rule details for [svelte/html-closing-bracket-spacing](https://sveltejs.github.io/eslint-plugin-svelte/rules/html-closing-bracket-spacing/).
 recipeList:
   - org.openrewrite.codemods.ESLint:
@@ -416,7 +416,7 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.svelte.PreferClassDirective
 displayName: Require class directives instead of ternary expressions
 description: |-
-  require class directives instead of ternary expressions
+  Require class directives instead of ternary expressions
   See rule details for [svelte/prefer-class-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/prefer-class-directive/).
 recipeList:
   - org.openrewrite.codemods.ESLint:
@@ -448,7 +448,7 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.cleanup.svelte.PreferStyleDirective
 displayName: Require style directives instead of style attribute
 description: |-
-  require style directives instead of style attribute
+  Require style directives instead of style attribute
   See rule details for [svelte/prefer-style-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/prefer-style-directive/).
 recipeList:
   - org.openrewrite.codemods.ESLint:
