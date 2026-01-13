@@ -60,15 +60,9 @@ public class ApplyCodemod extends NodeBasedRecipe {
     @Nullable
     List<String> codemodArgs;
 
-    @Override
-    public String getDisplayName() {
-        return "Applies a codemod to all source files";
-    }
+    String displayName = "Applies a codemod to all source files";
 
-    @Override
-    public String getDescription() {
-        return "Applies a codemod represented by an NPM package to all source files.";
-    }
+    String description = "Applies a codemod represented by an NPM package to all source files.";
 
     @Override
     protected List<String> getNpmCommand(Accumulator acc, ExecutionContext ctx) {
