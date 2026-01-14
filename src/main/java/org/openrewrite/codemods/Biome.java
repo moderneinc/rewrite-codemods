@@ -17,21 +17,18 @@
 
 package org.openrewrite.codemods;
 
+import lombok.Getter;
 import org.openrewrite.ExecutionContext;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class Biome extends NodeBasedRecipe {
-    @Override
-    public String getDisplayName() {
-        return "Biome recommendations";
-    }
+    @Getter
+    final String displayName = "Biome recommendations";
 
-    @Override
-    public String getDescription() {
-        return "Run [Biome](https://biomejs.dev/) recommended settings on your projects.";
-    }
+    @Getter
+    final String description = "Run [Biome](https://biomejs.dev/) recommended settings on your projects.";
 
     @Override
     protected List<String> getNpmCommand(Accumulator acc, ExecutionContext ctx) {
