@@ -35,15 +35,9 @@ public class Putout extends NodeBasedRecipe {
 
     private static final String PUTOUT_DIR = Putout.class.getName() + ".PUTOUT_DIR";
 
-    @Override
-    public String getDisplayName() {
-        return "Run Putout";
-    }
+    String displayName = "Run Putout";
 
-    @Override
-    public String getDescription() {
-        return "Run [Putout](https://github.com/coderaiser/putout) on your projects.";
-    }
+    String description = "Run [Putout](https://github.com/coderaiser/putout) on your projects.";
 
     @Option(displayName = "Rules",
             description = "Names of rules to enable. If not provided, putout's default rules are used.",

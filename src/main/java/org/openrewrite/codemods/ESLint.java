@@ -138,16 +138,10 @@ public class ESLint extends NodeBasedRecipe {
     @Nullable
     String configFile;
 
-    @Override
-    public String getDisplayName() {
-        return "Lint source code with ESLint";
-    }
+    String displayName = "Lint source code with ESLint";
 
-    @Override
-    public String getDescription() {
-        return "Run [ESLint](https://eslint.org/) across the code to fix common static analysis issues in the code.\n\n" +
+    String description = "Run [ESLint](https://eslint.org/) across the code to fix common static analysis issues in the code.\n\n" +
                 "This requires the code to have an existing ESLint configuration.";
-    }
 
     @Override
     public Accumulator getInitialValue(ExecutionContext ctx) {

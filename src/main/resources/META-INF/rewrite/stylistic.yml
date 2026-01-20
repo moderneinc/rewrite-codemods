@@ -16,8 +16,8 @@
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.RecommendedESLintStyling
 displayName: Recommended ESLint Styling
-description: |
-  Collection of stylistic ESLint rules that are recommended by the [ESLint Style.](https://eslint.style/)
+description: |-
+  Collection of stylistic ESLint rules that are recommended by the [ESLint Style.](https://eslint.style/).
 tags:
   - eslint
   - stylistic
@@ -128,10 +128,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ArrayBracketNewline
 displayName: Enforce linebreaks after opening and before closing array brackets
-description: |
+description: |-
   Enforce linebreaks after opening and before closing array brackets
 
-  See [rule details](https://eslint.style/rules/default/array-bracket-newline)
+  See [rule details](https://eslint.style/rules/default/array-bracket-newline).
 tags:
   - eslint
   - stylistic
@@ -156,10 +156,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ArrayBracketSpacing
 displayName: Enforce consistent spacing inside array brackets
-description: |
+description: |-
   Enforce consistent spacing inside array brackets
 
-  See [rule details](https://eslint.style/rules/default/array-bracket-spacing)
+  See [rule details](https://eslint.style/rules/default/array-bracket-spacing).
 tags:
   - eslint
   - stylistic
@@ -184,10 +184,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ArrayElementNewline
 displayName: Enforce line breaks after each array element
-description: |
+description: |-
   Enforce line breaks after each array element
 
-  See [rule details](https://eslint.style/rules/default/array-element-newline)
+  See [rule details](https://eslint.style/rules/default/array-element-newline).
 tags:
   - eslint
   - stylistic
@@ -212,10 +212,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ArrowParens
 displayName: Require parentheses around arrow function arguments
-description: |
+description: |-
   Require parentheses around arrow function arguments
 
-  See [rule details](https://eslint.style/rules/default/arrow-parens)
+  See [rule details](https://eslint.style/rules/default/arrow-parens).
 tags:
   - eslint
   - stylistic
@@ -240,10 +240,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ArrowSpacing
 displayName: Enforce consistent spacing before and after the arrow in arrow functions
-description: |
+description: |-
   Enforce consistent spacing before and after the arrow in arrow functions
 
-  See [rule details](https://eslint.style/rules/default/arrow-spacing)
+  See [rule details](https://eslint.style/rules/default/arrow-spacing).
 tags:
   - eslint
   - stylistic
@@ -268,10 +268,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.BlockSpacing
 displayName: Disallow or enforce spaces inside of blocks after opening block and before closing block
-description: |
+description: |-
   Disallow or enforce spaces inside of blocks after opening block and before closing block
 
-  See [rule details](https://eslint.style/rules/default/block-spacing)
+  See [rule details](https://eslint.style/rules/default/block-spacing).
 tags:
   - eslint
   - stylistic
@@ -296,10 +296,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.BraceStyle
 displayName: Enforce consistent brace style for blocks
-description: |
+description: |-
   Enforce consistent brace style for blocks
 
-  See [rule details](https://eslint.style/rules/default/brace-style)
+  See [rule details](https://eslint.style/rules/default/brace-style).
 tags:
   - eslint
   - stylistic
@@ -324,10 +324,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.CommaDangle
 displayName: Require or disallow trailing commas
-description: |
+description: |-
   Require or disallow trailing commas
 
-  See [rule details](https://eslint.style/rules/default/comma-dangle)
+  See [rule details](https://eslint.style/rules/default/comma-dangle).
 tags:
   - eslint
   - stylistic
@@ -352,10 +352,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.CommaSpacing
 displayName: Enforce consistent spacing before and after commas
-description: |
+description: |-
   Enforce consistent spacing before and after commas
 
-  See [rule details](https://eslint.style/rules/default/comma-spacing)
+  See [rule details](https://eslint.style/rules/default/comma-spacing).
 tags:
   - eslint
   - stylistic
@@ -380,10 +380,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.CommaStyle
 displayName: Enforce consistent comma style
-description: |
+description: |-
   Enforce consistent comma style
 
-  See [rule details](https://eslint.style/rules/default/comma-style)
+  See [rule details](https://eslint.style/rules/default/comma-style).
 tags:
   - eslint
   - stylistic
@@ -408,10 +408,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ComputedPropertySpacing
 displayName: Enforce consistent spacing inside computed property brackets
-description: |
+description: |-
   Enforce consistent spacing inside computed property brackets
 
-  See [rule details](https://eslint.style/rules/default/computed-property-spacing)
+  See [rule details](https://eslint.style/rules/default/computed-property-spacing).
 tags:
   - eslint
   - stylistic
@@ -436,10 +436,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.DotLocation
 displayName: Enforce consistent newlines before and after dots
-description: |
+description: |-
   Enforce consistent newlines before and after dots
 
-  See [rule details](https://eslint.style/rules/default/dot-location)
+  See [rule details](https://eslint.style/rules/default/dot-location).
 tags:
   - eslint
   - stylistic
@@ -464,10 +464,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.EolLast
 displayName: Require or disallow newline at the end of files
-description: |
+description: |-
   Require or disallow newline at the end of files
 
-  See [rule details](https://eslint.style/rules/default/eol-last)
+  See [rule details](https://eslint.style/rules/default/eol-last).
 tags:
   - eslint
   - stylistic
@@ -491,11 +491,11 @@ recipeList:
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.FuncCallSpacing
-displayName: Require or disallow spacing between function identifiers and their invocations. Alias of &#x60;function-call-spacing&#x60;.
-description: |
+displayName: Require or disallow spacing between function identifiers and their invocations. Alias of &#x60;function-call-spacing&#x60;
+description: |-
   Require or disallow spacing between function identifiers and their invocations. Alias of &#x60;function-call-spacing&#x60;.
 
-  See [rule details](https://eslint.style/rules/default/func-call-spacing)
+  See [rule details](https://eslint.style/rules/default/func-call-spacing).
 tags:
   - eslint
   - stylistic
@@ -520,10 +520,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.FunctionCallArgumentNewline
 displayName: Enforce line breaks between arguments of a function call
-description: |
+description: |-
   Enforce line breaks between arguments of a function call
 
-  See [rule details](https://eslint.style/rules/default/function-call-argument-newline)
+  See [rule details](https://eslint.style/rules/default/function-call-argument-newline).
 tags:
   - eslint
   - stylistic
@@ -548,10 +548,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.FunctionCallSpacing
 displayName: Require or disallow spacing between function identifiers and their invocations
-description: |
+description: |-
   Require or disallow spacing between function identifiers and their invocations
 
-  See [rule details](https://eslint.style/rules/default/function-call-spacing)
+  See [rule details](https://eslint.style/rules/default/function-call-spacing).
 tags:
   - eslint
   - stylistic
@@ -576,10 +576,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.FunctionParenNewline
 displayName: Enforce consistent line breaks inside function parentheses
-description: |
+description: |-
   Enforce consistent line breaks inside function parentheses
 
-  See [rule details](https://eslint.style/rules/default/function-paren-newline)
+  See [rule details](https://eslint.style/rules/default/function-paren-newline).
 tags:
   - eslint
   - stylistic
@@ -604,10 +604,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.GeneratorStarSpacing
 displayName: Enforce consistent spacing around &#x60;*&#x60; operators in generator functions
-description: |
+description: |-
   Enforce consistent spacing around &#x60;*&#x60; operators in generator functions
 
-  See [rule details](https://eslint.style/rules/default/generator-star-spacing)
+  See [rule details](https://eslint.style/rules/default/generator-star-spacing).
 tags:
   - eslint
   - stylistic
@@ -632,10 +632,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ImplicitArrowLinebreak
 displayName: Enforce the location of arrow function bodies
-description: |
+description: |-
   Enforce the location of arrow function bodies
 
-  See [rule details](https://eslint.style/rules/default/implicit-arrow-linebreak)
+  See [rule details](https://eslint.style/rules/default/implicit-arrow-linebreak).
 tags:
   - eslint
   - stylistic
@@ -660,10 +660,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.Indent
 displayName: Enforce consistent indentation
-description: |
+description: |-
   Enforce consistent indentation
 
-  See [rule details](https://eslint.style/rules/default/indent)
+  See [rule details](https://eslint.style/rules/default/indent).
 tags:
   - eslint
   - stylistic
@@ -688,10 +688,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.IndentBinaryOps
 displayName: Indentation for binary operators
-description: |
+description: |-
   Indentation for binary operators
 
-  See [rule details](https://eslint.style/rules/default/indent-binary-ops)
+  See [rule details](https://eslint.style/rules/default/indent-binary-ops).
 tags:
   - eslint
   - stylistic
@@ -716,10 +716,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxClosingBracketLocation
 displayName: Enforce closing bracket location in JSX
-description: |
+description: |-
   Enforce closing bracket location in JSX
 
-  See [rule details](https://eslint.style/rules/default/jsx-closing-bracket-location)
+  See [rule details](https://eslint.style/rules/default/jsx-closing-bracket-location).
 tags:
   - eslint
   - stylistic
@@ -744,10 +744,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxClosingTagLocation
 displayName: Enforce closing tag location for multiline JSX
-description: |
+description: |-
   Enforce closing tag location for multiline JSX
 
-  See [rule details](https://eslint.style/rules/default/jsx-closing-tag-location)
+  See [rule details](https://eslint.style/rules/default/jsx-closing-tag-location).
 tags:
   - eslint
   - stylistic
@@ -772,10 +772,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxCurlyBracePresence
 displayName: Disallow unnecessary JSX expressions when literals alone are sufficient or enforce JSX expressions on literals in JSX children or attributes
-description: |
+description: |-
   Disallow unnecessary JSX expressions when literals alone are sufficient or enforce JSX expressions on literals in JSX children or attributes
 
-  See [rule details](https://eslint.style/rules/default/jsx-curly-brace-presence)
+  See [rule details](https://eslint.style/rules/default/jsx-curly-brace-presence).
 tags:
   - eslint
   - stylistic
@@ -800,10 +800,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxCurlyNewline
 displayName: Enforce consistent linebreaks in curly braces in JSX attributes and expressions
-description: |
+description: |-
   Enforce consistent linebreaks in curly braces in JSX attributes and expressions
 
-  See [rule details](https://eslint.style/rules/default/jsx-curly-newline)
+  See [rule details](https://eslint.style/rules/default/jsx-curly-newline).
 tags:
   - eslint
   - stylistic
@@ -828,10 +828,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxCurlySpacing
 displayName: Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
-description: |
+description: |-
   Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
 
-  See [rule details](https://eslint.style/rules/default/jsx-curly-spacing)
+  See [rule details](https://eslint.style/rules/default/jsx-curly-spacing).
 tags:
   - eslint
   - stylistic
@@ -856,10 +856,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxEqualsSpacing
 displayName: Enforce or disallow spaces around equal signs in JSX attributes
-description: |
+description: |-
   Enforce or disallow spaces around equal signs in JSX attributes
 
-  See [rule details](https://eslint.style/rules/default/jsx-equals-spacing)
+  See [rule details](https://eslint.style/rules/default/jsx-equals-spacing).
 tags:
   - eslint
   - stylistic
@@ -884,10 +884,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxFirstPropNewLine
 displayName: Enforce proper position of the first property in JSX
-description: |
+description: |-
   Enforce proper position of the first property in JSX
 
-  See [rule details](https://eslint.style/rules/default/jsx-first-prop-new-line)
+  See [rule details](https://eslint.style/rules/default/jsx-first-prop-new-line).
 tags:
   - eslint
   - stylistic
@@ -912,10 +912,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxIndent
 displayName: Enforce JSX indentation
-description: |
+description: |-
   Enforce JSX indentation
 
-  See [rule details](https://eslint.style/rules/default/jsx-indent)
+  See [rule details](https://eslint.style/rules/default/jsx-indent).
 tags:
   - eslint
   - stylistic
@@ -940,10 +940,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxIndentProps
 displayName: Enforce props indentation in JSX
-description: |
+description: |-
   Enforce props indentation in JSX
 
-  See [rule details](https://eslint.style/rules/default/jsx-indent-props)
+  See [rule details](https://eslint.style/rules/default/jsx-indent-props).
 tags:
   - eslint
   - stylistic
@@ -968,10 +968,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxMaxPropsPerLine
 displayName: Enforce maximum of props on a single line in JSX
-description: |
+description: |-
   Enforce maximum of props on a single line in JSX
 
-  See [rule details](https://eslint.style/rules/default/jsx-max-props-per-line)
+  See [rule details](https://eslint.style/rules/default/jsx-max-props-per-line).
 tags:
   - eslint
   - stylistic
@@ -995,11 +995,11 @@ recipeList:
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxNewline
-displayName: Require or prevent a new line after jsx elements and expressions.
-description: |
+displayName: Require or prevent a new line after jsx elements and expressions
+description: |-
   Require or prevent a new line after jsx elements and expressions.
 
-  See [rule details](https://eslint.style/rules/default/jsx-newline)
+  See [rule details](https://eslint.style/rules/default/jsx-newline).
 tags:
   - eslint
   - stylistic
@@ -1024,10 +1024,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxOneExpressionPerLine
 displayName: Require one JSX element per line
-description: |
+description: |-
   Require one JSX element per line
 
-  See [rule details](https://eslint.style/rules/default/jsx-one-expression-per-line)
+  See [rule details](https://eslint.style/rules/default/jsx-one-expression-per-line).
 tags:
   - eslint
   - stylistic
@@ -1052,10 +1052,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxPascalCase
 displayName: Enforce PascalCase for user-defined JSX components
-description: |
+description: |-
   Enforce PascalCase for user-defined JSX components
 
-  See [rule details](https://eslint.style/rules/default/jsx-pascal-case)
+  See [rule details](https://eslint.style/rules/default/jsx-pascal-case).
 tags:
   - eslint
   - stylistic
@@ -1080,10 +1080,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxPropsNoMultiSpaces
 displayName: Disallow multiple spaces between inline JSX props
-description: |
+description: |-
   Disallow multiple spaces between inline JSX props
 
-  See [rule details](https://eslint.style/rules/default/jsx-props-no-multi-spaces)
+  See [rule details](https://eslint.style/rules/default/jsx-props-no-multi-spaces).
 tags:
   - eslint
   - stylistic
@@ -1108,10 +1108,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxQuotes
 displayName: Enforce the consistent use of either double or single quotes in JSX attributes
-description: |
+description: |-
   Enforce the consistent use of either double or single quotes in JSX attributes
 
-  See [rule details](https://eslint.style/rules/default/jsx-quotes)
+  See [rule details](https://eslint.style/rules/default/jsx-quotes).
 tags:
   - eslint
   - stylistic
@@ -1136,10 +1136,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxSelfClosingComp
 displayName: Disallow extra closing tags for components without children
-description: |
+description: |-
   Disallow extra closing tags for components without children
 
-  See [rule details](https://eslint.style/rules/default/jsx-self-closing-comp)
+  See [rule details](https://eslint.style/rules/default/jsx-self-closing-comp).
 tags:
   - eslint
   - stylistic
@@ -1164,10 +1164,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxSortProps
 displayName: Enforce props alphabetical sorting
-description: |
+description: |-
   Enforce props alphabetical sorting
 
-  See [rule details](https://eslint.style/rules/default/jsx-sort-props)
+  See [rule details](https://eslint.style/rules/default/jsx-sort-props).
 tags:
   - eslint
   - stylistic
@@ -1192,10 +1192,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxTagSpacing
 displayName: Enforce whitespace in and around the JSX opening and closing brackets
-description: |
+description: |-
   Enforce whitespace in and around the JSX opening and closing brackets
 
-  See [rule details](https://eslint.style/rules/default/jsx-tag-spacing)
+  See [rule details](https://eslint.style/rules/default/jsx-tag-spacing).
 tags:
   - eslint
   - stylistic
@@ -1220,10 +1220,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.JsxWrapMultilines
 displayName: Disallow missing parentheses around multiline JSX
-description: |
+description: |-
   Disallow missing parentheses around multiline JSX
 
-  See [rule details](https://eslint.style/rules/default/jsx-wrap-multilines)
+  See [rule details](https://eslint.style/rules/default/jsx-wrap-multilines).
 tags:
   - eslint
   - stylistic
@@ -1248,10 +1248,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.KeySpacing
 displayName: Enforce consistent spacing between keys and values in object literal properties
-description: |
+description: |-
   Enforce consistent spacing between keys and values in object literal properties
 
-  See [rule details](https://eslint.style/rules/default/key-spacing)
+  See [rule details](https://eslint.style/rules/default/key-spacing).
 tags:
   - eslint
   - stylistic
@@ -1276,10 +1276,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.KeywordSpacing
 displayName: Enforce consistent spacing before and after keywords
-description: |
+description: |-
   Enforce consistent spacing before and after keywords
 
-  See [rule details](https://eslint.style/rules/default/keyword-spacing)
+  See [rule details](https://eslint.style/rules/default/keyword-spacing).
 tags:
   - eslint
   - stylistic
@@ -1304,10 +1304,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.LinebreakStyle
 displayName: Enforce consistent linebreak style
-description: |
+description: |-
   Enforce consistent linebreak style
 
-  See [rule details](https://eslint.style/rules/default/linebreak-style)
+  See [rule details](https://eslint.style/rules/default/linebreak-style).
 tags:
   - eslint
   - stylistic
@@ -1332,10 +1332,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.LinesAroundComment
 displayName: Require empty lines around comments
-description: |
+description: |-
   Require empty lines around comments
 
-  See [rule details](https://eslint.style/rules/default/lines-around-comment)
+  See [rule details](https://eslint.style/rules/default/lines-around-comment).
 tags:
   - eslint
   - stylistic
@@ -1360,10 +1360,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.LinesBetweenClassMembers
 displayName: Require or disallow an empty line between class members
-description: |
+description: |-
   Require or disallow an empty line between class members
 
-  See [rule details](https://eslint.style/rules/default/lines-between-class-members)
+  See [rule details](https://eslint.style/rules/default/lines-between-class-members).
 tags:
   - eslint
   - stylistic
@@ -1388,10 +1388,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.MemberDelimiterStyle
 displayName: Require a specific member delimiter style for interfaces and type literals
-description: |
+description: |-
   Require a specific member delimiter style for interfaces and type literals
 
-  See [rule details](https://eslint.style/rules/default/member-delimiter-style)
+  See [rule details](https://eslint.style/rules/default/member-delimiter-style).
 tags:
   - eslint
   - stylistic
@@ -1416,10 +1416,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.MultilineTernary
 displayName: Enforce newlines between operands of ternary expressions
-description: |
+description: |-
   Enforce newlines between operands of ternary expressions
 
-  See [rule details](https://eslint.style/rules/default/multiline-ternary)
+  See [rule details](https://eslint.style/rules/default/multiline-ternary).
 tags:
   - eslint
   - stylistic
@@ -1444,10 +1444,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NewParens
 displayName: Enforce or disallow parentheses when invoking a constructor with no arguments
-description: |
+description: |-
   Enforce or disallow parentheses when invoking a constructor with no arguments
 
-  See [rule details](https://eslint.style/rules/default/new-parens)
+  See [rule details](https://eslint.style/rules/default/new-parens).
 tags:
   - eslint
   - stylistic
@@ -1472,10 +1472,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NewlinePerChainedCall
 displayName: Require a newline after each call in a method chain
-description: |
+description: |-
   Require a newline after each call in a method chain
 
-  See [rule details](https://eslint.style/rules/default/newline-per-chained-call)
+  See [rule details](https://eslint.style/rules/default/newline-per-chained-call).
 tags:
   - eslint
   - stylistic
@@ -1500,10 +1500,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NoConfusingArrow
 displayName: Disallow arrow functions where they could be confused with comparisons
-description: |
+description: |-
   Disallow arrow functions where they could be confused with comparisons
 
-  See [rule details](https://eslint.style/rules/default/no-confusing-arrow)
+  See [rule details](https://eslint.style/rules/default/no-confusing-arrow).
 tags:
   - eslint
   - stylistic
@@ -1528,10 +1528,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NoExtraParens
 displayName: Disallow unnecessary parentheses
-description: |
+description: |-
   Disallow unnecessary parentheses
 
-  See [rule details](https://eslint.style/rules/default/no-extra-parens)
+  See [rule details](https://eslint.style/rules/default/no-extra-parens).
 tags:
   - eslint
   - stylistic
@@ -1556,10 +1556,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NoExtraSemi
 displayName: Disallow unnecessary semicolons
-description: |
+description: |-
   Disallow unnecessary semicolons
 
-  See [rule details](https://eslint.style/rules/default/no-extra-semi)
+  See [rule details](https://eslint.style/rules/default/no-extra-semi).
 tags:
   - eslint
   - stylistic
@@ -1584,10 +1584,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NoFloatingDecimal
 displayName: Disallow leading or trailing decimal points in numeric literals
-description: |
+description: |-
   Disallow leading or trailing decimal points in numeric literals
 
-  See [rule details](https://eslint.style/rules/default/no-floating-decimal)
+  See [rule details](https://eslint.style/rules/default/no-floating-decimal).
 tags:
   - eslint
   - stylistic
@@ -1612,10 +1612,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NoMultiSpaces
 displayName: Disallow multiple spaces
-description: |
+description: |-
   Disallow multiple spaces
 
-  See [rule details](https://eslint.style/rules/default/no-multi-spaces)
+  See [rule details](https://eslint.style/rules/default/no-multi-spaces).
 tags:
   - eslint
   - stylistic
@@ -1640,10 +1640,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NoMultipleEmptyLines
 displayName: Disallow multiple empty lines
-description: |
+description: |-
   Disallow multiple empty lines
 
-  See [rule details](https://eslint.style/rules/default/no-multiple-empty-lines)
+  See [rule details](https://eslint.style/rules/default/no-multiple-empty-lines).
 tags:
   - eslint
   - stylistic
@@ -1668,10 +1668,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NoTrailingSpaces
 displayName: Disallow trailing whitespace at the end of lines
-description: |
+description: |-
   Disallow trailing whitespace at the end of lines
 
-  See [rule details](https://eslint.style/rules/default/no-trailing-spaces)
+  See [rule details](https://eslint.style/rules/default/no-trailing-spaces).
 tags:
   - eslint
   - stylistic
@@ -1696,10 +1696,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NoWhitespaceBeforeProperty
 displayName: Disallow whitespace before properties
-description: |
+description: |-
   Disallow whitespace before properties
 
-  See [rule details](https://eslint.style/rules/default/no-whitespace-before-property)
+  See [rule details](https://eslint.style/rules/default/no-whitespace-before-property).
 tags:
   - eslint
   - stylistic
@@ -1724,10 +1724,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.NonblockStatementBodyPosition
 displayName: Enforce the location of single-line statements
-description: |
+description: |-
   Enforce the location of single-line statements
 
-  See [rule details](https://eslint.style/rules/default/nonblock-statement-body-position)
+  See [rule details](https://eslint.style/rules/default/nonblock-statement-body-position).
 tags:
   - eslint
   - stylistic
@@ -1752,10 +1752,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ObjectCurlyNewline
 displayName: Enforce consistent line breaks after opening and before closing braces
-description: |
+description: |-
   Enforce consistent line breaks after opening and before closing braces
 
-  See [rule details](https://eslint.style/rules/default/object-curly-newline)
+  See [rule details](https://eslint.style/rules/default/object-curly-newline).
 tags:
   - eslint
   - stylistic
@@ -1780,10 +1780,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ObjectCurlySpacing
 displayName: Enforce consistent spacing inside braces
-description: |
+description: |-
   Enforce consistent spacing inside braces
 
-  See [rule details](https://eslint.style/rules/default/object-curly-spacing)
+  See [rule details](https://eslint.style/rules/default/object-curly-spacing).
 tags:
   - eslint
   - stylistic
@@ -1808,10 +1808,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.ObjectPropertyNewline
 displayName: Enforce placing object properties on separate lines
-description: |
+description: |-
   Enforce placing object properties on separate lines
 
-  See [rule details](https://eslint.style/rules/default/object-property-newline)
+  See [rule details](https://eslint.style/rules/default/object-property-newline).
 tags:
   - eslint
   - stylistic
@@ -1836,10 +1836,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.OneVarDeclarationPerLine
 displayName: Require or disallow newlines around variable declarations
-description: |
+description: |-
   Require or disallow newlines around variable declarations
 
-  See [rule details](https://eslint.style/rules/default/one-var-declaration-per-line)
+  See [rule details](https://eslint.style/rules/default/one-var-declaration-per-line).
 tags:
   - eslint
   - stylistic
@@ -1864,10 +1864,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.OperatorLinebreak
 displayName: Enforce consistent linebreak style for operators
-description: |
+description: |-
   Enforce consistent linebreak style for operators
 
-  See [rule details](https://eslint.style/rules/default/operator-linebreak)
+  See [rule details](https://eslint.style/rules/default/operator-linebreak).
 tags:
   - eslint
   - stylistic
@@ -1892,10 +1892,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.PaddedBlocks
 displayName: Require or disallow padding within blocks
-description: |
+description: |-
   Require or disallow padding within blocks
 
-  See [rule details](https://eslint.style/rules/default/padded-blocks)
+  See [rule details](https://eslint.style/rules/default/padded-blocks).
 tags:
   - eslint
   - stylistic
@@ -1920,10 +1920,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.PaddingLineBetweenStatements
 displayName: Require or disallow padding lines between statements
-description: |
+description: |-
   Require or disallow padding lines between statements
 
-  See [rule details](https://eslint.style/rules/default/padding-line-between-statements)
+  See [rule details](https://eslint.style/rules/default/padding-line-between-statements).
 tags:
   - eslint
   - stylistic
@@ -1948,10 +1948,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.QuoteProps
 displayName: Require quotes around object literal property names
-description: |
+description: |-
   Require quotes around object literal property names
 
-  See [rule details](https://eslint.style/rules/default/quote-props)
+  See [rule details](https://eslint.style/rules/default/quote-props).
 tags:
   - eslint
   - stylistic
@@ -1976,10 +1976,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.Quotes
 displayName: Enforce the consistent use of either backticks, double, or single quotes
-description: |
+description: |-
   Enforce the consistent use of either backticks, double, or single quotes
 
-  See [rule details](https://eslint.style/rules/default/quotes)
+  See [rule details](https://eslint.style/rules/default/quotes).
 tags:
   - eslint
   - stylistic
@@ -2004,10 +2004,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.RestSpreadSpacing
 displayName: Enforce spacing between rest and spread operators and their expressions
-description: |
+description: |-
   Enforce spacing between rest and spread operators and their expressions
 
-  See [rule details](https://eslint.style/rules/default/rest-spread-spacing)
+  See [rule details](https://eslint.style/rules/default/rest-spread-spacing).
 tags:
   - eslint
   - stylistic
@@ -2032,10 +2032,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.Semi
 displayName: Require or disallow semicolons instead of ASI
-description: |
+description: |-
   Require or disallow semicolons instead of ASI
 
-  See [rule details](https://eslint.style/rules/default/semi)
+  See [rule details](https://eslint.style/rules/default/semi).
 tags:
   - eslint
   - stylistic
@@ -2060,10 +2060,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SemiSpacing
 displayName: Enforce consistent spacing before and after semicolons
-description: |
+description: |-
   Enforce consistent spacing before and after semicolons
 
-  See [rule details](https://eslint.style/rules/default/semi-spacing)
+  See [rule details](https://eslint.style/rules/default/semi-spacing).
 tags:
   - eslint
   - stylistic
@@ -2088,10 +2088,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SemiStyle
 displayName: Enforce location of semicolons
-description: |
+description: |-
   Enforce location of semicolons
 
-  See [rule details](https://eslint.style/rules/default/semi-style)
+  See [rule details](https://eslint.style/rules/default/semi-style).
 tags:
   - eslint
   - stylistic
@@ -2116,10 +2116,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SpaceBeforeBlocks
 displayName: Enforce consistent spacing before blocks
-description: |
+description: |-
   Enforce consistent spacing before blocks
 
-  See [rule details](https://eslint.style/rules/default/space-before-blocks)
+  See [rule details](https://eslint.style/rules/default/space-before-blocks).
 tags:
   - eslint
   - stylistic
@@ -2144,10 +2144,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SpaceBeforeFunctionParen
 displayName: Enforce consistent spacing before &#x60;function&#x60; definition opening parenthesis
-description: |
+description: |-
   Enforce consistent spacing before &#x60;function&#x60; definition opening parenthesis
 
-  See [rule details](https://eslint.style/rules/default/space-before-function-paren)
+  See [rule details](https://eslint.style/rules/default/space-before-function-paren).
 tags:
   - eslint
   - stylistic
@@ -2172,10 +2172,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SpaceInParens
 displayName: Enforce consistent spacing inside parentheses
-description: |
+description: |-
   Enforce consistent spacing inside parentheses
 
-  See [rule details](https://eslint.style/rules/default/space-in-parens)
+  See [rule details](https://eslint.style/rules/default/space-in-parens).
 tags:
   - eslint
   - stylistic
@@ -2200,10 +2200,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SpaceInfixOps
 displayName: Require spacing around infix operators
-description: |
+description: |-
   Require spacing around infix operators
 
-  See [rule details](https://eslint.style/rules/default/space-infix-ops)
+  See [rule details](https://eslint.style/rules/default/space-infix-ops).
 tags:
   - eslint
   - stylistic
@@ -2228,10 +2228,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SpaceUnaryOps
 displayName: Enforce consistent spacing before or after unary operators
-description: |
+description: |-
   Enforce consistent spacing before or after unary operators
 
-  See [rule details](https://eslint.style/rules/default/space-unary-ops)
+  See [rule details](https://eslint.style/rules/default/space-unary-ops).
 tags:
   - eslint
   - stylistic
@@ -2256,10 +2256,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SpacedComment
 displayName: Enforce consistent spacing after the &#x60;//&#x60; or &#x60;/*&#x60; in a comment
-description: |
+description: |-
   Enforce consistent spacing after the &#x60;//&#x60; or &#x60;/*&#x60; in a comment
 
-  See [rule details](https://eslint.style/rules/default/spaced-comment)
+  See [rule details](https://eslint.style/rules/default/spaced-comment).
 tags:
   - eslint
   - stylistic
@@ -2284,10 +2284,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.SwitchColonSpacing
 displayName: Enforce spacing around colons of switch statements
-description: |
+description: |-
   Enforce spacing around colons of switch statements
 
-  See [rule details](https://eslint.style/rules/default/switch-colon-spacing)
+  See [rule details](https://eslint.style/rules/default/switch-colon-spacing).
 tags:
   - eslint
   - stylistic
@@ -2312,10 +2312,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.TemplateCurlySpacing
 displayName: Require or disallow spacing around embedded expressions of template strings
-description: |
+description: |-
   Require or disallow spacing around embedded expressions of template strings
 
-  See [rule details](https://eslint.style/rules/default/template-curly-spacing)
+  See [rule details](https://eslint.style/rules/default/template-curly-spacing).
 tags:
   - eslint
   - stylistic
@@ -2340,10 +2340,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.TemplateTagSpacing
 displayName: Require or disallow spacing between template tags and their literals
-description: |
+description: |-
   Require or disallow spacing between template tags and their literals
 
-  See [rule details](https://eslint.style/rules/default/template-tag-spacing)
+  See [rule details](https://eslint.style/rules/default/template-tag-spacing).
 tags:
   - eslint
   - stylistic
@@ -2368,10 +2368,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.TypeAnnotationSpacing
 displayName: Require consistent spacing around type annotations
-description: |
+description: |-
   Require consistent spacing around type annotations
 
-  See [rule details](https://eslint.style/rules/default/type-annotation-spacing)
+  See [rule details](https://eslint.style/rules/default/type-annotation-spacing).
 tags:
   - eslint
   - stylistic
@@ -2396,10 +2396,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.TypeGenericSpacing
 displayName: Enforces consistent spacing inside TypeScript type generics
-description: |
+description: |-
   Enforces consistent spacing inside TypeScript type generics
 
-  See [rule details](https://eslint.style/rules/default/type-generic-spacing)
+  See [rule details](https://eslint.style/rules/default/type-generic-spacing).
 tags:
   - eslint
   - stylistic
@@ -2424,10 +2424,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.TypeNamedTupleSpacing
 displayName: Expect space before the type declaration in the named tuple
-description: |
+description: |-
   Expect space before the type declaration in the named tuple
 
-  See [rule details](https://eslint.style/rules/default/type-named-tuple-spacing)
+  See [rule details](https://eslint.style/rules/default/type-named-tuple-spacing).
 tags:
   - eslint
   - stylistic
@@ -2452,10 +2452,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.WrapIife
 displayName: Require parentheses around immediate &#x60;function&#x60; invocations
-description: |
+description: |-
   Require parentheses around immediate &#x60;function&#x60; invocations
 
-  See [rule details](https://eslint.style/rules/default/wrap-iife)
+  See [rule details](https://eslint.style/rules/default/wrap-iife).
 tags:
   - eslint
   - stylistic
@@ -2480,10 +2480,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.WrapRegex
 displayName: Require parenthesis around regex literals
-description: |
+description: |-
   Require parenthesis around regex literals
 
-  See [rule details](https://eslint.style/rules/default/wrap-regex)
+  See [rule details](https://eslint.style/rules/default/wrap-regex).
 tags:
   - eslint
   - stylistic
@@ -2508,10 +2508,10 @@ recipeList:
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.format.YieldStarSpacing
 displayName: Require or disallow spacing around the &#x60;*&#x60; in &#x60;yield*&#x60; expressions
-description: |
+description: |-
   Require or disallow spacing around the &#x60;*&#x60; in &#x60;yield*&#x60; expressions
 
-  See [rule details](https://eslint.style/rules/default/yield-star-spacing)
+  See [rule details](https://eslint.style/rules/default/yield-star-spacing).
 tags:
   - eslint
   - stylistic

@@ -45,15 +45,9 @@ public class UI5 extends NodeBasedRecipe {
 
     transient UI5Messages messages = new UI5Messages(this);
 
-    @Override
-    public String getDisplayName() {
-        return "Lint UI5 projects with UI5 linter";
-    }
+    String displayName = "Lint UI5 projects with UI5 linter";
 
-    @Override
-    public String getDescription() {
-        return "Runs the [UI5 Linter](https://github.com/SAP/ui5-linter), a static code analysis tool for UI5 projects. It checks JavaScript, TypeScript, XML, JSON, and other files in your project and reports findings.";
-    }
+    String description = "Runs the [UI5 Linter](https://github.com/SAP/ui5-linter), a static code analysis tool for UI5 projects. It checks JavaScript, TypeScript, XML, JSON, and other files in your project and reports findings.";
 
     @Override
     public Accumulator getInitialValue(ExecutionContext ctx) {

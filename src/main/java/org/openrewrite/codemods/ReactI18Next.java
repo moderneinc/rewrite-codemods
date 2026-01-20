@@ -72,18 +72,12 @@ public class ReactI18Next extends NodeBasedRecipe {
     @Nullable
     String parser;
 
-    @Override
-    public String getDisplayName() {
-        return "React i18next internationalization";
-    }
+    String displayName = "React i18next internationalization";
 
-    @Override
-    public String getDescription() {
-        return "Automatically internationalizes React applications by extracting hardcoded strings " +
+    String description = "Automatically internationalizes React applications by extracting hardcoded strings " +
                 "and replacing them with [react-i18next](https://react.i18next.com) translation calls. " +
                 "Handles JSX text, attributes, and template literals with variables. " +
                 "Creates and updates a translation JSON file with extracted strings.";
-    }
 
 
     @Override
