@@ -19,6 +19,8 @@ displayName: Improve regexes by making them shorter, consistent, and safer
 description: |-
   Improve regexes by making them shorter, consistent, and safer.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-regex.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -43,6 +45,8 @@ displayName: Enforce a specific parameter name in catch clauses
 description: |-
   Enforce a specific parameter name in catch clauses.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/catch-error-name.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -67,6 +71,8 @@ displayName: Use destructured variables over properties
 description: |-
   Use destructured variables over properties.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-destructuring.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -91,6 +97,8 @@ displayName: Enforce correct `Error` subclassing
 description: |-
   Enforce correct `Error` subclassing.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/custom-error-definition.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -115,6 +123,8 @@ displayName: Enforce no spaces between braces
 description: |-
   Enforce no spaces between braces.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/empty-brace-spaces.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -139,6 +149,8 @@ displayName: Require escape sequences to use uppercase values
 description: |-
   Require escape sequences to use uppercase values.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/escape-case.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -163,6 +175,8 @@ displayName: Enforce explicitly comparing the length or size property of a value
 description: |-
   Enforce explicitly comparing the length or size property of a value.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/explicit-length-check.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -187,6 +201,8 @@ displayName: Enforce the use of `new` for all builtins, except `String`, `Number
 description: |-
   Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol`, and `BigInt`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/new-for-builtins.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -211,6 +227,8 @@ displayName: Prefer `for…of` over the `forEach` method
 description: |-
   Prefer `for…of` over the `forEach` method.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-for-each.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -235,6 +253,8 @@ displayName: Disallow using the `this` argument in array methods
 description: |-
   Disallow using the `this` argument in array methods.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-method-this-argument.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -259,6 +279,8 @@ displayName: Enforce combining multiple `Array#push()` into one call
 description: |-
   Enforce combining multiple `Array#push()` into one call.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-push-push.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -283,6 +305,8 @@ displayName: Disallow member access from `await` expression
 description: |-
   Disallow member access from `await` expression.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -307,6 +331,8 @@ displayName: Do not use leading/trailing space between `console.log` parameters
 description: |-
   Do not use leading/trailing space between `console.log` parameters.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -331,6 +357,8 @@ displayName: Do not use a `for` loop that can be replaced with a `for-of` loop
 description: |-
   Do not use a `for` loop that can be replaced with a `for-of` loop.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-for-loop.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -355,6 +383,8 @@ displayName: Enforce the use of Unicode escapes instead of hexadecimal escapes
 description: |-
   Enforce the use of Unicode escapes instead of hexadecimal escapes.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-hex-escape.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -379,6 +409,8 @@ displayName: Require `Array.isArray()` instead of `instanceof Array`
 description: |-
   Require `Array.isArray()` instead of `instanceof Array`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-array.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -403,6 +435,8 @@ displayName: Disallow `if` statements as the only statement in `if` blocks witho
 description: |-
   Disallow `if` statements as the only statement in `if` blocks without `else`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -427,6 +461,8 @@ displayName: Disallow negated conditions
 description: |-
   Disallow negated conditions.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -451,6 +487,8 @@ displayName: Disallow nested ternary expressions
 description: |-
   Disallow nested ternary expressions.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-nested-ternary.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -475,6 +513,8 @@ displayName: Disallow `new Array()`
 description: |-
   Disallow `new Array()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-new-array.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -499,6 +539,8 @@ displayName: Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of 
 description: |-
   Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-new-buffer.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -523,6 +565,8 @@ displayName: Disallow the use of the `null` literal
 description: |-
   Disallow the use of the `null` literal.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -547,6 +591,8 @@ displayName: Disallow classes that only have static members
 description: |-
   Disallow classes that only have static members.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-static-only-class.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -571,6 +617,8 @@ displayName: Disallow comparing `undefined` using `typeof`
 description: |-
   Disallow comparing `undefined` using `typeof`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-typeof-undefined.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -595,6 +643,8 @@ displayName: Disallow awaiting non-promise values
 description: |-
   Disallow awaiting non-promise values.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -619,6 +669,8 @@ displayName: Disallow unreadable array destructuring
 description: |-
   Disallow unreadable array destructuring.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-array-destructuring.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -643,6 +695,8 @@ displayName: Disallow useless fallback when spreading in object literals
 description: |-
   Disallow useless fallback when spreading in object literals.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-fallback-in-spread.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -667,6 +721,8 @@ displayName: Disallow useless array `length` check
 description: |-
   Disallow useless array `length` check.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-length-check.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -691,6 +747,8 @@ displayName: Disallow returning/yielding `Promise.resolve()`/`reject()` in `asyn
 description: |-
   Disallow returning/yielding `Promise.resolve()`/`reject()` in `async` functions or promise callbacks.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-promise-resolve-reject.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -715,6 +773,8 @@ displayName: Disallow unnecessary spread
 description: |-
   Disallow unnecessary spread.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-spread.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -739,6 +799,8 @@ displayName: Disallow useless `undefined`
 description: |-
   Disallow useless `undefined`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-undefined.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -763,6 +825,8 @@ displayName: Disallow number literals with zero fractions or dangling dots
 description: |-
   Disallow number literals with zero fractions or dangling dots.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-zero-fractions.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -787,6 +851,8 @@ displayName: Enforce proper case for numeric literals
 description: |-
   Enforce proper case for numeric literals.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/number-literal-case.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -811,6 +877,8 @@ displayName: Enforce the style of numeric separators by correctly grouping digit
 description: |-
   Enforce the style of numeric separators by correctly grouping digits.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/numeric-separators-style.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -835,6 +903,8 @@ displayName: Prefer `.addEventListener()` and `.removeEventListener()` over on-f
 description: |-
   Prefer `.addEventListener()` and `.removeEventListener()` over on-functions.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -859,6 +929,8 @@ displayName: Prefer `.find()` and `.findLast()` over the first or last element f
 description: |-
   Prefer `.find()` and `.findLast()` over the first or last element from `.filter()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -883,6 +955,8 @@ displayName: Prefer `Array#flat()` over legacy techniques to flatten arrays
 description: |-
   Prefer `Array#flat()` over legacy techniques to flatten arrays.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -907,6 +981,8 @@ displayName: Prefer `.flatMap()` over `.map().flat()`
 description: |-
   Prefer `.flatMap()` over `.map().flat()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat-map.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -931,6 +1007,8 @@ displayName: Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findL
 description: |-
   Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-index-of.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -955,6 +1033,8 @@ displayName: Prefer `.some()` over `.filter().length` check and `.{find,findLast
 description: |-
   Prefer `.some()` over `.filter().length` check and `.{find,findLast}()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-some.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -979,6 +1059,8 @@ displayName: Prefer `.at()` method for index access and `String#charAt()`
 description: |-
   Prefer `.at()` method for index access and `String#charAt()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1003,6 +1085,8 @@ displayName: Prefer `Date.now()` to get the number of milliseconds since the Uni
 description: |-
   Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-date-now.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1027,6 +1111,8 @@ displayName: Prefer default parameters over reassignment
 description: |-
   Prefer default parameters over reassignment.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-default-parameters.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1051,6 +1137,8 @@ displayName: Prefer `Node#append()` over `Node#appendChild()`
 description: |-
   Prefer `Node#append()` over `Node#appendChild()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1075,6 +1163,8 @@ displayName: Prefer using `.dataset` on DOM elements over calling attribute meth
 description: |-
   Prefer using `.dataset` on DOM elements over calling attribute methods.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-dataset.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1099,6 +1189,8 @@ displayName: Prefer `childNode.remove()` over `parentNode.removeChild(childNode)
 description: |-
   Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-remove.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1123,6 +1215,8 @@ displayName: Prefer `export…from` when re-exporting
 description: |-
   Prefer `export…from` when re-exporting.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1147,6 +1241,8 @@ displayName: Prefer `.includes()` over `.indexOf()` and `Array#some()` when chec
 description: |-
   Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1171,6 +1267,8 @@ displayName: Prefer reading a JSON file as a buffer
 description: |-
   Prefer reading a JSON file as a buffer.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-json-parse-buffer.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1195,6 +1293,8 @@ displayName: Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`
 description: |-
   Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1219,6 +1319,8 @@ displayName: Enforce the use of `Math.trunc()` instead of bitwise operators
 description: |-
   Enforce the use of `Math.trunc()` instead of bitwise operators.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1243,6 +1345,8 @@ displayName: Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.
 description: |-
   Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.replaceChild()`, prefer one of `.before()`, `.after()`, `.append()` or `.prepend()` over `insertAdjacentText()` and `insertAdjacentElement()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-dom-apis.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1267,6 +1371,8 @@ displayName: Prefer modern Math APIs over legacy patterns
 description: |-
   Prefer modern Math APIs over legacy patterns.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-math-apis.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1291,6 +1397,8 @@ displayName: Prefer JavaScript modules (ESM) over CommonJS
 description: |-
   Prefer JavaScript modules (ESM) over CommonJS.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-module.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1315,6 +1423,8 @@ displayName: Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` 
 description: |-
   Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-native-coercion-functions.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1339,6 +1449,8 @@ displayName: Prefer negative index over `.length - index` when possible
 description: |-
   Prefer negative index over `.length - index` when possible.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-negative-index.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1363,6 +1475,8 @@ displayName: Prefer using the `node:` protocol when importing Node.js builtin mo
 description: |-
   Prefer using the `node:` protocol when importing Node.js builtin modules.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-node-protocol.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1387,6 +1501,8 @@ displayName: Prefer `Number` static properties over global ones
 description: |-
   Prefer `Number` static properties over global ones.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-properties.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1411,6 +1527,8 @@ displayName: Prefer using `Object.fromEntries()` to transform a list of key-valu
 description: |-
   Prefer using `Object.fromEntries()` to transform a list of key-value pairs into an object.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-object-from-entries.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1435,6 +1553,8 @@ displayName: Prefer omitting the catch binding parameter
 description: |-
   Prefer omitting the catch binding parameter.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-optional-catch-binding.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1459,6 +1579,8 @@ displayName: Prefer borrowing methods from the prototype instead of the instance
 description: |-
   Prefer borrowing methods from the prototype instead of the instance.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-prototype-methods.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1483,6 +1605,8 @@ displayName: Prefer `.querySelector()` over `.getElementById()`, `.querySelector
 description: |-
   Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-query-selector.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1507,6 +1631,8 @@ displayName: Prefer `Reflect.apply()` over `Function#apply()`
 description: |-
   Prefer `Reflect.apply()` over `Function#apply()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-reflect-apply.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1531,6 +1657,8 @@ displayName: Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
 description: |-
   Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1555,6 +1683,8 @@ displayName: Prefer `Set#has()` over `Array#includes()` when checking for existe
 description: |-
   Prefer `Set#has()` over `Array#includes()` when checking for existence or non-existence.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-has.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1579,6 +1709,8 @@ displayName: Prefer using `Set#size` instead of `Array#length`
 description: |-
   Prefer using `Set#size` instead of `Array#length`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1603,6 +1735,8 @@ displayName: Prefer the spread operator over `Array.from()`, `Array#concat()`, `
 description: |-
   Prefer the spread operator over `Array.from()`, `Array#concat()`, `Array#{slice,toSpliced}()` and `String#split('')`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-spread.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1627,6 +1761,8 @@ displayName: Prefer `String#replaceAll()` over regex searches with the global fl
 description: |-
   Prefer `String#replaceAll()` over regex searches with the global flag.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1651,6 +1787,8 @@ displayName: Prefer `String#slice()` over `String#substr()` and `String#substrin
 description: |-
   Prefer `String#slice()` over `String#substr()` and `String#substring()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-slice.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1675,6 +1813,8 @@ displayName: Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#tes
 description: |-
   Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-starts-ends-with.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1699,6 +1839,8 @@ displayName: Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimL
 description: |-
   Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-trim-start-end.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1723,6 +1865,8 @@ displayName: Prefer `switch` over multiple `else-if`
 description: |-
   Prefer `switch` over multiple `else-if`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-switch.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1747,6 +1891,8 @@ displayName: Prefer ternary expressions over simple `if-else` statements
 description: |-
   Prefer ternary expressions over simple `if-else` statements.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-ternary.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1771,6 +1917,8 @@ displayName: Enforce throwing `TypeError` in type checking conditions
 description: |-
   Enforce throwing `TypeError` in type checking conditions.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-error.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1795,6 +1943,8 @@ displayName: Prevent abbreviations
 description: |-
   Prevent abbreviations.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1819,6 +1969,8 @@ displayName: Enforce consistent relative URL style
 description: |-
   Enforce consistent relative URL style.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/relative-url-style.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1843,6 +1995,8 @@ displayName: Enforce using the separator argument with `Array#join()`
 description: |-
   Enforce using the separator argument with `Array#join()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-join-separator.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1867,6 +2021,8 @@ displayName: Enforce using the digits argument with `Number#toFixed()`
 description: |-
   Enforce using the digits argument with `Number#toFixed()`.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-number-to-fixed-digits-argument.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1891,6 +2047,8 @@ displayName: Enforce better string content
 description: |-
   Enforce better string content.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/string-content.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1915,6 +2073,8 @@ displayName: Enforce consistent brace style for case clauses
 description: |-
   Enforce consistent brace style for case clauses.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/switch-case-braces.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1939,6 +2099,8 @@ displayName: Fix whitespace-insensitive template indentation
 description: |-
   Fix whitespace-insensitive template indentation.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/template-indent.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1963,6 +2125,8 @@ displayName: Enforce consistent case for text encoding identifiers
 description: |-
   Enforce consistent case for text encoding identifiers.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/text-encoding-identifier-case.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1987,6 +2151,8 @@ displayName: Require `new` when throwing an error
 description: |-
   Require `new` when throwing an error.
   See [rule details](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true

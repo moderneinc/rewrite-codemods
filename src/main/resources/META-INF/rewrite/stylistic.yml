@@ -18,6 +18,8 @@ name: org.openrewrite.codemods.format.RecommendedESLintStyling
 displayName: Recommended ESLint Styling
 description: |-
   Collection of stylistic ESLint rules that are recommended by the [ESLint Style.](https://eslint.style/).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -132,6 +134,8 @@ description: |-
   Enforce linebreaks after opening and before closing array brackets
 
   See [rule details](https://eslint.style/rules/default/array-bracket-newline).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -160,6 +164,8 @@ description: |-
   Enforce consistent spacing inside array brackets
 
   See [rule details](https://eslint.style/rules/default/array-bracket-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -188,6 +194,8 @@ description: |-
   Enforce line breaks after each array element
 
   See [rule details](https://eslint.style/rules/default/array-element-newline).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -216,6 +224,8 @@ description: |-
   Require parentheses around arrow function arguments
 
   See [rule details](https://eslint.style/rules/default/arrow-parens).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -244,6 +254,8 @@ description: |-
   Enforce consistent spacing before and after the arrow in arrow functions
 
   See [rule details](https://eslint.style/rules/default/arrow-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -272,6 +284,8 @@ description: |-
   Disallow or enforce spaces inside of blocks after opening block and before closing block
 
   See [rule details](https://eslint.style/rules/default/block-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -300,6 +314,8 @@ description: |-
   Enforce consistent brace style for blocks
 
   See [rule details](https://eslint.style/rules/default/brace-style).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -328,6 +344,8 @@ description: |-
   Require or disallow trailing commas
 
   See [rule details](https://eslint.style/rules/default/comma-dangle).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -356,6 +374,8 @@ description: |-
   Enforce consistent spacing before and after commas
 
   See [rule details](https://eslint.style/rules/default/comma-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -384,6 +404,8 @@ description: |-
   Enforce consistent comma style
 
   See [rule details](https://eslint.style/rules/default/comma-style).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -412,6 +434,8 @@ description: |-
   Enforce consistent spacing inside computed property brackets
 
   See [rule details](https://eslint.style/rules/default/computed-property-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -440,6 +464,8 @@ description: |-
   Enforce consistent newlines before and after dots
 
   See [rule details](https://eslint.style/rules/default/dot-location).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -468,6 +494,8 @@ description: |-
   Require or disallow newline at the end of files
 
   See [rule details](https://eslint.style/rules/default/eol-last).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -496,6 +524,8 @@ description: |-
   Require or disallow spacing between function identifiers and their invocations. Alias of &#x60;function-call-spacing&#x60;.
 
   See [rule details](https://eslint.style/rules/default/func-call-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -524,6 +554,8 @@ description: |-
   Enforce line breaks between arguments of a function call
 
   See [rule details](https://eslint.style/rules/default/function-call-argument-newline).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -552,6 +584,8 @@ description: |-
   Require or disallow spacing between function identifiers and their invocations
 
   See [rule details](https://eslint.style/rules/default/function-call-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -580,6 +614,8 @@ description: |-
   Enforce consistent line breaks inside function parentheses
 
   See [rule details](https://eslint.style/rules/default/function-paren-newline).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -608,6 +644,8 @@ description: |-
   Enforce consistent spacing around &#x60;*&#x60; operators in generator functions
 
   See [rule details](https://eslint.style/rules/default/generator-star-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -636,6 +674,8 @@ description: |-
   Enforce the location of arrow function bodies
 
   See [rule details](https://eslint.style/rules/default/implicit-arrow-linebreak).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -664,6 +704,8 @@ description: |-
   Enforce consistent indentation
 
   See [rule details](https://eslint.style/rules/default/indent).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -692,6 +734,8 @@ description: |-
   Indentation for binary operators
 
   See [rule details](https://eslint.style/rules/default/indent-binary-ops).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -720,6 +764,8 @@ description: |-
   Enforce closing bracket location in JSX
 
   See [rule details](https://eslint.style/rules/default/jsx-closing-bracket-location).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -748,6 +794,8 @@ description: |-
   Enforce closing tag location for multiline JSX
 
   See [rule details](https://eslint.style/rules/default/jsx-closing-tag-location).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -776,6 +824,8 @@ description: |-
   Disallow unnecessary JSX expressions when literals alone are sufficient or enforce JSX expressions on literals in JSX children or attributes
 
   See [rule details](https://eslint.style/rules/default/jsx-curly-brace-presence).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -804,6 +854,8 @@ description: |-
   Enforce consistent linebreaks in curly braces in JSX attributes and expressions
 
   See [rule details](https://eslint.style/rules/default/jsx-curly-newline).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -832,6 +884,8 @@ description: |-
   Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
 
   See [rule details](https://eslint.style/rules/default/jsx-curly-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -860,6 +914,8 @@ description: |-
   Enforce or disallow spaces around equal signs in JSX attributes
 
   See [rule details](https://eslint.style/rules/default/jsx-equals-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -888,6 +944,8 @@ description: |-
   Enforce proper position of the first property in JSX
 
   See [rule details](https://eslint.style/rules/default/jsx-first-prop-new-line).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -916,6 +974,8 @@ description: |-
   Enforce JSX indentation
 
   See [rule details](https://eslint.style/rules/default/jsx-indent).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -944,6 +1004,8 @@ description: |-
   Enforce props indentation in JSX
 
   See [rule details](https://eslint.style/rules/default/jsx-indent-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -972,6 +1034,8 @@ description: |-
   Enforce maximum of props on a single line in JSX
 
   See [rule details](https://eslint.style/rules/default/jsx-max-props-per-line).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1000,6 +1064,8 @@ description: |-
   Require or prevent a new line after jsx elements and expressions.
 
   See [rule details](https://eslint.style/rules/default/jsx-newline).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1028,6 +1094,8 @@ description: |-
   Require one JSX element per line
 
   See [rule details](https://eslint.style/rules/default/jsx-one-expression-per-line).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1056,6 +1124,8 @@ description: |-
   Enforce PascalCase for user-defined JSX components
 
   See [rule details](https://eslint.style/rules/default/jsx-pascal-case).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1084,6 +1154,8 @@ description: |-
   Disallow multiple spaces between inline JSX props
 
   See [rule details](https://eslint.style/rules/default/jsx-props-no-multi-spaces).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1112,6 +1184,8 @@ description: |-
   Enforce the consistent use of either double or single quotes in JSX attributes
 
   See [rule details](https://eslint.style/rules/default/jsx-quotes).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1140,6 +1214,8 @@ description: |-
   Disallow extra closing tags for components without children
 
   See [rule details](https://eslint.style/rules/default/jsx-self-closing-comp).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1168,6 +1244,8 @@ description: |-
   Enforce props alphabetical sorting
 
   See [rule details](https://eslint.style/rules/default/jsx-sort-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1196,6 +1274,8 @@ description: |-
   Enforce whitespace in and around the JSX opening and closing brackets
 
   See [rule details](https://eslint.style/rules/default/jsx-tag-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1224,6 +1304,8 @@ description: |-
   Disallow missing parentheses around multiline JSX
 
   See [rule details](https://eslint.style/rules/default/jsx-wrap-multilines).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1252,6 +1334,8 @@ description: |-
   Enforce consistent spacing between keys and values in object literal properties
 
   See [rule details](https://eslint.style/rules/default/key-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1280,6 +1364,8 @@ description: |-
   Enforce consistent spacing before and after keywords
 
   See [rule details](https://eslint.style/rules/default/keyword-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1308,6 +1394,8 @@ description: |-
   Enforce consistent linebreak style
 
   See [rule details](https://eslint.style/rules/default/linebreak-style).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1336,6 +1424,8 @@ description: |-
   Require empty lines around comments
 
   See [rule details](https://eslint.style/rules/default/lines-around-comment).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1364,6 +1454,8 @@ description: |-
   Require or disallow an empty line between class members
 
   See [rule details](https://eslint.style/rules/default/lines-between-class-members).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1392,6 +1484,8 @@ description: |-
   Require a specific member delimiter style for interfaces and type literals
 
   See [rule details](https://eslint.style/rules/default/member-delimiter-style).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1420,6 +1514,8 @@ description: |-
   Enforce newlines between operands of ternary expressions
 
   See [rule details](https://eslint.style/rules/default/multiline-ternary).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1448,6 +1544,8 @@ description: |-
   Enforce or disallow parentheses when invoking a constructor with no arguments
 
   See [rule details](https://eslint.style/rules/default/new-parens).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1476,6 +1574,8 @@ description: |-
   Require a newline after each call in a method chain
 
   See [rule details](https://eslint.style/rules/default/newline-per-chained-call).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1504,6 +1604,8 @@ description: |-
   Disallow arrow functions where they could be confused with comparisons
 
   See [rule details](https://eslint.style/rules/default/no-confusing-arrow).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1532,6 +1634,8 @@ description: |-
   Disallow unnecessary parentheses
 
   See [rule details](https://eslint.style/rules/default/no-extra-parens).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1560,6 +1664,8 @@ description: |-
   Disallow unnecessary semicolons
 
   See [rule details](https://eslint.style/rules/default/no-extra-semi).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1588,6 +1694,8 @@ description: |-
   Disallow leading or trailing decimal points in numeric literals
 
   See [rule details](https://eslint.style/rules/default/no-floating-decimal).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1616,6 +1724,8 @@ description: |-
   Disallow multiple spaces
 
   See [rule details](https://eslint.style/rules/default/no-multi-spaces).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1644,6 +1754,8 @@ description: |-
   Disallow multiple empty lines
 
   See [rule details](https://eslint.style/rules/default/no-multiple-empty-lines).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1672,6 +1784,8 @@ description: |-
   Disallow trailing whitespace at the end of lines
 
   See [rule details](https://eslint.style/rules/default/no-trailing-spaces).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1700,6 +1814,8 @@ description: |-
   Disallow whitespace before properties
 
   See [rule details](https://eslint.style/rules/default/no-whitespace-before-property).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1728,6 +1844,8 @@ description: |-
   Enforce the location of single-line statements
 
   See [rule details](https://eslint.style/rules/default/nonblock-statement-body-position).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1756,6 +1874,8 @@ description: |-
   Enforce consistent line breaks after opening and before closing braces
 
   See [rule details](https://eslint.style/rules/default/object-curly-newline).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1784,6 +1904,8 @@ description: |-
   Enforce consistent spacing inside braces
 
   See [rule details](https://eslint.style/rules/default/object-curly-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1812,6 +1934,8 @@ description: |-
   Enforce placing object properties on separate lines
 
   See [rule details](https://eslint.style/rules/default/object-property-newline).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1840,6 +1964,8 @@ description: |-
   Require or disallow newlines around variable declarations
 
   See [rule details](https://eslint.style/rules/default/one-var-declaration-per-line).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1868,6 +1994,8 @@ description: |-
   Enforce consistent linebreak style for operators
 
   See [rule details](https://eslint.style/rules/default/operator-linebreak).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1896,6 +2024,8 @@ description: |-
   Require or disallow padding within blocks
 
   See [rule details](https://eslint.style/rules/default/padded-blocks).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1924,6 +2054,8 @@ description: |-
   Require or disallow padding lines between statements
 
   See [rule details](https://eslint.style/rules/default/padding-line-between-statements).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1952,6 +2084,8 @@ description: |-
   Require quotes around object literal property names
 
   See [rule details](https://eslint.style/rules/default/quote-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -1980,6 +2114,8 @@ description: |-
   Enforce the consistent use of either backticks, double, or single quotes
 
   See [rule details](https://eslint.style/rules/default/quotes).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2008,6 +2144,8 @@ description: |-
   Enforce spacing between rest and spread operators and their expressions
 
   See [rule details](https://eslint.style/rules/default/rest-spread-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2036,6 +2174,8 @@ description: |-
   Require or disallow semicolons instead of ASI
 
   See [rule details](https://eslint.style/rules/default/semi).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2064,6 +2204,8 @@ description: |-
   Enforce consistent spacing before and after semicolons
 
   See [rule details](https://eslint.style/rules/default/semi-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2092,6 +2234,8 @@ description: |-
   Enforce location of semicolons
 
   See [rule details](https://eslint.style/rules/default/semi-style).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2120,6 +2264,8 @@ description: |-
   Enforce consistent spacing before blocks
 
   See [rule details](https://eslint.style/rules/default/space-before-blocks).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2148,6 +2294,8 @@ description: |-
   Enforce consistent spacing before &#x60;function&#x60; definition opening parenthesis
 
   See [rule details](https://eslint.style/rules/default/space-before-function-paren).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2176,6 +2324,8 @@ description: |-
   Enforce consistent spacing inside parentheses
 
   See [rule details](https://eslint.style/rules/default/space-in-parens).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2204,6 +2354,8 @@ description: |-
   Require spacing around infix operators
 
   See [rule details](https://eslint.style/rules/default/space-infix-ops).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2232,6 +2384,8 @@ description: |-
   Enforce consistent spacing before or after unary operators
 
   See [rule details](https://eslint.style/rules/default/space-unary-ops).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2260,6 +2414,8 @@ description: |-
   Enforce consistent spacing after the &#x60;//&#x60; or &#x60;/*&#x60; in a comment
 
   See [rule details](https://eslint.style/rules/default/spaced-comment).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2288,6 +2444,8 @@ description: |-
   Enforce spacing around colons of switch statements
 
   See [rule details](https://eslint.style/rules/default/switch-colon-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2316,6 +2474,8 @@ description: |-
   Require or disallow spacing around embedded expressions of template strings
 
   See [rule details](https://eslint.style/rules/default/template-curly-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2344,6 +2504,8 @@ description: |-
   Require or disallow spacing between template tags and their literals
 
   See [rule details](https://eslint.style/rules/default/template-tag-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2372,6 +2534,8 @@ description: |-
   Require consistent spacing around type annotations
 
   See [rule details](https://eslint.style/rules/default/type-annotation-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2400,6 +2564,8 @@ description: |-
   Enforces consistent spacing inside TypeScript type generics
 
   See [rule details](https://eslint.style/rules/default/type-generic-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2428,6 +2594,8 @@ description: |-
   Expect space before the type declaration in the named tuple
 
   See [rule details](https://eslint.style/rules/default/type-named-tuple-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2456,6 +2624,8 @@ description: |-
   Require parentheses around immediate &#x60;function&#x60; invocations
 
   See [rule details](https://eslint.style/rules/default/wrap-iife).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2484,6 +2654,8 @@ description: |-
   Require parenthesis around regex literals
 
   See [rule details](https://eslint.style/rules/default/wrap-regex).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic
@@ -2512,6 +2684,8 @@ description: |-
   Require or disallow spacing around the &#x60;*&#x60; in &#x60;yield*&#x60; expressions
 
   See [rule details](https://eslint.style/rules/default/yield-star-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - eslint
   - stylistic

@@ -23,6 +23,8 @@ name: org.openrewrite.codemods.ecmascript.ESLintTypeScriptDefaults
 displayName: Lint TypeScript code using ESLint
 description: >-
   The default config includes the `@typescript-eslint` plugin and the corresponding `plugin:@typescript-eslint/recommended` extend.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - eslint
@@ -42,6 +44,8 @@ name: org.openrewrite.codemods.ecmascript.ESLintTypeScriptPrettier
 displayName: Format TypeScript using ESLint Prettier plugin
 description: >-
   Formats all TypeScript source code using the ESLint Prettier plugin.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - eslint
@@ -62,6 +66,8 @@ name: org.openrewrite.codemods.ecmascript.5to6.cjsToEsm
 displayName: Transform CommonJS style `require()` calls to ES6 `import` statements
 description: >-
   Transform CommonJS style `require()` calls to ES6 `import` statements.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - 5to6
@@ -76,6 +82,8 @@ name: org.openrewrite.codemods.ecmascript.5to6.amdToEsm
 displayName: Transform AMD style `define()` calls to ES6 `import` statements
 description: >-
   Transform AMD style `define()` calls to ES6 `import` statements.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - 5to6
@@ -88,6 +96,8 @@ name: org.openrewrite.codemods.ecmascript.5to6.noStrict
 displayName: Remove "use strict" directives
 description: >-
   Remove "use strict" directives.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - 5to6
@@ -100,6 +110,8 @@ name: org.openrewrite.codemods.ecmascript.5to6.namedExportGeneration
 displayName: Generate named exports from CommonJS modules
 description: >-
   Generate named exports from CommonJS modules.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - 5to6
@@ -112,6 +124,8 @@ name: org.openrewrite.codemods.ecmascript.5to6.varToLet
 displayName: Convert `var` to `let`
 description: >-
   Convert `var` to `let`.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - 5to6
@@ -124,6 +138,8 @@ name: org.openrewrite.codemods.ecmascript.5to6.simpleArrow
 displayName: Replace all function expressions with only `return` statement with simple arrow
 description: >-
   Replace all function expressions with only `return` statement with simple arrow function.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - 5to6
@@ -136,6 +152,8 @@ name: org.openrewrite.codemods.ecmascript.5to6.ECMAScript6BestPractices
 displayName: Upgrade ECMAScript 5 to ECMAScript 6
 description: >-
   A collection of common ECMAScript 5 to ECMAScript 6 updates.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - 5to6

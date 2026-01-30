@@ -18,6 +18,8 @@ name: org.openrewrite.codemods.migrate.mui.All
 displayName: Combination of all deprecations
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#all).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -32,6 +34,8 @@ name: org.openrewrite.codemods.migrate.mui.SxProp
 displayName: Update the usage of the `sx` prop to be compatible with `@pigment-css/react`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#sx-prop).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -46,6 +50,8 @@ name: org.openrewrite.codemods.migrate.mui.SystemProps
 displayName: Remove system props and add them to the `sx` prop
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#system-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -60,6 +66,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeV
 displayName: Update the theme creation from `@mui/system@v5` to be compatible with `@pigment-css/react`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-v6).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -74,6 +82,8 @@ name: org.openrewrite.codemods.migrate.mui.Styled
 displayName: Updates the usage of `styled` from `@mui/system@v5` to be compatible with` @pigment-css/react`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#styled).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -88,6 +98,8 @@ name: org.openrewrite.codemods.migrate.mui.GridVProps
 displayName: Updates the usage of the `@mui/material/Grid2`, `@mui/system/Grid`, and `@mui/joy/Grid` components to their updated APIs
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#grid-v2-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -102,6 +114,8 @@ name: org.openrewrite.codemods.migrate.mui.AdapterV
 displayName: Converts components to use the v4 adapter module
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#adapter-v4).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -116,6 +130,8 @@ name: org.openrewrite.codemods.migrate.mui.AutocompleteRenameCloseicon
 displayName: Renames `closeIcon` prop to `closeButtonIcon`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#autocomplete-rename-closeicon).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -130,6 +146,8 @@ name: org.openrewrite.codemods.migrate.mui.AutocompleteRenameOption
 displayName: Renames `option` prop to `getOptionLabel`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#autocomplete-rename-option).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -144,6 +162,8 @@ name: org.openrewrite.codemods.migrate.mui.AvatarCircleCircular
 displayName: Updates `circle` prop to `variant="circular"`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#avatar-circle-circular).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -158,6 +178,8 @@ name: org.openrewrite.codemods.migrate.mui.BadgeOverlapValue
 displayName: Updates `overlap` prop to `variant="dot"`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#badge-overlap-value).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -172,6 +194,8 @@ name: org.openrewrite.codemods.migrate.mui.BaseHookImports
 displayName: Converts base imports to use React hooks
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#base-hook-imports).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -186,6 +210,8 @@ name: org.openrewrite.codemods.migrate.mui.BaseRemoveComponentProp
 displayName: Removes `component` prop from base components
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#base-remove-component-prop).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -200,6 +226,8 @@ name: org.openrewrite.codemods.migrate.mui.BaseRemoveUnstyledSuffix
 displayName: Removes `Unstyled` suffix from base components
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#base-remove-unstyled-suffix).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -214,6 +242,8 @@ name: org.openrewrite.codemods.migrate.mui.BaseRenameComponentsToSlots
 displayName: Renames base components to slots
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#base-rename-components-to-slots).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -228,6 +258,8 @@ name: org.openrewrite.codemods.migrate.mui.BaseUseNamedExports
 displayName: Updates base imports to use named exports
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#base-use-named-exports).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -242,6 +274,8 @@ name: org.openrewrite.codemods.migrate.mui.BoxBorderradiusValues
 displayName: Updates `borderRadius` prop values
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#box-borderradius-values).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -256,6 +290,8 @@ name: org.openrewrite.codemods.migrate.mui.BoxRenameCss
 displayName: Renames CSS properties for Box component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#box-rename-css).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -270,6 +306,8 @@ name: org.openrewrite.codemods.migrate.mui.BoxRenameGap
 displayName: Renames `gap` prop to `spacing`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#box-rename-gap).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -284,6 +322,8 @@ name: org.openrewrite.codemods.migrate.mui.BoxSxProp
 displayName: Converts `sx` prop to `sx` style prop
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#box-sx-prop).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -298,6 +338,8 @@ name: org.openrewrite.codemods.migrate.mui.ButtonColorProp
 displayName: Renames `color` prop to `colorOverride`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#button-color-prop).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -312,6 +354,8 @@ name: org.openrewrite.codemods.migrate.mui.ChipVariantProp
 displayName: Updates `variant` prop for Chip component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#chip-variant-prop).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -326,6 +370,8 @@ name: org.openrewrite.codemods.migrate.mui.CircularprogressVariant
 displayName: Updates `variant` prop for CircularProgress component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#circularprogress-variant).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -340,6 +386,8 @@ name: org.openrewrite.codemods.migrate.mui.CollapseRenameCollapsedheight
 displayName: Renames `collapsedHeight` prop to `transitionCollapsedHeight`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#collapse-rename-collapsedheight).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -354,6 +402,8 @@ name: org.openrewrite.codemods.migrate.mui.ComponentRenameProp
 displayName: Renames `component` prop to `as`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#component-rename-prop).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -368,6 +418,8 @@ name: org.openrewrite.codemods.migrate.mui.CoreStylesImport
 displayName: Updates import paths for core styles
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#core-styles-import).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -382,6 +434,8 @@ name: org.openrewrite.codemods.migrate.mui.CreateTheme
 displayName: Updates createMuiTheme usage
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#create-theme).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -396,6 +450,8 @@ name: org.openrewrite.codemods.migrate.mui.DatePickersMovedToX
 displayName: Moves date pickers to `@mui/x-date-picker`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#date-pickers-moved-to-x).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -410,6 +466,8 @@ name: org.openrewrite.codemods.migrate.mui.DialogProps
 displayName: Updates props for Dialog component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#dialog-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -424,6 +482,8 @@ name: org.openrewrite.codemods.migrate.mui.DialogTitleProps
 displayName: Updates props for DialogTitle component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#dialog-title-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -438,6 +498,8 @@ name: org.openrewrite.codemods.migrate.mui.EmotionPrependCache
 displayName: Prepends emotion cache
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#emotion-prepend-cache).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -452,6 +514,8 @@ name: org.openrewrite.codemods.migrate.mui.ExpansionPanelComponent
 displayName: Converts ExpansionPanel to use ExpansionPanel component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#expansion-panel-component).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -466,6 +530,8 @@ name: org.openrewrite.codemods.migrate.mui.FabVariant
 displayName: Updates `variant` prop for Fab component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#fab-variant).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -480,6 +546,8 @@ name: org.openrewrite.codemods.migrate.mui.FadeRenameAlpha
 displayName: Renames `alpha` prop to `opacity`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#fade-rename-alpha).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -494,6 +562,8 @@ name: org.openrewrite.codemods.migrate.mui.GridJustifyJustifycontent
 displayName: Updates `justify` prop to `justifyContent` for Grid component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#grid-justify-justifycontent).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -508,6 +578,8 @@ name: org.openrewrite.codemods.migrate.mui.GridListComponent
 displayName: Converts GridList to use Grid component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#grid-list-component).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -522,6 +594,8 @@ name: org.openrewrite.codemods.migrate.mui.HiddenDownProps
 displayName: Updates `down` prop for Hidden component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#hidden-down-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -536,6 +610,8 @@ name: org.openrewrite.codemods.migrate.mui.IconButtonSize
 displayName: Updates `size` prop for IconButton component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#icon-button-size).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -550,6 +626,8 @@ name: org.openrewrite.codemods.migrate.mui.JoyAvatarRemoveImgprops
 displayName: Removes `imgProps` prop from Avatar component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#joy-avatar-remove-imgProps).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -564,6 +642,8 @@ name: org.openrewrite.codemods.migrate.mui.JoyRenameClassnamePrefix
 displayName: Renames `Mui` classname prefix
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#joy-rename-classname-prefix).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -578,6 +658,8 @@ name: org.openrewrite.codemods.migrate.mui.JoyRenameComponentsToSlots
 displayName: Renames components to slots
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#joy-rename-components-to-slots).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -592,6 +674,8 @@ name: org.openrewrite.codemods.migrate.mui.JoyRenameRowProp
 displayName: Renames `row` prop to `flexDirection="row"`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#joy-rename-row-prop).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -606,6 +690,8 @@ name: org.openrewrite.codemods.migrate.mui.JoyTextFieldToInput
 displayName: Renames `TextField` to `Input`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#joy-text-field-to-input).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -620,6 +706,8 @@ name: org.openrewrite.codemods.migrate.mui.JssToStyled
 displayName: Converts JSS styles to styled-components
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#jss-to-styled).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -634,6 +722,8 @@ name: org.openrewrite.codemods.migrate.mui.JssToTssReact
 displayName: Converts JSS to TypeScript in React components
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#jss-to-tss-react).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -648,6 +738,8 @@ name: org.openrewrite.codemods.migrate.mui.LinkUnderlineHover
 displayName: Updates link underline on hover
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#link-underline-hover).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -662,6 +754,8 @@ name: org.openrewrite.codemods.migrate.mui.MaterialUiStyles
 displayName: Updates usage of `@mui/styles`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#material-ui-styles).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -676,6 +770,8 @@ name: org.openrewrite.codemods.migrate.mui.MaterialUiTypes
 displayName: Updates usage of `@mui/types`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#material-ui-types).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -690,6 +786,8 @@ name: org.openrewrite.codemods.migrate.mui.ModalProps
 displayName: Updates props for Modal component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#modal-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -704,6 +802,8 @@ name: org.openrewrite.codemods.migrate.mui.MovedLabModules
 displayName: Moves lab modules to `@mui/material`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#moved-lab-modules).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -718,6 +818,8 @@ name: org.openrewrite.codemods.migrate.mui.MuiReplace
 displayName: Replaces `@mui` imports with `@mui/material`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#mui-replace).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -732,6 +834,8 @@ name: org.openrewrite.codemods.migrate.mui.OptimalImports
 displayName: Optimizes imports
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#optimal-imports).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -746,6 +850,8 @@ name: org.openrewrite.codemods.migrate.mui.PaginationRoundCircular
 displayName: Updates `circular` prop to `variant="circular"`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#pagination-round-circular).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -760,6 +866,8 @@ name: org.openrewrite.codemods.migrate.mui.PresetSafe
 displayName: Ensures presets are safe to use
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#preset-safe).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -774,6 +882,8 @@ name: org.openrewrite.codemods.migrate.mui.RenameCssVariables
 displayName: Renames CSS variables
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#rename-css-variables).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -788,6 +898,8 @@ name: org.openrewrite.codemods.migrate.mui.RootRef
 displayName: Converts `rootRef` to `ref`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#root-ref).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -802,6 +914,8 @@ name: org.openrewrite.codemods.migrate.mui.SkeletonVariant
 displayName: Updates `variant` prop for Skeleton component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#skeleton-variant).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -816,6 +930,8 @@ name: org.openrewrite.codemods.migrate.mui.StyledEngineProvider
 displayName: Updates usage of styled engine provider
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#styled-engine-provider).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -830,6 +946,8 @@ name: org.openrewrite.codemods.migrate.mui.TableProps
 displayName: Updates props for Table component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#table-props).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -844,6 +962,8 @@ name: org.openrewrite.codemods.migrate.mui.TabsScrollButtons
 displayName: Updates scroll buttons for Tabs component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#tabs-scroll-buttons).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -858,6 +978,8 @@ name: org.openrewrite.codemods.migrate.mui.TextareaMinmaxRows
 displayName: Updates `minRows` and `maxRows` props for TextareaAutosize component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#textarea-minmax-rows).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -872,6 +994,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeAugment
 displayName: Adds `DefaultTheme` module augmentation to typescript projects
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-augment).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -886,6 +1010,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeBreakpointsWidth
 displayName: Updates `width` values for theme breakpoints
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-breakpoints-width).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -900,6 +1026,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeBreakpoints
 displayName: Updates theme breakpoints
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-breakpoints).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -914,6 +1042,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeOptions
 displayName: Updates theme options
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-options).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -928,6 +1058,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemePaletteMode
 displayName: Updates theme palette mode
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-palette-mode).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -942,6 +1074,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeProvider
 displayName: Updates usage of ThemeProvider
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-provider).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -956,6 +1090,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeSpacing
 displayName: Updates theme spacing
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-spacing).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -970,6 +1106,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeTypographyRound
 displayName: Updates `round` values for theme typography
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-typography-round).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -984,6 +1122,8 @@ name: org.openrewrite.codemods.migrate.mui.TopLevelImports
 displayName: Converts all `@mui/material` submodule imports to the root module
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#top-level-imports).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -998,6 +1138,8 @@ name: org.openrewrite.codemods.migrate.mui.Transitions
 displayName: Updates usage of transitions
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#transitions).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -1012,6 +1154,8 @@ name: org.openrewrite.codemods.migrate.mui.TreeViewMovedToX
 displayName: Moves tree view to `@mui/x-tree-view`
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#tree-view-moved-to-x).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -1026,6 +1170,8 @@ name: org.openrewrite.codemods.migrate.mui.UseAutocomplete
 displayName: Updates usage of useAutocomplete
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#use-autocomplete).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -1040,6 +1186,8 @@ name: org.openrewrite.codemods.migrate.mui.UseTransitionprops
 displayName: Updates usage of useTransitionProps
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#use-transitionprops).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -1054,6 +1202,8 @@ name: org.openrewrite.codemods.migrate.mui.VariantProp
 displayName: Updates `variant` prop usage
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#variant-prop).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -1068,6 +1218,8 @@ name: org.openrewrite.codemods.migrate.mui.WithMobileDialog
 displayName: Updates withMobileDialog higher-order component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#with-mobile-dialog).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -1082,6 +1234,8 @@ name: org.openrewrite.codemods.migrate.mui.WithWidth
 displayName: Updates withWidth higher-order component
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#with-width).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -1096,6 +1250,8 @@ name: org.openrewrite.codemods.migrate.mui.OptimalImports
 displayName: Optimizes imports
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#optimal-imports).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui
@@ -1110,6 +1266,8 @@ name: org.openrewrite.codemods.migrate.mui.ThemeSpacingApi
 displayName: Updates theme spacing API
 description: >-
   See Material UI codemod projects for more [details](https://github.com/mui/material-ui/tree/master/packages/mui-codemod#theme-spacing-api).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - material-ui

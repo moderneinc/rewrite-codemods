@@ -18,6 +18,8 @@ name: org.openrewrite.codemods.cleanup.vue.RecommendedVueCodeCleanup
 displayName: Recommended vue code cleanup
 description: |-
   Collection of cleanup ESLint rules from [eslint-plugin-vue](https://eslint.vuejs.org/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -109,6 +111,8 @@ displayName: Enforce order of attributes
 description: |-
   Enforce order of attributes
   See rule details for [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -145,6 +149,8 @@ displayName: Enforce order of component top-level elements
 description: |-
   Enforce order of component top-level elements
   See rule details for [vue/component-tags-order](https://eslint.vuejs.org/rules/component-tags-order.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -181,6 +187,8 @@ displayName: Enforce order of properties in components
 description: |-
   Enforce order of properties in components
   See rule details for [vue/order-in-components](https://eslint.vuejs.org/rules/order-in-components.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -217,6 +225,8 @@ displayName: Disallow usage of this in template
 description: |-
   Disallow usage of this in template
   See rule details for [vue/this-in-template](https://eslint.vuejs.org/rules/this-in-template.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -253,6 +263,8 @@ displayName: Enforce order of component top-level elements
 description: |-
   Enforce order of component top-level elements
   See rule details for [vue/block-order](https://eslint.vuejs.org/rules/block-order.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -289,6 +301,8 @@ displayName: Enforce line breaks after opening and before closing block-level ta
 description: |-
   Enforce line breaks after opening and before closing block-level tags
   See rule details for [vue/block-tag-newline](https://eslint.vuejs.org/rules/block-tag-newline.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -325,6 +339,8 @@ displayName: Enforce specific casing for the component naming style in template
 description: |-
   Enforce specific casing for the component naming style in template
   See rule details for [vue/component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -361,6 +377,8 @@ displayName: Enforce the casing of component name in components options
 description: |-
   Enforce the casing of component name in components options
   See rule details for [vue/component-options-name-casing](https://eslint.vuejs.org/rules/component-options-name-casing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -397,6 +415,8 @@ displayName: Enforce order of defineEmits and defineProps compiler macros
 description: |-
   Enforce order of defineEmits and defineProps compiler macros
   See rule details for [vue/define-macros-order](https://eslint.vuejs.org/rules/define-macros-order.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -433,6 +453,8 @@ displayName: Enforce unified line brake in HTML comments
 description: |-
   Enforce unified line brake in HTML comments
   See rule details for [vue/html-comment-content-newline](https://eslint.vuejs.org/rules/html-comment-content-newline.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -469,6 +491,8 @@ displayName: Enforce unified spacing in HTML comments
 description: |-
   Enforce unified spacing in HTML comments
   See rule details for [vue/html-comment-content-spacing](https://eslint.vuejs.org/rules/html-comment-content-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -505,6 +529,8 @@ displayName: Enforce consistent indentation in HTML comments
 description: |-
   Enforce consistent indentation in HTML comments
   See rule details for [vue/html-comment-indent](https://eslint.vuejs.org/rules/html-comment-indent.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -541,6 +567,8 @@ displayName: Enforce new lines between multi-line properties in Vue components
 description: |-
   Enforce new lines between multi-line properties in Vue components
   See rule details for [vue/new-line-between-multi-line-property](https://eslint.vuejs.org/rules/new-line-between-multi-line-property.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -577,6 +605,8 @@ displayName: Enforce Promise or callback style in nextTick
 description: |-
   Enforce Promise or callback style in nextTick
   See rule details for [vue/next-tick-style](https://eslint.vuejs.org/rules/next-tick-style.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -613,6 +643,8 @@ displayName: Enforce props with default values to be optional
 description: |-
   Enforce props with default values to be optional
   See rule details for [vue/no-required-prop-with-default](https://eslint.vuejs.org/rules/no-required-prop-with-default.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -649,6 +681,8 @@ displayName: Disallow unsupported Vue.js syntax on the specified version
 description: |-
   Disallow unsupported Vue.js syntax on the specified version
   See rule details for [vue/no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -685,6 +719,8 @@ displayName: Disallow unnecessary mustache interpolations
 description: |-
   Disallow unnecessary mustache interpolations
   See rule details for [vue/no-useless-mustaches](https://eslint.vuejs.org/rules/no-useless-mustaches.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -721,6 +757,8 @@ displayName: Disallow unnecessary v-bind directives
 description: |-
   Disallow unnecessary v-bind directives
   See rule details for [vue/no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -757,6 +795,8 @@ displayName: Require or disallow padding lines between blocks
 description: |-
   Require or disallow padding lines between blocks
   See rule details for [vue/padding-line-between-blocks](https://eslint.vuejs.org/rules/padding-line-between-blocks.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -793,6 +833,8 @@ displayName: Require or disallow newlines between sibling tags in template
 description: |-
   Require or disallow newlines between sibling tags in template
   See rule details for [vue/padding-line-between-tags](https://eslint.vuejs.org/rules/padding-line-between-tags.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -829,6 +871,8 @@ displayName: Require or disallow padding lines in component definition
 description: |-
   Require or disallow padding lines in component definition
   See rule details for [vue/padding-lines-in-component-definition](https://eslint.vuejs.org/rules/padding-lines-in-component-definition.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -865,6 +909,8 @@ displayName: Enforce use of defineOptions instead of default export
 description: |-
   Enforce use of defineOptions instead of default export.
   See rule details for [vue/prefer-define-options](https://eslint.vuejs.org/rules/prefer-define-options.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -901,6 +947,8 @@ displayName: Require static class names in template to be in a separate class at
 description: |-
   Require static class names in template to be in a separate class attribute
   See rule details for [vue/prefer-separate-static-class](https://eslint.vuejs.org/rules/prefer-separate-static-class.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -937,6 +985,8 @@ displayName: Enforce consistent indentation in `<script>`
 description: |-
   Enforce consistent indentation in `<script>`
   See rule details for [vue/script-indent](https://eslint.vuejs.org/rules/script-indent.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -973,6 +1023,8 @@ displayName: Enforce static class names order
 description: |-
   Enforce static class names order
   See rule details for [vue/static-class-names-order](https://eslint.vuejs.org/rules/static-class-names-order.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1009,6 +1061,8 @@ displayName: Enforce v-for directive's delimiter style
 description: |-
   Enforce v-for directive's delimiter style
   See rule details for [vue/v-for-delimiter-style](https://eslint.vuejs.org/rules/v-for-delimiter-style.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1045,6 +1099,8 @@ displayName: Require key attribute for conditionally rendered repeated component
 description: |-
   Require key attribute for conditionally rendered repeated components
   See rule details for [vue/v-if-else-key](https://eslint.vuejs.org/rules/v-if-else-key.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1081,6 +1137,8 @@ displayName: Enforce writing style for handlers in v-on directives
 description: |-
   Enforce writing style for handlers in v-on directives
   See rule details for [vue/v-on-handler-style](https://eslint.vuejs.org/rules/v-on-handler-style.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1117,6 +1175,8 @@ displayName: Enforce linebreaks after opening and before closing array brackets 
 description: |-
   Enforce linebreaks after opening and before closing array brackets in `<template>`
   See rule details for [vue/array-bracket-newline](https://eslint.vuejs.org/rules/array-bracket-newline.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1153,6 +1213,8 @@ displayName: Enforce consistent spacing inside array brackets in `<template>`
 description: |-
   Enforce consistent spacing inside array brackets in `<template>`
   See rule details for [vue/array-bracket-spacing](https://eslint.vuejs.org/rules/array-bracket-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1189,6 +1251,8 @@ displayName: Enforce line breaks after each array element in `<template>`
 description: |-
   Enforce line breaks after each array element in `<template>`
   See rule details for [vue/array-element-newline](https://eslint.vuejs.org/rules/array-element-newline.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1225,6 +1289,8 @@ displayName: Enforce consistent spacing before and after the arrow in arrow func
 description: |-
   Enforce consistent spacing before and after the arrow in arrow functions in `<template>`
   See rule details for [vue/arrow-spacing](https://eslint.vuejs.org/rules/arrow-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1261,6 +1327,8 @@ displayName: Disallow or enforce spaces inside of blocks after opening block and
 description: |-
   Disallow or enforce spaces inside of blocks after opening block and before closing block in `<template>`
   See rule details for [vue/block-spacing](https://eslint.vuejs.org/rules/block-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1297,6 +1365,8 @@ displayName: Enforce consistent brace style for blocks in `<template>`
 description: |-
   Enforce consistent brace style for blocks in `<template>`
   See rule details for [vue/brace-style](https://eslint.vuejs.org/rules/brace-style.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1333,6 +1403,8 @@ displayName: Require or disallow trailing commas in `<template>`
 description: |-
   Require or disallow trailing commas in `<template>`
   See rule details for [vue/comma-dangle](https://eslint.vuejs.org/rules/comma-dangle.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1369,6 +1441,8 @@ displayName: Enforce consistent spacing before and after commas in `<template>`
 description: |-
   Enforce consistent spacing before and after commas in `<template>`
   See rule details for [vue/comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1405,6 +1479,8 @@ displayName: Enforce consistent comma style in `<template>`
 description: |-
   Enforce consistent comma style in `<template>`
   See rule details for [vue/comma-style](https://eslint.vuejs.org/rules/comma-style.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1441,6 +1517,8 @@ displayName: Enforce consistent newlines before and after dots in `<template>`
 description: |-
   Enforce consistent newlines before and after dots in `<template>`
   See rule details for [vue/dot-location](https://eslint.vuejs.org/rules/dot-location.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1477,6 +1555,8 @@ displayName: Enforce dot notation whenever possible in `<template>`
 description: |-
   Enforce dot notation whenever possible in `<template>`
   See rule details for [vue/dot-notation](https://eslint.vuejs.org/rules/dot-notation.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1513,6 +1593,8 @@ displayName: Require the use of === and !== in `<template>`
 description: |-
   Require the use of === and !== in `<template>`
   See rule details for [vue/eqeqeq](https://eslint.vuejs.org/rules/eqeqeq.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1549,6 +1631,8 @@ displayName: Require or disallow spacing between function identifiers and their 
 description: |-
   Require or disallow spacing between function identifiers and their invocations in `<template>`
   See rule details for [vue/func-call-spacing](https://eslint.vuejs.org/rules/func-call-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1585,6 +1669,8 @@ displayName: Enforce consistent spacing between keys and values in object litera
 description: |-
   Enforce consistent spacing between keys and values in object literal properties in `<template>`
   See rule details for [vue/key-spacing](https://eslint.vuejs.org/rules/key-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1621,6 +1707,8 @@ displayName: Enforce consistent spacing before and after keywords in `<template>
 description: |-
   Enforce consistent spacing before and after keywords in `<template>`
   See rule details for [vue/keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1657,6 +1745,8 @@ displayName: Enforce newlines between operands of ternary expressions in `<templ
 description: |-
   Enforce newlines between operands of ternary expressions in `<template>`
   See rule details for [vue/multiline-ternary](https://eslint.vuejs.org/rules/multiline-ternary.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1693,6 +1783,8 @@ displayName: Disallow unnecessary parentheses in `<template>`
 description: |-
   Disallow unnecessary parentheses in `<template>`
   See rule details for [vue/no-extra-parens](https://eslint.vuejs.org/rules/no-extra-parens.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1729,6 +1821,8 @@ displayName: Enforce consistent line breaks after opening and before closing bra
 description: |-
   Enforce consistent line breaks after opening and before closing braces in `<template>`
   See rule details for [vue/object-curly-newline](https://eslint.vuejs.org/rules/object-curly-newline.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1765,6 +1859,8 @@ displayName: Enforce consistent spacing inside braces in `<template>`
 description: |-
   Enforce consistent spacing inside braces in `<template>`
   See rule details for [vue/object-curly-spacing](https://eslint.vuejs.org/rules/object-curly-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1801,6 +1897,8 @@ displayName: Enforce placing object properties on separate lines in `<template>`
 description: |-
   Enforce placing object properties on separate lines in `<template>`
   See rule details for [vue/object-property-newline](https://eslint.vuejs.org/rules/object-property-newline.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1837,6 +1935,8 @@ displayName: Require or disallow method and property shorthand syntax for object
 description: |-
   Require or disallow method and property shorthand syntax for object literals in `<template>`
   See rule details for [vue/object-shorthand](https://eslint.vuejs.org/rules/object-shorthand.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1873,6 +1973,8 @@ displayName: Enforce consistent linebreak style for operators in `<template>`
 description: |-
   Enforce consistent linebreak style for operators in `<template>`
   See rule details for [vue/operator-linebreak](https://eslint.vuejs.org/rules/operator-linebreak.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1909,6 +2011,8 @@ displayName: Require template literals instead of string concatenation in `<temp
 description: |-
   Require template literals instead of string concatenation in `<template>`
   See rule details for [vue/prefer-template](https://eslint.vuejs.org/rules/prefer-template.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1945,6 +2049,8 @@ displayName: Require quotes around object literal property names in `<template>`
 description: |-
   Require quotes around object literal property names in `<template>`
   See rule details for [vue/quote-props](https://eslint.vuejs.org/rules/quote-props.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -1981,6 +2087,8 @@ displayName: Enforce consistent spacing inside parentheses in `<template>`
 description: |-
   Enforce consistent spacing inside parentheses in `<template>`
   See rule details for [vue/space-in-parens](https://eslint.vuejs.org/rules/space-in-parens.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -2017,6 +2125,8 @@ displayName: Require spacing around infix operators in `<template>`
 description: |-
   Require spacing around infix operators in `<template>`
   See rule details for [vue/space-infix-ops](https://eslint.vuejs.org/rules/space-infix-ops.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -2053,6 +2163,8 @@ displayName: Enforce consistent spacing before or after unary operators in `<tem
 description: |-
   Enforce consistent spacing before or after unary operators in `<template>`
   See rule details for [vue/space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -2089,6 +2201,8 @@ displayName: Require or disallow spacing around embedded expressions of template
 description: |-
   Require or disallow spacing around embedded expressions of template strings in `<template>`
   See rule details for [vue/template-curly-spacing](https://eslint.vuejs.org/rules/template-curly-spacing.html).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true

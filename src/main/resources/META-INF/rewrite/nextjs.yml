@@ -29,6 +29,8 @@ displayName: Next.js Codemods for API Updates
 description: >-
   Next.js provides Codemod transformations to help upgrade your [Next.js](https://nextjs.org/) codebase when an API is
   updated or deprecated.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -51,6 +53,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v6.UrlToWithrouter
 displayName: Use `withRouter`
 description: Transforms the deprecated automatically injected url property on top-level pages to using `withRouter` and the `router` property it injects. Read more [here](https://nextjs.org/docs/messages/url-deprecated).
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -63,6 +67,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v8.WithampToConfig
 displayName: Transform AMP HOC into page config
 description: Transforms the `withAmp` HOC into Next.js 9 page configuration.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -75,6 +81,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v9.NameDefaultComponent
 displayName: Transform Anonymous Components into Named Components
 description: Transforms anonymous components into named components to make sure they work with Fast Refresh. The component will have a camel-cased name based on the name of the file, and it also works with arrow functions.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -87,6 +95,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v10.AddMissingReactImport
 displayName: Add React imports
 description: Transforms files that do not import `React` to include the import in order for the new React JSX transform to work.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -99,6 +109,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v11.CraToNext
 displayName: Rename Next Image Imports
 description: Safely renames `next/image` imports in existing Next.js `10` `11` or `12` applications to `next/legacy/image` in Next.js 13. Also renames `next/future/image` to `next/image`.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -111,6 +123,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v13_0.NextImageToLegacyImage
 displayName: Rename Next Image Imports
 description: Safely renames `next/image` imports in existing Next.js `10` `11` or `12` applications to `next/legacy/image` in Next.js 13. Also renames `next/future/image` to `next/image`.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -123,6 +137,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v13_0.NextImageExperimental
 displayName: Migrate to the New Image Component
 description: Dangerously migrates from `next/legacy/image` to the new `next/image` by adding inline styles and removing unused props.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -135,6 +151,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v13_0.NewLink
 displayName: Remove `<a>` Tags From Link Components
 description: Remove `&lt;a&gt;` tags inside Link Components or add a `legacyBehavior` prop to Links that cannot be auto-fixed.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -147,6 +165,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v13_2.BuiltInNextFont
 displayName: Use Built-in Font
 description: This codemod uninstalls the `@next/font` package and transforms `@next/font` imports into the built-in `next/font`.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -159,6 +179,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v14_0.NextOgImport
 displayName: Migrate `ImageResponse` imports
 description: This codemod moves transforms imports from `next/server` to `next/og` for usage of Dynamic OG Image Generation.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs
@@ -171,6 +193,8 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.codemods.migrate.nextjs.v14_0.MetadataToViewportExport
 displayName: Use `viewport` export
 description: This codemod migrates certain viewport metadata to `viewport` export.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - nextjs

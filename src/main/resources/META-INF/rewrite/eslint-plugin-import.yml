@@ -19,6 +19,8 @@ displayName: Forbid empty named import
 description: |-
   Forbid empty named import
   See rule details for [import/no-empty-named-blocks](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-empty-named-blocks.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -43,6 +45,8 @@ displayName: Forbid import statements with CommonJS module.exports
 description: |-
   Forbid import statements with CommonJS module.exports
   See rule details for [import/no-import-module-exports](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-import-module-exports.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -67,6 +71,8 @@ displayName: Forbid import of modules using absolute paths
 description: |-
   Forbid import of modules using absolute paths
   See rule details for [import/no-absolute-path](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-absolute-path.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -91,6 +97,8 @@ displayName: Forbid importing packages through relative paths
 description: |-
   Forbid importing packages through relative paths
   See rule details for [import/no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-relative-packages.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -115,6 +123,8 @@ displayName: Forbid unnecessary path segments in import and require statements
 description: |-
   Forbid unnecessary path segments in import and require statements
   See rule details for [import/no-useless-path-segments](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-useless-path-segments.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -139,6 +149,8 @@ displayName: Enforce or ban the use of inline type-only markers for named import
 description: |-
   Enforce or ban the use of inline type-only markers for named imports
   See rule details for [import/consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/consistent-type-specifier-style.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -163,6 +175,8 @@ displayName: Ensure all imports appear before other statements
 description: |-
   Ensure all imports appear before other statements
   See rule details for [import/first](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/first.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -187,6 +201,8 @@ displayName: Enforce a newline after import statements
 description: |-
   Enforce a newline after import statements
   See rule details for [import/newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/newline-after-import.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -211,6 +227,8 @@ displayName: Forbid repeated import of the same module in multiple places
 description: |-
   Forbid repeated import of the same module in multiple places
   See rule details for [import/no-duplicates](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-duplicates.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -235,6 +253,8 @@ displayName: Forbid namespace (a.k.a. "wildcard" `*`) imports
 description: |-
   Forbid namespace (a.k.a. "wildcard" `*`) imports.
   See rule details for [import/no-namespace](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-namespace.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -259,6 +279,8 @@ displayName: Enforce a convention in module import order
 description: |-
   Enforce a convention in module import order
   See rule details for [import/order](https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/order.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
