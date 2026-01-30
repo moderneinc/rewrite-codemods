@@ -19,6 +19,8 @@ displayName: Require braces around arrow function bodies
 description: |-
   Require braces around arrow function bodies
   See [rule details](https://eslint.org/docs/latest/rules/arrow-body-style).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -42,6 +44,8 @@ displayName: Enforce or disallow capitalization of the first letter of a comment
 description: |-
   Enforce or disallow capitalization of the first letter of a comment 
   See [rule details](https://eslint.org/docs/latest/rules/capitalized-comments).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -65,6 +69,8 @@ displayName: Enforce consistent brace style for all control statements
 description: |-
   Enforce consistent brace style for all control statements 
   See [rule details](https://eslint.org/docs/latest/rules/curly).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -88,6 +94,8 @@ displayName: Enforce dot notation whenever possible
 description: |-
   Enforce dot notation whenever possible 
   See [rule details](https://eslint.org/docs/latest/rules/dot-notation).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -111,6 +119,8 @@ displayName: Require the use of `===` and `!==`
 description: |-
   Require the use of `===` and `!==` 
   See [rule details](https://eslint.org/docs/latest/rules/eqeqeq).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -134,6 +144,8 @@ displayName: Require or disallow logical assignment operator shorthand
 description: |-
   Require or disallow logical assignment operator shorthand 
   See [rule details](https://eslint.org/docs/latest/rules/logical-assignment-operators).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -157,6 +169,8 @@ displayName: Enforce a particular style for multiline comments
 description: |-
   Enforce a particular style for multiline comments 
   See [rule details](https://eslint.org/docs/latest/rules/multiline-comment-style).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -180,6 +194,8 @@ displayName: Disallow equal signs explicitly at the beginning of regular express
 description: |-
   Disallow equal signs explicitly at the beginning of regular expressions 
   See [rule details](https://eslint.org/docs/latest/rules/no-div-regex).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -203,6 +219,8 @@ displayName: Disallow else blocks after return statements in if statements
 description: |-
   Disallow else blocks after return statements in if statements 
   See [rule details](https://eslint.org/docs/latest/rules/no-else-return).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -226,6 +244,8 @@ displayName: Disallow unnecessary calls to `.bind()`
 description: |-
   Disallow unnecessary calls to `.bind()` 
   See [rule details](https://eslint.org/docs/latest/rules/no-extra-bind).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -249,6 +269,8 @@ displayName: Disallow unnecessary labels
 description: |-
   Disallow unnecessary labels 
   See [rule details](https://eslint.org/docs/latest/rules/no-extra-label).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -272,6 +294,8 @@ displayName: Disallow shorthand type conversions
 description: |-
   Disallow shorthand type conversions 
   See [rule details](https://eslint.org/docs/latest/rules/no-implicit-coercion).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -295,6 +319,8 @@ displayName: Disallow if statements as the only statement in else blocks
 description: |-
   Disallow if statements as the only statement in else blocks 
   See [rule details](https://eslint.org/docs/latest/rules/no-lonely-if).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -318,6 +344,8 @@ displayName: Disallow initializing variables to undefined
 description: |-
   Disallow initializing variables to undefined 
   See [rule details](https://eslint.org/docs/latest/rules/no-undef-init).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -341,6 +369,8 @@ displayName: Disallow ternary operators when simpler alternatives exist
 description: |-
   Disallow ternary operators when simpler alternatives exist 
   See [rule details](https://eslint.org/docs/latest/rules/no-unneeded-ternary).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -364,6 +394,8 @@ displayName: Disallow unnecessary computed property keys in objects and classes
 description: |-
   Disallow unnecessary computed property keys in objects and classes 
   See [rule details](https://eslint.org/docs/latest/rules/no-useless-computed-key).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -387,6 +419,8 @@ displayName: Disallow renaming import, export, and destructured assignments to t
 description: |-
   Disallow renaming import, export, and destructured assignments to the same name
   See [rule details](https://eslint.org/docs/latest/rules/no-useless-rename).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -410,6 +444,8 @@ displayName: Disallow redundant return statements
 description: |-
   Disallow redundant return statements 
   See [rule details](https://eslint.org/docs/latest/rules/no-useless-return).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -433,6 +469,8 @@ displayName: Require `let` or `const` instead of `var`
 description: |-
   Require `let` or `const` instead of `var` 
   See [rule details](https://eslint.org/docs/latest/rules/no-var).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -456,6 +494,8 @@ displayName: Require or disallow method and property shorthand syntax for object
 description: |-
   Require or disallow method and property shorthand syntax for object literals 
   See [rule details](https://eslint.org/docs/latest/rules/object-shorthand).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -479,6 +519,8 @@ displayName: Enforce variables to be declared either together or separately in f
 description: |-
   Enforce variables to be declared either together or separately in functions 
   See [rule details](https://eslint.org/docs/latest/rules/one-var).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -502,6 +544,8 @@ displayName: Require or disallow assignment operator shorthand where possible
 description: |-
   Require or disallow assignment operator shorthand where possible 
   See [rule details](https://eslint.org/docs/latest/rules/operator-assignment).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -525,6 +569,8 @@ displayName: Require using arrow functions for callbacks
 description: |-
   Require using arrow functions for callbacks 
   See [rule details](https://eslint.org/docs/latest/rules/prefer-arrow-callback).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -548,6 +594,8 @@ displayName: Require const declarations for variables that are never reassigned 
 description: |-
   Require const declarations for variables that are never reassigned after declared 
   See [rule details](https://eslint.org/docs/latest/rules/prefer-const).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -571,6 +619,8 @@ displayName: Require destructuring from arrays and/or objects
 description: |-
   Require destructuring from arrays and/or objects 
   See [rule details](https://eslint.org/docs/latest/rules/prefer-destructuring).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -594,6 +644,8 @@ displayName: Disallow the use of `Math.pow` in favor of the ** operator
 description: |-
   Disallow the use of `Math.pow` in favor of the ** operator 
   See [rule details](https://eslint.org/docs/latest/rules/prefer-exponentiation-operator).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -617,6 +669,8 @@ displayName: Disallow `parseInt()` and `Number.parseInt()` in favor of binary, o
 description: |-
   Disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals 
   See [rule details](https://eslint.org/docs/latest/rules/prefer-numeric-literals).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -640,6 +694,8 @@ displayName: Disallow use of `Object.prototype.hasOwnProperty.call()` and prefer
 description: |-
   Disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn(`) 
   See [rule details](https://eslint.org/docs/latest/rules/prefer-object-has-own).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -663,6 +719,8 @@ displayName: Disallow using `Object.assign` with an object literal as the first 
 description: |-
   Disallow using `Object.assign` with an object literal as the first argument and prefer the use of object spread instead 
   See [rule details](https://eslint.org/docs/latest/rules/prefer-object-spread).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -686,6 +744,8 @@ displayName: Require template literals instead of string concatenation
 description: |-
   Require template literals instead of string concatenation 
   See [rule details](https://eslint.org/docs/latest/rules/prefer-template).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -709,6 +769,8 @@ displayName: Enforce sorted import declarations within modules
 description: |-
   Enforce sorted import declarations within modules 
   See [rule details](https://eslint.org/docs/latest/rules/sort-imports).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -732,6 +794,8 @@ displayName: Require variables within the same declaration block to be sorted
 description: |-
   Require variables within the same declaration block to be sorted 
   See [rule details](https://eslint.org/docs/latest/rules/sort-vars).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -755,6 +819,8 @@ displayName: Require or disallow strict mode directives
 description: |-
   Require or disallow strict mode directives 
   See [rule details](https://eslint.org/docs/latest/rules/strict).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -778,6 +844,8 @@ displayName: Require or disallow "Yoda" conditions
 description: |-
   Require or disallow "Yoda" conditions
   See [rule details](https://eslint.org/docs/latest/rules/yoda).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -801,6 +869,8 @@ displayName: Require or disallow Unicode byte order mark (BOM)
 description: |-
   Require or disallow Unicode byte order mark (BOM) 
   See [rule details](https://eslint.org/docs/latest/rules/unicode-bom).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true

@@ -18,6 +18,8 @@ name: org.openrewrite.codemods.cleanup.svelte.RecommendedsvelteCodeCleanup
 displayName: Recommended svelte code cleanup
 description: |-
   Collection of cleanup ESLint rules from [eslint-plugin-svelte](https://github.com/sveltejs/eslint-plugin-svelte).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -66,6 +68,8 @@ displayName: Disallow dynamic slot name
 description: |-
   Disallow dynamic slot name
   See rule details for [svelte/no-dynamic-slot-name](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dynamic-slot-name/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -98,6 +102,8 @@ displayName: Disallow to use of the store itself as an operand. Need to use $ pr
 description: |-
   Disallow to use of the store itself as an operand. Need to use $ prefix or get function.
   See rule details for [svelte/require-store-reactive-access](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-store-reactive-access/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -130,6 +136,8 @@ displayName: Disallow unnecessary mustache interpolations
 description: |-
   Disallow unnecessary mustache interpolations
   See rule details for [svelte/no-useless-mustaches](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-useless-mustaches/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -162,6 +170,8 @@ displayName: Enforce the location of first attribute
 description: |-
   Enforce the location of first attribute
   See rule details for [svelte/first-attribute-linebreak](https://sveltejs.github.io/eslint-plugin-svelte/rules/first-attribute-linebreak/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -194,6 +204,8 @@ displayName: Require or disallow a space before tag's closing brackets
 description: |-
   Require or disallow a space before tag's closing brackets
   See rule details for [svelte/html-closing-bracket-spacing](https://sveltejs.github.io/eslint-plugin-svelte/rules/html-closing-bracket-spacing/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -226,6 +238,8 @@ displayName: Enforce quotes style of HTML attributes
 description: |-
   Enforce quotes style of HTML attributes
   See rule details for [svelte/html-quotes](https://sveltejs.github.io/eslint-plugin-svelte/rules/html-quotes/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -258,6 +272,8 @@ displayName: Enforce self-closing style
 description: |-
   Enforce self-closing style
   See rule details for [svelte/html-self-closing](https://sveltejs.github.io/eslint-plugin-svelte/rules/html-self-closing/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -290,6 +306,8 @@ displayName: Enforce consistent indentation
 description: |-
   Enforce consistent indentation
   See rule details for [svelte/indent](https://sveltejs.github.io/eslint-plugin-svelte/rules/indent/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -322,6 +340,8 @@ displayName: Enforce the maximum number of attributes per line
 description: |-
   Enforce the maximum number of attributes per line
   See rule details for [svelte/max-attributes-per-line](https://sveltejs.github.io/eslint-plugin-svelte/rules/max-attributes-per-line/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -354,6 +374,8 @@ displayName: Enforce unified spacing in mustache
 description: |-
   Enforce unified spacing in mustache
   See rule details for [svelte/mustache-spacing](https://sveltejs.github.io/eslint-plugin-svelte/rules/mustache-spacing/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -386,6 +408,8 @@ displayName: Disallow spaces around equal signs in attribute
 description: |-
   Disallow spaces around equal signs in attribute
   See rule details for [svelte/no-spaces-around-equal-signs-in-attribute](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-spaces-around-equal-signs-in-attribute/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -418,6 +442,8 @@ displayName: Require class directives instead of ternary expressions
 description: |-
   Require class directives instead of ternary expressions
   See rule details for [svelte/prefer-class-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/prefer-class-directive/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -450,6 +476,8 @@ displayName: Require style directives instead of style attribute
 description: |-
   Require style directives instead of style attribute
   See rule details for [svelte/prefer-style-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/prefer-style-directive/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -482,6 +510,8 @@ displayName: Enforce use of shorthand syntax in attribute
 description: |-
   Enforce use of shorthand syntax in attribute
   See rule details for [svelte/shorthand-attribute](https://sveltejs.github.io/eslint-plugin-svelte/rules/shorthand-attribute/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -514,6 +544,8 @@ displayName: Enforce use of shorthand syntax in directives
 description: |-
   Enforce use of shorthand syntax in directives
   See rule details for [svelte/shorthand-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/shorthand-directive/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -546,6 +578,8 @@ displayName: Enforce order of attributes
 description: |-
   Enforce order of attributes
   See rule details for [svelte/sort-attributes](https://sveltejs.github.io/eslint-plugin-svelte/rules/sort-attributes/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:
@@ -578,6 +612,8 @@ displayName: Enforce consistent spacing after the <!-- and before the --> in a H
 description: |-
   Enforce consistent spacing after the <!-- and before the --> in a HTML comment
   See rule details for [svelte/spaced-html-comment](https://sveltejs.github.io/eslint-plugin-svelte/rules/spaced-html-comment/).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       patterns:

@@ -23,6 +23,8 @@ name: org.openrewrite.codemods.cleanup.jest.RecommendedJestCodeCleanup
 displayName: Recommended Jest code cleanup
 description: |-
   Collection of cleanup ESLint rules that are recommended by [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -67,6 +69,8 @@ displayName: Disallow use of deprecated functions from before version 27
 description: |-
   Disallow use of deprecated functions from before version 27
   See rule details for [jest/no-deprecated-functions](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/no-deprecated-functions.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -102,6 +106,8 @@ displayName: Enforce test and it usage conventions
 description: |-
   Enforce test and it usage conventions
   See rule details for [jest/consistent-test-it](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/consistent-test-it.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -131,6 +137,8 @@ displayName: Disallow alias methods
 description: |-
   Disallow alias methods
   See rule details for [jest/no-alias-methods](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/no-alias-methods.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -160,6 +168,8 @@ displayName: Disallow Jasmine globals
 description: |-
   Disallow Jasmine globals
   See rule details for [jest/no-jasmine-globals](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/no-jasmine-globals.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -189,6 +199,8 @@ displayName: Require using .only and .skip over f and x
 description: |-
   Require using .only and .skip over f and x
   See rule details for [jest/no-test-prefixes](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/no-test-prefixes.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -218,6 +230,8 @@ displayName: Disallow using jest.mock() factories without an explicit type param
 description: |-
   Disallow using jest.mock() factories without an explicit type parameter
   See rule details for [jest/no-untyped-mock-factory](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/no-untyped-mock-factory.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -247,6 +261,8 @@ displayName: Suggest using the built-in comparison matchers
 description: |-
   Suggest using the built-in comparison matchers
   See rule details for [jest/prefer-comparison-matcher](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-comparison-matcher.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -276,6 +292,8 @@ displayName: Prefer await expect(...).resolves over expect(await ...) syntax
 description: |-
   Prefer await expect(...).resolves over expect(await ...) syntax
   See rule details for [jest/prefer-expect-resolves](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-expect-resolves.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -305,6 +323,8 @@ displayName: Enforce lowercase test names
 description: |-
   Enforce lowercase test names
   See rule details for [jest/prefer-lowercase-title](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-lowercase-title.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -334,6 +354,8 @@ displayName: Prefer mock resolved/rejected shorthands for promises
 description: |-
   Prefer mock resolved/rejected shorthands for promises
   See rule details for [jest/prefer-mock-promise-shorthand](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-mock-promise-shorthand.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -363,6 +385,8 @@ displayName: Suggest using jest.spyOn()
 description: |-
   Suggest using jest.spyOn()
   See rule details for [jest/prefer-spy-on](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-spy-on.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -392,6 +416,8 @@ displayName: Suggest using toBe() for primitive literals
 description: |-
   Suggest using toBe() for primitive literals
   See rule details for [jest/prefer-to-be](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-to-be.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -421,6 +447,8 @@ displayName: Suggest using toContain()
 description: |-
   Suggest using toContain()
   See rule details for [jest/prefer-to-contain](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-to-contain.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -450,6 +478,8 @@ displayName: Suggest using toHaveLength()
 description: |-
   Suggest using toHaveLength()
   See rule details for [jest/prefer-to-have-length](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-to-have-length.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -479,6 +509,8 @@ displayName: Suggest using test.todo
 description: |-
   Suggest using test.todo
   See rule details for [jest/prefer-todo](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/prefer-todo.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -508,6 +540,8 @@ displayName: Enforce valid titles
 description: |-
   Enforce valid titles
   See rule details for [jest/valid-title](https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/valid-title.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true

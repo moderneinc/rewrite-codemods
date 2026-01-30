@@ -18,6 +18,8 @@ name: org.openrewrite.codemods.cleanup.storybook.RecommendedStorybookCodeCleanup
 displayName: Recommended Storybook code cleanup
 description: |-
   Collection of cleanup ESLint rules from [eslint-plugin-storybook](https://github.com/storybookjs/eslint-plugin-storybook#readme).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -53,6 +55,8 @@ displayName: Interactions should be awaited
 description: |-
   Interactions should be awaited
   See rule details for [storybook/await-interactions](https://github.com/storybookjs/eslint-plugin-storybook/blob/main/docs/rules/await-interactions.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -81,6 +85,8 @@ displayName: Story files should have a default export
 description: |-
   Story files should have a default export
   See rule details for [storybook/default-exports](https://github.com/storybookjs/eslint-plugin-storybook/blob/main/docs/rules/default-exports.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -109,6 +115,8 @@ displayName: Deprecated hierarchy separator in title property
 description: |-
   Deprecated hierarchy separator in title property
   See rule details for [storybook/hierarchy-separator](https://github.com/storybookjs/eslint-plugin-storybook/blob/main/docs/rules/hierarchy-separator.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -137,6 +145,8 @@ displayName: A story should not have a redundant name property
 description: |-
   A story should not have a redundant name property
   See rule details for [storybook/no-redundant-story-name](https://github.com/storybookjs/eslint-plugin-storybook/blob/main/docs/rules/no-redundant-story-name.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -165,6 +175,8 @@ displayName: Do not define a title in meta
 description: |-
   Do not define a title in meta
   See rule details for [storybook/no-title-property-in-meta](https://github.com/storybookjs/eslint-plugin-storybook/blob/main/docs/rules/no-title-property-in-meta.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -193,6 +205,8 @@ displayName: Stories should use PascalCase
 description: |-
   Stories should use PascalCase
   See rule details for [storybook/prefer-pascal-case](https://github.com/storybookjs/eslint-plugin-storybook/blob/main/docs/rules/prefer-pascal-case.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -221,6 +235,8 @@ displayName: Use expect from @storybook/jest
 description: |-
   Use expect from @storybook/jest
   See rule details for [storybook/use-storybook-expect](https://github.com/storybookjs/eslint-plugin-storybook/blob/main/docs/rules/use-storybook-expect.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true
@@ -249,6 +265,8 @@ displayName: Do not use testing-library directly on stories
 description: |-
   Do not use testing-library directly on stories
   See rule details for [storybook/use-storybook-testing-library](https://github.com/storybookjs/eslint-plugin-storybook/blob/main/docs/rules/use-storybook-testing-library.md).
+preconditions:
+  - org.openrewrite.Singleton
 recipeList:
   - org.openrewrite.codemods.ESLint:
       fix: true

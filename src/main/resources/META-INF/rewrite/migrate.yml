@@ -30,6 +30,8 @@ description: |-
   - `_.rest` (alias for `_.tail`)
   - `_.last(x)` -> `x[x.length - 1]`
   - `_.last(x, n)` -> `x.slice(x.length - n)`.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - lodash
@@ -44,6 +46,8 @@ displayName: Replace lodash and underscore function functions with native JavaSc
 description: |-
   - `_.bind(fn, obj, ...x)` -> `fn.bind(obj, ...x)`
   - `_.partial(fn, a, b);` -> `(...args) => fn(a, b, ...args)`.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - lodash
@@ -62,6 +66,8 @@ description: |-
   - `_.keys(x)` -> `Object.keys(x)`
   - `_.pairs(x)` -> `Object.entries(x)`
   - `_.values(x)` -> `Object.values(x)`.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - lodash
@@ -81,6 +87,8 @@ description: |-
   - `_.isNull(x)` -> `x === null`
   - `_.isString(x)` -> `typeof(x) === 'string'`
   - `_.isUndefined(x)` -> `typeof(x) === 'undefined'`.
+preconditions:
+  - org.openrewrite.Singleton
 tags:
   - codemods
   - lodash
