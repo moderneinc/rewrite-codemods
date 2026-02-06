@@ -1,0 +1,12 @@
+Convention type,Pattern,Example,Frequency,Scope
+imports,Static imports from java.util,java.util.Collections.emptyList,,project-wide
+naming,get* method naming pattern,getNpmCommand,,project-wide
+imports,Static imports from org.openrewrite,org.openrewrite.Tree.randomId,,project-wide
+naming,UPPER_SNAKE_CASE for constants,ESLINT_DIR,,project-wide
+naming,process* method naming pattern,processOutput,,project-wide
+naming,create* method naming pattern,createAfter,,project-wide
+comments,Methods have Javadoc documentation,recreateBinSymlinks,,project-wide
+imports,Static imports from org.openrewrite.test,org.openrewrite.test.SourceSpecs.text,,project-wide
+naming,Test suffix for classes,ApplyCodemodReactMUITest,,project-wide
+naming,format* method naming pattern,formatStatement,,project-wide
+imports,Static imports from org.assertj.core.api,org.assertj.core.api.Assertions.assertThat,,project-wide
