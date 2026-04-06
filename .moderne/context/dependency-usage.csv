@@ -1,0 +1,7 @@
+Library,Top-level package,Usage pattern,Common classes,Import count,Example usage
+org.openrewrite:rewrite-core:8.73.0-SNAPSHOT,org.openrewrite,,"ExecutionContext, Option",1,
+org.jspecify:jspecify:1.0.0,org.jspecify,,Nullable,1,
+org.projectlombok:lombok:1.18.42,org.projectlombok,,"EqualsAndHashCode, Value",1,
+com.fasterxml.jackson.core:jackson-databind:2.17.2,com.fasterxml.jackson.core,,"ArrayNode, ObjectMapper, JsonNode",1,
+org.junit.jupiter:junit-jupiter-api:5.14.0,org.junit.jupiter,,"Test, DisabledIfEnvironmentVariable",1,
+org.openrewrite:rewrite-test:8.73.0-SNAPSHOT,org.openrewrite,,"TypeValidation, SourceSpec, RewriteTest, RecipeSpec",1,

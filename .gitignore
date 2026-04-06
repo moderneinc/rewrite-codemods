@@ -5,3 +5,7 @@ out/
 
 node_modules/
 /.working-set/
+
+# Moderne CLI
+.moderne/*
+!.moderne/context/
