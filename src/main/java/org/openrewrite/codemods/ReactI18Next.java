@@ -146,7 +146,7 @@ public class ReactI18Next extends NodeBasedRecipe {
                 // Return the translation file as a generated source
                 List<SourceFile> sources = new ArrayList<>();
                 if (result != null) {
-                    sources.addAll((Collection<SourceFile>) result);
+                    sources.addAll(result);
                 }
                 sources.add(translationSource);
                 return sources;
