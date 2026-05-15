@@ -1,0 +1,19 @@
+Source path,Class name,Line count,Method count,Field count,WMC,LCOM4,TCC,CBO,Maintainability index
+src/test/java/org/openrewrite/codemods/ApplyCodemodReactMUITest.java,org.openrewrite.codemods.ApplyCodemodReactMUITest,28,1,0,1,1,1.0,7,52.82755392799026
+src/test/java/org/openrewrite/codemods/ApplyCodemodTest.java,org.openrewrite.codemods.ApplyCodemodTest,22,1,0,1,1,1.0,6,55.71152509902159
+src/test/java/org/openrewrite/codemods/BiomeTest.java,org.openrewrite.codemods.BiomeTest,42,3,0,3,3,0.0,6,63.61629560670866
+src/test/java/org/openrewrite/codemods/ESLintTest.java,org.openrewrite.codemods.ESLintTest,290,8,0,8,8,0.0,15,48.485026149860154
+src/test/java/org/openrewrite/codemods/NextJsCodemodsTest.java,org.openrewrite.codemods.NextJsCodemodsTest,33,1,0,1,1,1.0,5,52.40603062022377
+src/test/java/org/openrewrite/codemods/PutoutTest.java,org.openrewrite.codemods.PutoutTest,124,4,0,4,4,0.0,7,52.585928590640684
+src/test/java/org/openrewrite/codemods/ReactI18NextTest.java,org.openrewrite.codemods.ReactI18NextTest,156,3,0,3,3,0.0,6,46.21013175256807
+src/test/java/org/openrewrite/codemods/UI5Test.java,org.openrewrite.codemods.UI5Test,135,1,0,1,1,1.0,6,36.98162178001118
+src/main/java/org/openrewrite/codemods/ApplyCodemod.java,org.openrewrite.codemods.ApplyCodemod,74,1,6,7,1,1.0,6,38.18787147225529
+src/main/java/org/openrewrite/codemods/Biome.java,org.openrewrite.codemods.Biome,15,1,2,1,1,1.0,1,63.6999199000187
+src/main/java/org/openrewrite/codemods/ESLint.java,org.openrewrite.codemods.ESLint,296,4,15,45,2,0.3333333333333333,34,35.97734792260335
+src/main/java/org/openrewrite/codemods/ESLintMessages.java,org.openrewrite.codemods.ESLintMessages,42,1,0,1,1,1.0,1,57.00012039557105
+src/main/java/org/openrewrite/codemods/NodeBasedRecipe.java,org.openrewrite.codemods.NodeBasedRecipe,270,12,3,43,4,0.045454545454545456,33,52.542181373256035
+src/main/java/org/openrewrite/codemods/Putout.java,org.openrewrite.codemods.Putout,151,3,5,18,1,0.3333333333333333,23,41.898324391411165
+src/main/java/org/openrewrite/codemods/ReactI18Next.java,org.openrewrite.codemods.ReactI18Next,144,3,7,15,1,0.3333333333333333,15,44.2839523152096
+src/main/java/org/openrewrite/codemods/RecipeResources.java,org.openrewrite.codemods.RecipeResources,147,8,1,26,2,0.03571428571428571,27,54.739871893482395
+src/main/java/org/openrewrite/codemods/UI5.java,org.openrewrite.codemods.UI5,174,4,4,18,4,0.0,28,43.54740694363235
+src/main/java/org/openrewrite/codemods/UI5Messages.java,org.openrewrite.codemods.UI5Messages,39,1,0,1,1,1.0,1,57.702195921237895
