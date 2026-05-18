@@ -13,7 +13,7 @@ src/main/java/org/openrewrite/codemods/ESLint.java,org.openrewrite.codemods.ESLi
 src/main/java/org/openrewrite/codemods/ESLintMessages.java,org.openrewrite.codemods.ESLintMessages,42,1,0,1,1,1.0,1,57.00012039557105
 src/main/java/org/openrewrite/codemods/NodeBasedRecipe.java,org.openrewrite.codemods.NodeBasedRecipe,270,12,3,43,4,0.045454545454545456,33,52.542181373256035
 src/main/java/org/openrewrite/codemods/Putout.java,org.openrewrite.codemods.Putout,151,3,5,18,1,0.3333333333333333,23,41.898324391411165
-src/main/java/org/openrewrite/codemods/ReactI18Next.java,org.openrewrite.codemods.ReactI18Next,144,3,7,15,1,0.3333333333333333,15,44.2839523152096
+src/main/java/org/openrewrite/codemods/ReactI18Next.java,org.openrewrite.codemods.ReactI18Next,144,3,7,15,1,0.3333333333333333,14,44.3127056538928
 src/main/java/org/openrewrite/codemods/RecipeResources.java,org.openrewrite.codemods.RecipeResources,147,8,1,26,2,0.03571428571428571,27,54.739871893482395
 src/main/java/org/openrewrite/codemods/UI5.java,org.openrewrite.codemods.UI5,174,4,4,18,4,0.0,28,43.54740694363235
 src/main/java/org/openrewrite/codemods/UI5Messages.java,org.openrewrite.codemods.UI5Messages,39,1,0,1,1,1.0,1,57.702195921237895
