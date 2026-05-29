@@ -1,7 +1,7 @@
 Library,Top-level package,Usage pattern,Common classes,Import count,Example usage
 com.fasterxml.jackson.core:jackson-databind:2.21.2,com.fasterxml.jackson.core,,"JsonNode, ObjectMapper, ArrayNode, ObjectNode, TextNode",1,
 org.jspecify:jspecify:1.0.0,org.jspecify,,"Nullable, NullMarked",1,
-org.junit.jupiter:junit-jupiter-api:5.14.0,org.junit.jupiter,,"Test, DisabledIfEnvironmentVariable, Disabled",1,
-org.openrewrite:rewrite-core:8.83.0-SNAPSHOT,org.openrewrite,,"DocumentExample, ExecutionContext, PlainText, DataTable, Option, SourceFile, WorkingDirectoryExecutionContextView, Marker",1,
-org.openrewrite:rewrite-test:8.83.0-SNAPSHOT,org.openrewrite,,"RecipeSpec, RewriteTest, SourceSpec, TypeValidation",1,
+org.junit.jupiter:junit-jupiter-api:6.1.0,org.junit.jupiter,,"Test, DisabledIfEnvironmentVariable, Disabled",1,
+org.openrewrite:rewrite-core:8.84.0-SNAPSHOT,org.openrewrite,,"DocumentExample, ExecutionContext, PlainText, DataTable, Option, SourceFile, WorkingDirectoryExecutionContextView, Marker",1,
+org.openrewrite:rewrite-test:8.84.0-SNAPSHOT,org.openrewrite,,"RecipeSpec, RewriteTest, SourceSpec, TypeValidation",1,
 org.projectlombok:lombok:1.18.46,org.projectlombok,,"Value, EqualsAndHashCode, Getter, RequiredArgsConstructor, ToString",1,
