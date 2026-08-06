@@ -109,10 +109,8 @@ class PutoutTest implements RewriteTest {
         );
     }
 
-    /**
-     * recast should keep format close to original while putout would format it
-     * have all props on a new line, leave trailing commas, etc.
-     */
+    /// recast should keep format close to original while putout would format it
+    /// have all props on a new line, leave trailing commas, etc.
     @Test
     void printer() {
         rewriteRun(
